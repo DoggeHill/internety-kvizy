@@ -1,0 +1,114 @@
+.Quiz {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.QuizPanel {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+
+.title {
+  padding: 0.75em 0;
+}
+
+.QuitButton {
+  font-size: 1.875rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.QuitButton > input:hover {
+  text-decoration: underline;
+}
+
+.SettingsButtonText {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.SettingsButton {
+  padding-top: 1.5em;
+}
+
+.Sidebar_Layout {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.TransitionButton {
+  text-align: center;
+  padding-bottom: 1em;
+  margin-top: auto;
+}
+
+.QuestionWrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.ExplanationBox {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e8f4f8;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+}
+
+.SubmitButton {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+.IncorrectAnswersButton {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.RetryIncorrectButton {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.ContinueQuizButton {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.IncorrectAnswersModal {
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: hidden;
+  padding: 1.5rem;
+}
+
+.IncorrectAnswersList {
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.IncorrectAnswerItem {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fff3cd;
+  border-left: 4px solid #f39c12;
+  border-radius: 4px;
+}
+
+.AnswerDetails {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.AnswerDetails > p {
+  margin: 0.5rem 0;
+}

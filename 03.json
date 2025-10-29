@@ -1,0 +1,962 @@
+[
+  {
+    "question": "The Distance Vector (DV) routing approach is fundamentally based on which graph theory algorithm?",
+    "options": [
+      "Dijkstra's algorithm",
+      "Kruskal's algorithm",
+      "Bellman-Ford algorithm",
+      "Prim's algorithm"
+    ],
+    "answer": "Bellman-Ford algorithm"
+  },
+  {
+    "question": "What information do neighboring routers periodically exchange in a Distance Vector (DV) routing protocol?",
+    "options": [
+      "Information about states of directly connected links",
+      "Complete copies of their routing tables",
+      "The entire network topology graph",
+      "Link-State Advertisements (LSAs)"
+    ],
+    "answer": "Complete copies of their routing tables"
+  },
+  {
+    "question": "What is the specific metric used by the Routing Information Protocol (RIP)?",
+    "options": [
+      "Bandwidth",
+      "Hop count",
+      "Delay",
+      "Load"
+    ],
+    "answer": "Hop count"
+  },
+  {
+    "question": "What is the maximum hop count value that represents 'infinity' in the RIPv1 protocol?",
+    "options": [
+      "8",
+      "15",
+      "16",
+      "32"
+    ],
+    "answer": "16"
+  },
+  {
+    "question": "Which protocol is used at the transport layer to carry RIP messages?",
+    "options": [
+      "TCP",
+      "SCTP",
+      "ICMP",
+      "UDP"
+    ],
+    "answer": "UDP"
+  },
+  {
+    "question": "Which version of the Routing Information Protocol (RIP) does NOT support variable length subnet masking (VLSM)?",
+    "options": [
+      "RIPng",
+      "RIPv2",
+      "RIPv1",
+      "All versions support VLSM"
+    ],
+    "answer": "RIPv1"
+  },
+  {
+    "question": "Which new field was introduced in RIPv2 to differentiate internal routes within a RIP domain from external routes?",
+    "options": [
+      "Next Hop",
+      "Route Tag",
+      "Subnet Mask",
+      "Unused"
+    ],
+    "answer": "Route Tag"
+  },
+  {
+    "question": "RIPv2 messages are multicast on which specific IP address?",
+    "options": [
+      "255.255.255.255",
+      "224.0.0.9",
+      "224.0.0.10",
+      "192.0.0.9"
+    ],
+    "answer": "224.0.0.9"
+  },
+  {
+    "question": "Which routing protocol was developed by Cisco primarily to overcome the hop count limit and single metric of RIPv1?",
+    "options": [
+      "EIGRP",
+      "IGRP",
+      "OSPF",
+      "IS-IS"
+    ],
+    "answer": "IGRP"
+  },
+  {
+    "question": "Which of the following is NOT one of the four factors used in IGRP's composite metric calculation?",
+    "options": [
+      "Bandwidth (B)",
+      "Reliability (R)",
+      "Jitter (J)",
+      "Delay (D)"
+    ],
+    "answer": "Jitter (J)"
+  },
+  {
+    "question": "Distance Vector protocols are generally more suitable for what size of networks?",
+    "options": [
+      "Large-scale networks",
+      "National backbone networks",
+      "Smaller networks",
+      "Transit AS networks"
+    ],
+    "answer": "Smaller networks"
+  },
+  {
+    "question": "Which problem is a major drawback of Distance Vector routing that may converge more slowly than Link State?",
+    "options": [
+      "The count-to-infinity problem",
+      "Oscillations",
+      "Neighbor unreachability detection",
+      "Longest Prefix Matching"
+    ],
+    "answer": "The count-to-infinity problem"
+  },
+  {
+    "question": "When the Interior Gateway Routing Protocol (IGRP) runs directly over IP, what is the protocol type field set to?",
+    "options": [
+      "1 (ICMP)",
+      "6 (TCP)",
+      "9",
+      "17 (UDP)"
+    ],
+    "answer": "9"
+  },
+  {
+    "question": "Which RIP version is an extension to support IPv6 addresses/networks?",
+    "options": [
+      "RIPv1",
+      "RIPv2",
+      "RIPng",
+      "RIP-E"
+    ],
+    "answer": "RIPng"
+  },
+  {
+    "question": "IGRP supports load balancing by allowing what for a route?",
+    "options": [
+      "Variable Length Subnet Masking",
+      "Multiple paths",
+      "Explicit masking",
+      "Triggered updates"
+    ],
+    "answer": "Multiple paths"
+  },
+  {
+    "question": "The Link State (LS) routing approach is fundamentally based on which graph theory algorithm?",
+    "options": [
+      "Bellman-Ford algorithm",
+      "Dijkstra's algorithm",
+      "Floyd-Warshall algorithm",
+      "Prim's algorithm"
+    ],
+    "answer": "Dijkstra's algorithm"
+  },
+  {
+    "question": "What information do Link State routers exchange with all other routers in the network?",
+    "options": [
+      "Complete copies of their routing tables",
+      "The shortest path tree to all destinations",
+      "Information about states of their directly connected links",
+      "The network's traffic matrix"
+    ],
+    "answer": "Information about states of their directly connected links"
+  },
+  {
+    "question": "What must every router maintain in a Link State routing environment to compute shortest paths?",
+    "options": [
+      "Only the routes advertised by its neighbors",
+      "Complete information about the network topology",
+      "A limited distance vector number",
+      "The Autonomous System Number of all ASs"
+    ],
+    "answer": "Complete information about the network topology"
+  },
+  {
+    "question": "What is the stated complexity of the standard Dijkstra's algorithm for computing shortest paths to all destinations from a single source?",
+    "options": [
+      "O(LN)",
+      "O(N²)",
+      "O(L+NlogN)",
+      "O(NlogL)"
+    ],
+    "answer": "O(N²)"
+  },
+  {
+    "question": "Link State protocols are more suitable for what size of networks?",
+    "options": [
+      "Small networks",
+      "Networks with fewer than 16 hops",
+      "Large networks",
+      "Networks managed by a single department"
+    ],
+    "answer": "Large networks"
+  },
+  {
+    "question": "Regarding robustness, Link State routing is advantageous because a compromised router spreads wrong information only about which part of the network?",
+    "options": [
+      "The entire AS",
+      "The links it is directly connected to",
+      "All nodes within a 16-hop radius",
+      "The core routers"
+    ],
+    "answer": "The links it is directly connected to"
+  },
+  {
+    "question": "When a link state changes, the message complexity for propagating the change to every node in a Link State protocol is generally considered to be:",
+    "options": [
+      "O(N)",
+      "O(N²)",
+      "O(nE)",
+      "O(logN)"
+    ],
+    "answer": "O(nE)"
+  },
+  {
+    "question": "The robustness of Link State protocols is enhanced because the routing table computation is separated from which other process?",
+    "options": [
+      "Autonomous System Number assignment",
+      "Routing information propagation",
+      "Load balancing",
+      "IP Address Lookup"
+    ],
+    "answer": "Routing information propagation"
+  },
+  {
+    "question": "Which of the following is a Link State routing protocol used as an Interior Gateway Protocol (IGP)?",
+    "options": [
+      "BGP",
+      "RIP",
+      "OSPF",
+      "EGP"
+    ],
+    "answer": "OSPF"
+  },
+  {
+    "question": "The complexity of Dijkstra's algorithm, O(N²), can be improved to which complexity measure?",
+    "options": [
+      "O(N³)",
+      "O(N²logN)",
+      "O(L+NlogN)",
+      "O(LN)"
+    ],
+    "answer": "O(L+NlogN)"
+  },
+  {
+    "question": "The property where the bandwidth of a path is determined by the link with the minimum available bandwidth is an example of a:",
+    "options": [
+      "Additive property",
+      "Non-additive concave property",
+      "Metric-independent property",
+      "Linear property"
+    ],
+    "answer": "Non-additive concave property"
+  },
+  {
+    "question": "What is the general complexity of the Bellman-Ford algorithm for computing shortest paths from a single source to a single destination?",
+    "options": [
+      "O(N²)",
+      "O(L+NlogN)",
+      "O(LN)",
+      "O(ElogN)"
+    ],
+    "answer": "O(LN)"
+  },
+  {
+    "question": "Compared to Distance Vector, Link State protocols are generally known for their:",
+    "options": [
+      "Slower convergence speed",
+      "Lack of support for authentication",
+      "Simpler configuration",
+      "Faster speed of convergence"
+    ],
+    "answer": "Faster speed of convergence"
+  },
+  {
+    "question": "Which type of routing protocol is BGP Protocol categorized as?",
+    "options": [
+      "Distance Vector",
+      "Link State",
+      "Path Vector",
+      "Hybrid"
+    ],
+    "answer": "Path Vector"
+  },
+  {
+    "question": "What is the main difference between Path Vector (PV) routing and Distance Vector (DV) routing?",
+    "options": [
+      "PV uses Dijkstra's algorithm; DV uses Bellman-Ford",
+      "PV sends whole paths; DV sends only the end nodes",
+      "PV supports only IPv6; DV supports only IPv4",
+      "PV is an IGP; DV is an EGP"
+    ],
+    "answer": "PV sends whole paths; DV sends only the end nodes"
+  },
+  {
+    "question": "The main benefit of sending entire paths in the Path Vector approach is to allow for a simple detection of:",
+    "options": [
+      "Shortest paths",
+      "Loops",
+      "Link utilization",
+      "Address family"
+    ],
+    "answer": "Loops"
+  },
+  {
+    "question": "The primary goal of Exterior Gateway Protocols (EGP), such as BGP, is to support defined policies and:",
+    "options": [
+      "Performance",
+      "Traffic Engineering",
+      "Scalability",
+      "Lowest cost"
+    ],
+    "answer": "Scalability"
+  },
+  {
+    "question": "What is the name of the 16-bit identifier assigned to every Autonomous System (AS)?",
+    "options": [
+      "ASID",
+      "AS-Key",
+      "Autonomous System Number (ASN)",
+      "ASR"
+    ],
+    "answer": "Autonomous System Number (ASN)"
+  },
+  {
+    "question": "Which organization is responsible for assigning Autonomous System Numbers (ASN)?",
+    "options": [
+      "IETF",
+      "ICANN",
+      "IEEE",
+      "Cisco"
+    ],
+    "answer": "ICANN"
+  },
+  {
+    "question": "What is the term for an Autonomous System (AS) that only originates and terminates traffic and does NOT allow traffic to pass through to other ASs?",
+    "options": [
+      "Transit AS",
+      "Stub AS",
+      "Multihomed AS",
+      "Core AS"
+    ],
+    "answer": "Stub AS"
+  },
+  {
+    "question": "An AS that is connected to multiple other ASs and allows traffic to pass through to other ASs is called a:",
+    "options": [
+      "Stub AS",
+      "Multihomed AS",
+      "Transit AS",
+      "Interior AS"
+    ],
+    "answer": "Transit AS"
+  },
+  {
+    "question": "Routing *among* Autonomous Systems is classified as what kind of routing?",
+    "options": [
+      "Interior routing",
+      "Exterior routing",
+      "Localized routing",
+      "Datagram routing"
+    ],
+    "answer": "Exterior routing"
+  },
+  {
+    "question": "BGP-4 is an example of which category of routing protocols?",
+    "options": [
+      "Interior Gateway Protocol (IGP)",
+      "Link State Protocol",
+      "Distance Vector Protocol",
+      "Exterior Gateway Protocol (EGP)"
+    ],
+    "answer": "Exterior Gateway Protocol (EGP)"
+  },
+  {
+    "question": "The Path Vector approach allows for the definition of what, such as friendly vs. non-friendly ASs?",
+    "options": [
+      "Metrics",
+      "Policies",
+      "Hop counts",
+      "Trie structures"
+    ],
+    "answer": "Policies"
+  },
+  {
+    "question": "The primary goal for interior routing (routing inside an AS) is:",
+    "options": [
+      "Cost minimization",
+      "Scalability",
+      "Support of policies",
+      "Performance"
+    ],
+    "answer": "Performance"
+  },
+  {
+    "question": "The principle where a router only deals with forwarding a packet one step closer to the recipient is known as the:",
+    "options": [
+      "Datagram approach",
+      "Hop-by-hop principle",
+      "Longest Prefix Matching",
+      "Widest-shortest path"
+    ],
+    "answer": "Hop-by-hop principle"
+  },
+  {
+    "question": "What is the time complexity of the Naive Algorithm for IP Address Lookup with CIDR, which uses a linear search of prefixes?",
+    "options": [
+      "O(logN)",
+      "O(N²)",
+      "O(N)",
+      "O(1)"
+    ],
+    "answer": "O(N)"
+  },
+  {
+    "question": "The term 'trie' in trie-based algorithms for IP address lookup is a shortened form of which word?",
+    "options": [
+      "Tree",
+      "Retrieve",
+      "Tributary",
+      "Trail"
+    ],
+    "answer": "Retrieval"
+  },
+  {
+    "question": "Which router architecture component is responsible for providing preferential treatment and different service guarantees for different types of traffic?",
+    "options": [
+      "IP Address Lookup Algorithms",
+      "Router Introduction",
+      "IP Packet Filtering and Classification",
+      "BGP Protocol"
+    ],
+    "answer": "IP Packet Filtering and Classification"
+  },
+  {
+    "question": "When using Classless Inter-Domain Routing (CIDR) for IP Address Lookup, the core principle used to find the best matching prefix is:",
+    "options": [
+      "Smallest hop count",
+      "Longest Prefix Matching",
+      "First match found",
+      "Longest path preference"
+    ],
+    "answer": "Longest Prefix Matching"
+  },
+  {
+    "question": "In packet classification, a collection of rules or policies is referred to as a flow classifier, a rule/policy database, or simply a:",
+    "options": [
+      "Forwarding table",
+      "Classifier",
+      "Routing table",
+      "Trie"
+    ],
+    "answer": "Classifier"
+  },
+  {
+    "question": "If a packet matches more than one rule in a classifier, what is associated with each rule to determine an unambiguous match?",
+    "options": [
+      "A cost",
+      "A prefix length",
+      "A TTL value",
+      "An AS number"
+    ],
+    "answer": "A cost"
+  },
+  {
+    "question": "When rules in a classifier are ordered based on their cost, the goal for matching is to find the:",
+    "options": [
+      "Rule with the highest cost",
+      "Rule with the least cost",
+      "Rule that is a prefix match",
+      "Rule with the shortest path"
+    ],
+    "answer": "Rule with the least cost"
+  },
+  {
+    "question": "What type of naive algorithm for packet filtering/classification is described as storage efficient but search-time inefficient (does not scale)?",
+    "options": [
+      "HyperCuts",
+      "Storing the rules in a linked list",
+      "Ternary CAM-Based Lookup",
+      "Binary Tries"
+    ],
+    "answer": "Storing the rules in a linked list"
+  },
+  {
+    "question": "What hardware-based solution is mentioned for both IP Address Lookup and IP Packet Filtering/Classification?",
+    "options": [
+      "RAM-Based Lookup",
+      "Cross-Producting",
+      "Ternary Content Addressable Memory (TCAM)",
+      "Multibit Tries"
+    ],
+    "answer": "Ternary Content Addressable Memory (TCAM)"
+  },
+  {
+    "question": "Which match criterion for packet classification allows the forwarding engine to examine fields other than the destination address?",
+    "options": [
+      "Exact match",
+      "Prefix match",
+      "Range match",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "A security-related purpose for performing IP Packet Filtering and Classification is:",
+    "options": [
+      "Load balancing",
+      "Preventing malicious attacks",
+      "Minimizing link utilization",
+      "Maximizing bandwidth"
+    ],
+    "answer": "Preventing malicious attacks"
+  },
+  {
+    "question": "Which of the following is a type of trie-based algorithm for IP Address Lookup with CIDR?",
+    "options": [
+      "Linear Search",
+      "Multibit Tries",
+      "RAM-Based Lookup",
+      "Recursive Flow Classification"
+    ],
+    "answer": "Multibit Tries"
+  },
+  {
+    "question": "Which of the following is a possible action that must be applied to packets belonging to a flow in the packet classification process?",
+    "options": [
+      "Deny",
+      "Compute cost",
+      "Calculate checksum",
+      "Determine metric"
+    ],
+    "answer": "Deny"
+  },
+  {
+    "question": "The interior routing protocols used in IP networks are based on what routing principle?",
+    "options": [
+      "Path Vector First",
+      "Longest Path First",
+      "Shortest Path First (SPF)",
+      "Composite Metric First"
+    ],
+    "answer": "Shortest Path First (SPF)"
+  },
+  {
+    "question": "What is the primary network issue that arises when traffic increases in an SPF-based network?",
+    "options": [
+      "All paths become equally saturated",
+      "Shortest paths may become saturated while longer paths are underused",
+      "The path vector protocol fails to converge",
+      "Bellman-Ford algorithm becomes too slow"
+    ],
+    "answer": "Shortest paths may become saturated while longer paths are underused"
+  },
+  {
+    "question": "Traffic Engineering (TE) is the process of directing traffic to which type of routes to achieve optimal resource use?",
+    "options": [
+      "Routes that only use RIPv1",
+      "Routes other than the shortest",
+      "Only the shortest path",
+      "Only paths with a hop count less than 16"
+    ],
+    "answer": "Routes other than the shortest"
+  },
+  {
+    "question": "Which mechanism is mentioned as usable for traffic distribution but is explicitly stated as NOT a problem-solving solution for congestion in a TE context?",
+    "options": [
+      "Equal-Cost MultiPath (ECMP)",
+      "Traffic matrix estimation",
+      "Link-state advertisements",
+      "NetFlow"
+    ],
+    "answer": "Equal-Cost MultiPath (ECMP)"
+  },
+  {
+    "question": "What is the very first step performed in the architectural framework for IP Traffic Engineering?",
+    "options": [
+      "Topology and configuration are obtained",
+      "Link weights are determined",
+      "Traffic measurements are collected to estimate the traffic matrix",
+      "The computed link weights are injected into the network"
+    ],
+    "answer": "Traffic measurements are collected to estimate the traffic matrix"
+  },
+  {
+    "question": "How are the computed link weights in Traffic Engineering disseminated throughout the network using OSPF/IS-IS?",
+    "options": [
+      "Via BGP updates",
+      "Through triggered IGRP messages",
+      "Through link-state advertisements (LSAs)",
+      "Via SNMP polling"
+    ],
+    "answer": "Through link-state advertisements (LSAs)"
+  },
+  {
+    "question": "How often are the link weights typically updated by the network provider/administrator to avoid short-term traffic fluctuations?",
+    "options": [
+      "Once an hour",
+      "Continuously",
+      "Once a day or once a week",
+      "Only when a link fails"
+    ],
+    "answer": "Once a day or once a week"
+  },
+  {
+    "question": "Which method for discovering network utilization involves an application polling each router and provides only an absolute measure of the traffic load?",
+    "options": [
+      "NetFlow",
+      "SNMP",
+      "sFlow",
+      "BGP"
+    ],
+    "answer": "SNMP"
+  },
+  {
+    "question": "Which tool, developed by Cisco, is mentioned for collecting and consolidating information at key points within the network, using aggregation points?",
+    "options": [
+      "SNMP",
+      "ntop",
+      "NetFlow",
+      "OSPF"
+    ],
+    "answer": "NetFlow"
+  },
+  {
+    "question": "In a single-commodity network flow problem, what does the variable 'c' typically denote?",
+    "options": [
+      "The demand volume",
+      "The link capacity",
+      "The link cost",
+      "The number of paths"
+    ],
+    "answer": "The link capacity"
+  },
+  {
+    "question": "When considering traffic volume for Traffic Engineering, what part of the traffic data rate over a 24-hour window is usually considered, due to nonstationary traffic?",
+    "options": [
+      "The minimum rate",
+      "The average rate",
+      "The peak (or 90% of the peak) rate",
+      "The median rate"
+    ],
+    "answer": "The peak (or 90% of the peak) rate"
+  },
+  {
+    "question": "The goal in a network flow model that seeks the minimization of maximum link utilization is specifically known as:",
+    "options": [
+      "Cost minimization",
+      "Load balancing",
+      "Topology discovery",
+      "Hop count optimization"
+    ],
+    "answer": "Load balancing"
+  },
+  {
+    "question": "To support Traffic Engineering, IGP protocols like OSPF and IS-IS have been extended to provide information about the links, such as the TE metric and:",
+    "options": [
+      "Maximum bandwidth",
+      "AS number",
+      "Destination IP address",
+      "Next hop address"
+    ],
+    "answer": "Maximum bandwidth"
+  },
+  {
+    "question": "What is the term for a network flow problem where all demand pairs in the network can have positive demand volumes?",
+    "options": [
+      "Single-commodity flow",
+      "Multicommodity flow",
+      "Load balancing flow",
+      "Shortest path flow"
+    ],
+    "answer": "Multicommodity flow"
+  },
+  {
+    "question": "What does the acronym MPLS stand for?",
+    "options": [
+      "Multipath Latency System",
+      "Multiprotocol Label Switching",
+      "Mobile Packet Link Service",
+      "Multiple Path Loss Simulation"
+    ],
+    "answer": "Multiprotocol Label Switching"
+  },
+  {
+    "question": "The extension of MPLS that includes 'Grid-enabled' functionality is known as:",
+    "options": [
+      "MPLS-TE",
+      "MPLS-IP",
+      "Generalized MPLS (GMPLS)",
+      "Grid-enabled MPLS"
+    ],
+    "answer": "Generalized MPLS (GMPLS)"
+  },
+  {
+    "question": "The CESNET2 network topology figure explicitly mentions the presence of which layer, in conjunction with IP routing?",
+    "options": [
+      "The Ethernet layer",
+      "The ATM layer",
+      "The IP/MPLS layer",
+      "The L2/L3 Access Switch layer"
+    ],
+    "answer": "The IP/MPLS layer"
+  },
+  {
+    "question": "In the CESNET2 IP/MPLS topology, a router labeled with 'P' (like OSR7609) is identified as a:",
+    "options": [
+      "Access Router [PE]",
+      "Customer Edge Router [CE]",
+      "Core Router [P]",
+      "Provider Edge Router [PE]"
+    ],
+    "answer": "Core Router [P]"
+  },
+  {
+    "question": "In the CESNET2 IP/MPLS topology, a router labeled with 'PE' (like OSR7609) is identified as an:",
+    "options": [
+      "Core Router [P]",
+      "Access Router [PE]",
+      "Link State Router",
+      "Path Vector Router"
+    ],
+    "answer": "Access Router [PE]"
+  },
+  {
+    "question": "What does the 'GMPLS' extension to MPLS stand for?",
+    "options": [
+      "General Multiprotocol Load Switching",
+      "Generalized MPLS",
+      "Grid-enabled Mobile Packet Link Service",
+      "Global Message Protocol Label Switching"
+    ],
+    "answer": "Generalized MPLS"
+  },
+  {
+    "question": "In the CESNET2 network topology, which line color corresponds to a link capacity of 40 Gbps?",
+    "options": [
+      "Black",
+      "Green",
+      "Magenta (Pink/Purple)",
+      "Red"
+    ],
+    "answer": "Magenta (Pink/Purple)"
+  },
+  {
+    "question": "In the CESNET2 network topology, which line color corresponds to a link capacity of 10 GE?",
+    "options": [
+      "Black",
+      "Green",
+      "Magenta (Pink/Purple)",
+      "Red"
+    ],
+    "answer": "Green"
+  },
+  {
+    "question": "In the CESNET2 network topology, which line color corresponds to a link capacity of 1 GE?",
+    "options": [
+      "Black",
+      "Green",
+      "Magenta (Pink/Purple)",
+      "Red"
+    ],
+    "answer": "Black"
+  },
+  {
+    "question": "In the context of Autonomous Systems, NIX2-GTS and AMS-IX are examples of what general type of network entity?",
+    "options": [
+      "Interior Gateway Protocols (IGP)",
+      "Network Backbone",
+      "Internet Exchange Points (IXP)",
+      "Stub AS"
+    ],
+    "answer": "Internet Exchange Points (IXP)"
+  },
+  {
+    "question": "What is one of the stated goals of the Internet's division into Autonomous Systems?",
+    "options": [
+      "To increase routing overhead",
+      "A reduction of routing overhead",
+      "To eliminate the need for IGPs",
+      "To enforce Bellman-Ford for all routing"
+    ],
+    "answer": "A reduction of routing overhead"
+  },
+  {
+    "question": "What does the acronym AS stand for in the context of Internet routing?",
+    "options": [
+      "Access System",
+      "Autonomous Segment",
+      "Autonomous System",
+      "Advanced Switch"
+    ],
+    "answer": "Autonomous System"
+  },
+  {
+    "question": "What type of AS is connected to two or more other ASs but does not allow transit traffic to pass through to other ASs?",
+    "options": [
+      "Transit AS",
+      "Stub AS",
+      "Multihomed AS",
+      "Core AS"
+    ],
+    "answer": "Multihomed AS"
+  },
+  {
+    "question": "QoS-Based Routing primarily addresses the need to find paths that satisfy:",
+    "options": [
+      "Only the minimum hop count",
+      "Multiple constraints beyond minimum cost",
+      "Only the maximum bandwidth",
+      "The fastest possible convergence"
+    ],
+    "answer": "Multiple constraints beyond minimum cost"
+  },
+  {
+    "question": "What are the two primary metrics that are considered for simplicity in the context of QoS-based routing metrics?",
+    "options": [
+      "Hop count and cost",
+      "Link bandwidth and propagation delay",
+      "Reliability and load",
+      "Path length and number of routers"
+    ],
+    "answer": "Link bandwidth and propagation delay"
+  },
+  {
+    "question": "In QoS-Based Routing, extensions are added to Link State Advertisements (LSAs) for which purpose?",
+    "options": [
+      "To decrease protocol overhead",
+      "To carry information about the QoS metrics",
+      "To prevent routing loops",
+      "To authenticate routing information"
+    ],
+    "answer": "To carry information about the QoS metrics"
+  },
+  {
+    "question": "Why are LSAs in QoS-Based Routing only triggered when a significant change occurs in the metric values?",
+    "options": [
+      "To increase hop count limit",
+      "To allow for load balancing",
+      "To decrease protocol overhead",
+      "To increase the speed of convergence"
+    ],
+    "answer": "To decrease protocol overhead"
+  },
+  {
+    "question": "What concept is used in QoS-Based Routing that involves the algorithm pre-computing paths for every possible destination?",
+    "options": [
+      "Equal-Cost MultiPath (ECMP)",
+      "Traffic Engineering (TE)",
+      "QoS paths pre-computation",
+      "Hop-by-hop principle"
+    ],
+    "answer": "QoS paths pre-computation"
+  },
+  {
+    "question": "What specific type of path is pre-computed for every possible destination in QoS-Based Routing?",
+    "options": [
+      "Shortest path",
+      "Longest prefix match",
+      "Widest path",
+      "Widest-shortest path"
+    ],
+    "answer": "Widest-shortest path"
+  },
+  {
+    "question": "A 'widest-shortest path' in QoS-Based Routing is defined as a path with maximum available bandwidth and a:",
+    "options": [
+      "Maximum hop count",
+      "Minimum hop count",
+      "Zero-delay path",
+      "Lowest load"
+    ],
+    "answer": "Minimum hop count"
+  },
+  {
+    "question": "Which algorithm is used for the pre-computation of QoS paths in QoS-Based Routing?",
+    "options": [
+      "A shortest path version of Dijkstra’s algorithm",
+      "A widest path version of the Bellman–Ford algorithm",
+      "A combined Link State/Distance Vector approach",
+      "The longest prefix matching algorithm"
+    ],
+    "answer": "A widest path version of the Bellman–Ford algorithm"
+  },
+  {
+    "question": "Which algorithm is used for the on-demand computation of QoS paths in QoS-Based Routing?",
+    "options": [
+      "A widest shortest path version of Dijkstra’s algorithm",
+      "The standard Bellman-Ford algorithm",
+      "A linear search of prefixes",
+      "The RIPv2 protocol"
+    ],
+    "answer": "A widest shortest path version of Dijkstra’s algorithm"
+  },
+  {
+    "question": "If the bandwidth of a path is determined by the link with the minimum available bandwidth, what type of routing algorithm uses this non-additive concave property?",
+    "options": [
+      "Shortest path first",
+      "Widest-path routing algorithms",
+      "Path vector routing",
+      "Interior Gateway Protocol"
+    ],
+    "answer": "Widest-path routing algorithms"
+  },
+  {
+    "question": "Which IPv6 QoS support mechanism focuses on flow-based resource reservation?",
+    "options": [
+      "Differentiated Services",
+      "Integrated Services",
+      "Best-Effort Service",
+      "Link State"
+    ],
+    "answer": "Integrated Services"
+  },
+  {
+    "question": "Which IPv6 QoS support mechanism focuses on class-based prioritization and traffic shaping?",
+    "options": [
+      "Integrated Services",
+      "Differentiated Services",
+      "Best-Effort Service",
+      "Traffic Engineering"
+    ],
+    "answer": "Differentiated Services"
+  },
+  {
+    "question": "In the general view of routing, the route/path found has to satisfy what criterion?",
+    "options": [
+      "Be the longest possible path",
+      "Satisfy certain constraints",
+      "Be a Multihomed AS path",
+      "Use only the largest MTU"
+    ],
+    "answer": "Satisfy certain constraints"
+  },
+  {
+    "question": "In general routing, what is an example of a static factor that influences the route/path finding process?",
+    "options": [
+      "Network load",
+      "Network topology",
+      "Link reliability",
+      "Current delay"
+    ],
+    "answer": "Network topology"
+  },
+  {
+    "question": "In general routing, what is an example of a dynamic factor that influences the route/path finding process?",
+    "options": [
+      "Network topology",
+      "IP address structure",
+      "Network load",
+      "Router architecture"
+    ],
+    "answer": "Network load"
+  }
+]

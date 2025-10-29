@@ -1,0 +1,1268 @@
+[
+{
+"question": "What are the three fundamental characteristics networks must provide according to the lecture?",
+"options": [
+"Throughput, Security, Cost",
+"Latency, Jitter, Bandwidth",
+"Delivery, Accuracy, Timeliness",
+"Scalability, Redundancy, Availability",
+"Speed, Reliability, Efficiency"
+],
+"correct": 2,
+"explanation": "Networks must provide Delivery (data reaches destination), Accuracy (data is correct), and Timeliness (data arrives when needed)."
+},
+{
+"question": "True or False: In an ideal network there is unlimited throughput, no losses, and zero latency.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. An ideal network would have unlimited throughput, no losses, and zero latency, but this is theoretical and not achievable in practice."
+},
+{
+"question": "Which of the following is NOT a main purpose of standardization mentioned in the slides?",
+"options": [
+"Security",
+"Compatibility",
+"Interoperability",
+"Monopoly"
+],
+"correct": 3,
+"explanation": "Monopoly is not a purpose of standardization. Standardization aims to ensure security, compatibility, and interoperability between different systems and vendors."
+},
+{
+"question": "Which of the following are main purposes of network standardization? (Select all that apply)",
+"options": [
+"Security",
+"Compatibility",
+"Interoperability",
+"Monopoly",
+"Vendor lock-in"
+],
+"correct": [0, 1, 2],
+"multipleCorrect": true,
+"explanation": "The main purposes of standardization are Security, Compatibility, and Interoperability. Monopoly and vendor lock-in are negative outcomes that standardization aims to prevent."
+},
+{
+"question": "Which organisation is primarily responsible for publishing RFCs used in Internet standards?",
+"options": [
+"ISO",
+"IEEE",
+"ITU-T",
+"IETF",
+"W3C"
+],
+"correct": 3,
+"explanation": "The Internet Engineering Task Force (IETF) is primarily responsible for publishing RFCs (Request for Comments) which define Internet standards."
+},
+{
+"question": "What does a network protocol define?",
+"options": [
+"Only the syntax of messages",
+"Only the semantics of messages",
+"Only how often to send messages",
+"Syntax, semantics, and timing of messages",
+"Only the physical layer specifications"
+],
+"correct": 3,
+"explanation": "A network protocol defines the syntax (format), semantics (meaning), and timing (when to send) of messages exchanged between entities."
+},
+{
+"question": "True or False: Timing (when messages are sent) is part of what a network protocol defines.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Network protocols define three key aspects: syntax (message format), semantics (message meaning), and timing (when and how fast messages are sent)."
+},
+{
+"question": "Why is layered architecture used in network models?",
+"options": [
+"To force vendors to use the same hardware",
+"To make networks slower but more secure",
+"To remove the need for addressing",
+"To isolate functionality so changes affect only neighbors",
+"To increase network complexity"
+],
+"correct": 3,
+"explanation": "Layered architecture isolates functionality so that changes in one layer only affect neighboring layers, making the system more modular and easier to maintain."
+},
+{
+"question": "Which is a key difference between the ISO/OSI 7-layer model and TCP/IP model according to the lecture?",
+"options": [
+"OSI prescribes mandatory protocols; TCP/IP is only a theory",
+"OSI has seven layers; TCP/IP uses a slimmer set and the hourglass view",
+"OSI is used on the Internet; TCP/IP is not",
+"OSI includes physical media; TCP/IP does not"
+],
+"correct": 1,
+"explanation": "The OSI model has seven distinct layers while TCP/IP uses a more streamlined approach with fewer layers and follows the hourglass architectural view."
+},
+{
+"question": "At which layer are bits transformed into signals suitable for the physical medium?",
+"options": [
+"Data Link Layer",
+"Network Layer",
+"Transport Layer",
+"Physical Layer",
+"Session Layer"
+],
+"correct": 3,
+"explanation": "The Physical Layer (Layer 1) is responsible for converting bits into electrical, optical, or radio signals suitable for transmission over the physical medium."
+},
+{
+"question": "True or False: Bit synchronization and bit-rate control are services of the Physical Layer.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. The Physical Layer handles bit synchronization (timing coordination) and bit-rate control to ensure proper signal transmission."
+},
+{
+"question": "Which multiplexing technique is typically used for digital signals?",
+"options": [
+"Frequency-Division Multiplexing (FDM)",
+"Wave-Division Multiplexing (WDM)",
+"Space-Division Multiplexing (SDM)",
+"Time-Division Multiplexing (TDM)",
+"Code-Division Multiplexing (CDM)"
+],
+"correct": 3,
+"explanation": "Time-Division Multiplexing (TDM) is the primary technique for digital signals, where different signals share the channel by taking turns in time slots."
+},
+{
+"question": "True or False: WDM is used mainly for optical fibers.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Wave-Division Multiplexing (WDM) is specifically designed for optical fiber communications, where different wavelengths of light carry different signals."
+},
+{
+"question": "What is the main responsibility of the Data Link Layer?",
+"options": [
+"Routing datagrams across multiple networks",
+"Interfacing directly with user applications",
+"Transforming packets into frames and providing local delivery",
+"Providing end-to-end transport reliability",
+"Managing application sessions"
+],
+"correct": 2,
+"explanation": "The Data Link Layer is responsible for transforming packets into frames and providing hop-by-hop (local) delivery across a single network segment."
+},
+{
+"question": "Which function is part of Data Link Layer services?",
+"options": [
+"IP addressing",
+"End-to-end congestion control",
+"Application-level encryption",
+"Framing, MAC addressing, error control, and flow control",
+"Routing table management"
+],
+"correct": 3,
+"explanation": "The Data Link Layer provides framing (packaging data), MAC addressing (hardware addresses), error control (detecting/correcting errors), and flow control (managing data rate)."
+},
+{
+"question": "Which error-control technique uses redundancy to allow correction without retransmission?",
+"options": [
+"ARQ (Automatic Repeat reQuest)",
+"Parity only",
+"Spanning Tree",
+"FEC (Forward Error Correction)",
+"CRC (Cyclic Redundancy Check)"
+],
+"correct": 3,
+"explanation": "Forward Error Correction (FEC) adds redundant data that allows the receiver to detect and correct errors without requesting retransmission, unlike ARQ which requires retransmission."
+},
+{
+"question": "True or False: ARQ is a good choice for high-latency, lossy media where retransmissions are very costly.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. ARQ requires retransmissions when errors are detected, making it unsuitable for high-latency or very lossy media. FEC is preferred in such scenarios."
+},
+{
+"question": "Which MAC (Medium Access Control) protocol class does CSMA/CD belong to?",
+"options": [
+"Controlled-access protocols",
+"Channelization protocols",
+"Token-based protocols",
+"Random-access protocols",
+"Circuit-switching protocols"
+],
+"correct": 3,
+"explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) is a random-access protocol where stations compete for channel access and detect collisions."
+},
+{
+"question": "True or False: A switch is essentially a multi-port bridge operating at Layer 2.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. A switch is a multi-port bridge that operates at the Data Link Layer (Layer 2) and uses MAC addresses to forward frames between ports."
+},
+{
+"question": "Why do Layer 2 networks run a Spanning Tree algorithm?",
+"options": [
+"To select the best IP routes",
+"To balance TCP windows",
+"To encrypt MAC addresses",
+"To prevent switching loops and disable redundant ports",
+"To compress data frames"
+],
+"correct": 3,
+"explanation": "The Spanning Tree Protocol prevents switching loops by identifying and disabling redundant paths in the network topology, ensuring a loop-free Layer 2 network."
+},
+{
+"question": "Which of the following is a correct description of the Spanning Tree root selection?",
+"options": [
+"The root is the bridge with the highest MAC address",
+"The root is pre-configured manually and never changes",
+"The root is the bridge with the highest port count",
+"All bridges claim to be root and the one with lowest address is chosen",
+"The root is randomly selected"
+],
+"correct": 3,
+"explanation": "In Spanning Tree Protocol, all bridges initially claim to be the root bridge, and through BPDU exchange, the bridge with the lowest bridge ID (priority + MAC address) is elected as the root."
+},
+{
+"question": "What does the Network Layer provide to the Transport Layer?",
+"options": [
+"Physical bit transmission",
+"Direct access to hardware registers",
+"User authentication",
+"An illusion of a single wide-area network and routing services",
+"Application-level encryption"
+],
+"correct": 3,
+"explanation": "The Network Layer provides the abstraction of a single unified network to upper layers and handles routing of packets across multiple networks."
+},
+{
+"question": "True or False: Fragmentation at the Network Layer is used to adapt datagrams to differing MTUs across networks.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Different networks have different Maximum Transmission Units (MTUs), so the Network Layer fragments large packets to fit the MTU of each network segment."
+},
+{
+"question": "Which protocol is primarily used to report network errors and diagnostics (e.g., Destination Unreachable)?",
+"options": [
+"ARP",
+"BGP",
+"IGMP",
+"ICMP",
+"DHCP"
+],
+"correct": 3,
+"explanation": "ICMP (Internet Control Message Protocol) is used to report errors and provide diagnostic information about network conditions, such as destination unreachable or time exceeded messages."
+},
+{
+"question": "True or False: ARP is used to discover L3 addresses from L2 addresses.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. ARP (Address Resolution Protocol) is used to discover Layer 2 (MAC) addresses from Layer 3 (IP) addresses, not the other way around."
+},
+{
+"question": "What is the main address length difference between IPv4 and IPv6?",
+"options": [
+"IPv4: 128 bits, IPv6: 32 bits",
+"IPv4: 64 bits, IPv6: 128 bits",
+"IPv4: 32 bits, IPv6: 64 bits",
+"IPv4: 32 bits, IPv6: 128 bits",
+"IPv4: 16 bits, IPv6: 64 bits"
+],
+"correct": 3,
+"explanation": "IPv4 uses 32-bit addresses (allowing about 4.3 billion addresses), while IPv6 uses 128-bit addresses (providing a vastly larger address space)."
+},
+{
+"question": "True or False: IPv6 removed broadcasts and replaced many broadcast uses with multicast.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. IPv6 eliminated broadcast addressing entirely and uses multicast (and anycast) for similar functionality, improving network efficiency."
+},
+{
+"question": "Which IPv6 address type delivers a packet to the nearest member of a group?",
+"options": [
+"Unicast",
+"Multicast",
+"Broadcast",
+"Anycast",
+"Geocast"
+],
+"correct": 3,
+"explanation": "Anycast addresses in IPv6 deliver packets to the nearest (in routing distance) member of a group of interfaces that share the same anycast address."
+},
+{
+"question": "True or False: Leading zeros in IPv6 hextets can be omitted and a consecutive sequence of zero hextets can be replaced by :: once.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. IPv6 addresses can be shortened by omitting leading zeros in each hextet and replacing one consecutive sequence of all-zero hextets with :: (double colon)."
+},
+{
+"question": "In IPv4, which field is changed by routers and thus requires a dedicated header checksum only for the header?",
+"options": [
+"Data payload",
+"Header Checksum",
+"Options",
+"TTL (Time To Live)",
+"Fragment Offset"
+],
+"correct": 3,
+"explanation": "The TTL (Time To Live) field is decremented by each router, causing the header to change. This is why IPv4 has a header checksum that must be recalculated at each hop."
+},
+{
+"question": "True or False: The IPv4 header checksum covers both header and data.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. The IPv4 header checksum only covers the IP header, not the data payload. This allows routers to only verify header integrity without processing the entire packet."
+},
+{
+"question": "Why was the checksum removed from the IPv6 base header?",
+"options": [
+"Because headers never change in transit",
+"Because IPv6 is always transported over reliable media",
+"Because ICMPv6 replaced it",
+"Because error detection is handled on L2 and L4, and header recomputation on routers is expensive",
+"Because IPv6 uses encryption instead"
+],
+"correct": 3,
+"explanation": "IPv6 removed the header checksum because error detection is already performed at Layer 2 (Data Link) and Layer 4 (Transport), and recalculating checksums at every router hop is computationally expensive."
+},
+{
+"question": "True or False: IPv6 uses a fixed base header size and places optional/extra info into extension headers.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. IPv6 has a fixed 40-byte base header for efficient processing, with optional functionality moved to extension headers that are only processed when needed."
+},
+{
+"question": "Which protocol combines neighbor discovery and functions of ARP in IPv6?",
+"options": [
+"ARPv6",
+"RARP",
+"NDv4",
+"ICMPv6",
+"DHCPv6"
+],
+"correct": 3,
+"explanation": "ICMPv6 (Internet Control Message Protocol version 6) incorporates neighbor discovery functionality that replaces ARP from IPv4, along with other control and diagnostic features."
+},
+{
+"question": "True or False: Routing is primarily a global problem; having complete, always-up-to-date global topology at every router is practical.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. Routing is a distributed problem where maintaining complete, always-current global topology at every router is impractical due to scale, bandwidth, and update frequency constraints."
+},
+{
+"question": "What is the hop-by-hop principle in routing?",
+"options": [
+"Each router computes the entire end-to-end path and forwards accordingly",
+"Each router decides only the next hop to forward the packet closer to destination",
+"Packets teleport to destination if route known",
+"Only the source chooses all hops and sends them in packet header"
+],
+"correct": 1,
+"explanation": "Hop-by-hop routing means each router only decides the next router to forward the packet to, without computing or knowing the complete end-to-end path."
+},
+{
+"question": "True or False: Distance Vector routing algorithms require routers to send full copies of their routing tables to neighbors periodically.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. In Distance Vector protocols like RIP, routers periodically exchange their entire routing tables with directly connected neighbors to maintain routing information."
+},
+{
+"question": "Which routing protocol uses hop count as its primary metric and limits path length to 15 hops?",
+"options": [
+"OSPF",
+"RIP",
+"BGP",
+"IS-IS"
+],
+"correct": 1,
+"explanation": "RIP (Routing Information Protocol) uses hop count as its metric and considers any route with more than 15 hops as unreachable (infinity = 16)."
+},
+{
+"question": "True or False: RIP is suitable for very large, highly redundant networks due to its quick convergence.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. RIP has slow convergence, limited scalability (15 hop maximum), and is not suitable for large networks. Protocols like OSPF are better for large, redundant networks."
+},
+{
+"question": "Which of the following are characteristics of Link State routing protocols? (Select all that apply)",
+"options": [
+"Distributes link-state information to all routers",
+"Each router learns the full network topology",
+"Each router runs Dijkstra's algorithm independently",
+"Uses hop count as the only metric",
+"Suitable for large networks"
+],
+"correct": [0, 1, 2, 4],
+"multipleCorrect": true,
+"explanation": "Link State protocols distribute topology information to all routers, allowing each to build a complete topology map and independently compute shortest paths using Dijkstra's algorithm. They scale well to large networks and use metrics beyond simple hop count."
+},
+{
+"question": "True or False: OSPF (a Link State protocol) assigns a cost to interfaces often inversely related to bandwidth.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. OSPF assigns cost based on bandwidth - higher bandwidth links have lower costs (cost = reference bandwidth / interface bandwidth), allowing it to prefer faster paths."
+},
+{
+"question": "Which protocol is used for routing between autonomous systems and supports policy-based routing?",
+"options": [
+"RIP",
+"OSPF",
+"BGP-4",
+"IGRP"
+],
+"correct": 2,
+"explanation": "BGP-4 (Border Gateway Protocol version 4) is the standard EGP used for inter-AS routing on the Internet and supports complex policy-based routing decisions."
+},
+{
+"question": "True or False: BGP uses full path information (AS path) to avoid loops and support routing policies.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. BGP advertises complete AS paths, which prevents routing loops (by rejecting routes containing own AS) and enables policy decisions based on the path."
+},
+{
+"question": "What is an Autonomous System (AS) in Internet routing?",
+"options": [
+"A single host with multiple IPs",
+"A managed administrative domain with a unique ASN",
+"A protocol for multicast",
+"An ISP that only uses RIP"
+],
+"correct": 1,
+"explanation": "An Autonomous System is a collection of networks under a single administrative control with a unique AS Number (ASN), typically an ISP or large organization."
+},
+{
+"question": "True or False: Interior Gateway Protocols (IGPs) like OSPF are used inside an AS while EGPs like BGP are used between ASes.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. IGPs (like OSPF, RIP, IS-IS) operate within a single AS, while EGPs (like BGP) handle routing between different autonomous systems."
+},
+{
+"question": "Which of the following are advantages of multicast communication? (Select all that apply)",
+"options": [
+"Sends a single copy per network link",
+"Reduces bandwidth usage compared to multiple unicasts",
+"Provides guaranteed delivery like TCP",
+"Scales efficiently for one-to-many communication",
+"Eliminates the need for routers"
+],
+"correct": [0, 1, 3],
+"multipleCorrect": true,
+"explanation": "Multicast sends one packet per link that is replicated only where needed, saving bandwidth compared to sending individual unicast packets to each recipient. This scales well for distribution to multiple receivers. However, multicast is typically best-effort (like UDP) and still requires routing."
+},
+{
+"question": "True or False: Multicast uses UDP-like semantics (best-effort) rather than TCP-like reliability by default.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Multicast is typically unreliable and best-effort, similar to UDP. Implementing reliability over multicast requires additional protocols or application-level mechanisms."
+},
+{
+"question": "Which multicast routing approach builds a source-specific tree for distribution?",
+"options": [
+"Shared Tree (Core Based Tree)",
+"Source Based Tree",
+"PIM-SM",
+"RIP Multicast"
+],
+"correct": 1,
+"explanation": "Source Based Tree (also called Shortest Path Tree) builds a separate distribution tree from each source to all receivers, optimizing paths but requiring more state."
+},
+{
+"question": "True or False: Core Based Tree (CBT) scales better than source-based trees because it reduces per-source state.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. CBT uses a single shared tree for all sources sending to a group, reducing the routing state compared to maintaining separate trees for each source."
+},
+{
+"question": "Which of the following are key responsibilities of the Transport Layer? (Select all that apply)",
+"options": [
+"Process-to-process communication using ports",
+"Optional reliability and flow control",
+"Managing physical network cables",
+"Routing packets between networks",
+"Multiplexing multiple applications over one connection"
+],
+"correct": [0, 1, 4],
+"multipleCorrect": true,
+"explanation": "The Transport Layer provides process-to-process communication using port numbers, can offer reliability/flow control (TCP), and multiplexes multiple application data streams. Physical management is Layer 1 and routing is Layer 3."
+},
+{
+"question": "True or False: Port numbers are used at the Transport Layer to identify applications/services.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Port numbers (16-bit values) identify specific processes or services on a host, enabling multiple applications to use the network simultaneously."
+},
+{
+"question": "Which transport protocol provides connectionless, minimal-overhead, best-effort delivery?",
+"options": [
+"TCP",
+"UDP",
+"SCTP",
+"ICMP"
+],
+"correct": 1,
+"explanation": "UDP (User Datagram Protocol) is connectionless and provides minimal overhead with best-effort delivery - no reliability, ordering, or flow control guarantees."
+},
+{
+"question": "True or False: If an application needs guaranteed delivery and ordering, it should build that on top of UDP.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. If guaranteed delivery and ordering are needed, the application should use TCP, which provides these features natively. While you could build reliability on UDP, it's better to use TCP unless there are specific reasons to avoid it."
+},
+{
+"question": "Which transport protocol provides a reliable, byte-stream, connection-oriented service?",
+"options": [
+"UDP",
+"TCP",
+"RUDP",
+"ICMP"
+],
+"correct": 1,
+"explanation": "TCP (Transmission Control Protocol) provides reliable, ordered, byte-stream delivery over a connection-oriented service with error detection and recovery."
+},
+{
+"question": "True or False: TCP uses a three-way handshake to establish connections before data transfer.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. TCP establishes connections using a three-way handshake: SYN from client, SYN-ACK from server, and ACK from client, ensuring both sides are ready to communicate."
+},
+{
+"question": "Which of the following are part of the TCP three-way handshake? (Select all that apply)",
+"options": [
+"Client sends SYN with initial sequence number",
+"Server responds with SYN-ACK",
+"Client sends final ACK",
+"Server sends FIN to close connection",
+"Both sides exchange window sizes"
+],
+"correct": [0, 1, 2],
+"multipleCorrect": true,
+"explanation": "The TCP three-way handshake consists of: (1) Client sends SYN with its initial sequence number, (2) Server responds with SYN-ACK containing its sequence number and acknowledging client's, (3) Client sends ACK. FIN is used for connection termination, not establishment."
+},
+{
+"question": "Which TCP header field indicates the next byte the receiver expects (i.e., cumulative ACK)?",
+"options": [
+"Sequence number",
+"Acknowledgement number",
+"Window size",
+"Urgent pointer"
+],
+"correct": 1,
+"explanation": "The Acknowledgement number field indicates the next sequence number the receiver expects to receive, effectively acknowledging all bytes up to that point (cumulative acknowledgment)."
+},
+{
+"question": "True or False: TCP header checksum covers only the header and not the data.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. The TCP checksum covers both the TCP header and the data payload, providing error detection for the entire segment. It also includes a pseudo-header with IP addresses."
+},
+{
+"question": "Which mechanism in TCP protects the receiver from being overwhelmed by sender's data rate?",
+"options": [
+"Congestion Window",
+"Receiver Window (Flow Control)",
+"Sequence Numbers",
+"ICMP"
+],
+"correct": 1,
+"explanation": "Flow control using the receiver's advertised window size (receive window) prevents the sender from overwhelming the receiver's buffer capacity."
+},
+{
+"question": "True or False: Congestion control aims to protect the network from overload, while flow control protects the receiver.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Congestion control (using congestion window) prevents network overload by limiting sending rate based on network conditions. Flow control (using receiver window) prevents receiver buffer overflow."
+},
+{
+"question": "What does AIMD (Additive Increase Multiplicative Decrease) control in TCP?",
+"options": [
+"Error correction",
+"Congestion control (congestion window adjustment)",
+"Checksum calculation",
+"Port assignments"
+],
+"correct": 1,
+"explanation": "AIMD is TCP's congestion control algorithm: it additively increases the congestion window during normal operation and multiplicatively decreases it when congestion is detected (packet loss)."
+},
+{
+"question": "True or False: TCP employs piggybacking so ACKs can be sent together with data to reduce overhead.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. TCP can piggyback acknowledgments on data packets going in the reverse direction, reducing the number of separate ACK packets and improving efficiency."
+},
+{
+"question": "Which layer is responsible for process-to-process addressing (IP:port)?",
+"options": [
+"Physical Layer",
+"Network Layer",
+"Transport Layer",
+"Application Layer"
+],
+"correct": 2,
+"explanation": "The Transport Layer uses the combination of IP address (from Network Layer) and port number to provide process-to-process addressing, creating socket addresses."
+},
+{
+"question": "True or False: A unique application on the network is identified solely by its port number.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. A unique application instance is identified by the combination of IP address and port number (socket). Port number alone is insufficient as many hosts may use the same port."
+},
+{
+"question": "Which of these is an application-layer protocol?",
+"options": [
+"HTTP",
+"TCP",
+"IP",
+"Ethernet"
+],
+"correct": 0,
+"explanation": "HTTP (Hypertext Transfer Protocol) operates at the Application Layer. TCP is Transport Layer, IP is Network Layer, and Ethernet is Data Link/Physical Layer."
+},
+{
+"question": "True or False: Application protocols define both the syntax and semantics of messages between applications.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Application protocols specify the message format/structure (syntax) and the meaning/actions for each message type (semantics) to enable proper communication between applications."
+},
+{
+"question": "What distinguishes client-server from peer-to-peer architectures?",
+"options": [
+"Client-server is decentralized; peer-to-peer has a central server",
+"Client-server has centralized services; peer-to-peer distributes services among peers",
+"Only peer-to-peer supports HTTP",
+"There is no practical difference"
+],
+"correct": 1,
+"explanation": "Client-server architecture has dedicated servers providing centralized services to many clients. Peer-to-peer (P2P) distributes functionality among peers, with each node acting as both client and server."
+},
+{
+"question": "True or False: In the pull model, the server pushes updates to clients without client request.",
+"options": [
+"True",
+"False"
+],
+"correct": 1,
+"explanation": "False. In the pull model, clients initiate requests to get data from servers. In the push model, servers send updates to clients without explicit requests."
+},
+{
+"question": "Which of the following applications are likely to favor UDP over TCP? (Select all that apply)",
+"options": [
+"Real-time voice/video streaming requiring low latency",
+"DNS queries requiring quick responses",
+"Live gaming with frequent position updates",
+"Bulk file transfer requiring reliability",
+"Banking transactions requiring guaranteed delivery"
+],
+"correct": [0, 1, 2],
+"multipleCorrect": true,
+"explanation": "UDP is preferred for real-time applications (VoIP, video streaming, gaming) where low latency is critical and occasional packet loss is acceptable. DNS uses UDP for quick query/response. File transfers and banking need TCP's reliability."
+},
+{
+"question": "True or False: Multicast is preferable to sending multiple unicast streams when many receivers want the same data.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. Multicast sends one copy per network link that reaches multiple receivers, significantly reducing bandwidth usage compared to sending separate unicast streams to each receiver."
+},
+{
+"question": "Which field in IPv4 indicates the total size of the datagram including header and data?",
+"options": [
+"Header length",
+"Total length",
+"Identification",
+"Flags"
+],
+"correct": 1,
+"explanation": "The Total Length field in the IPv4 header indicates the entire size of the IP datagram (header + payload) in bytes."
+},
+{
+"question": "True or False: IPv4 total length field is 16 bits, limiting datagram size to 65535 bytes.",
+"options": [
+"True",
+"False"
+],
+"correct": 0,
+"explanation": "True. The 16-bit Total Length field can represent values 0-65535, making 65535 bytes the maximum size for an IPv4 datagram."
+},
+{
+"question": "Why is the Network Layer called responsible for 'internetworking'?",
+"options": [
+"It merges application protocols",
+"It logically joins heterogeneous physical networks to provide a single-wide-area illusion",
+"It handles user authentication",
+"It performs encryption for applications"
+],
+"correct": 1,
+"explanation": "The Network Layer provides internetworking by connecting different types of physical networks (Ethernet, Wi-Fi, etc.) and presenting them as a unified logical network to upper layers."
+},
+{
+"question": "True or False: ARP is used to map MAC addresses to IP addresses in IPv4.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What problem does 'count-to-infinity' relate to?",
+"options": [
+"Spanning Tree Algorithm failures",
+"Distance Vector routing convergence issues",
+"TCP congestion collapse",
+"ARP cache overflow"
+],
+"correct": 1
+},
+{
+"question": "True or False: Link State algorithms are inherently immune to faulty information propagation because each router computes routes locally from full topology.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which metric formula was shown as a default OSPF cost assignment?",
+"options": [
+"cost = bandwidth * 100000000",
+"cost = 100000000 / bandwidth (bps)",
+"cost = hop count",
+"cost = latency in ms"
+],
+"correct": 1
+},
+{
+"question": "True or False: OSPF supports areas to scale large networks and message authentication for security.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What does ICMPv6 add beyond ICMPv4?",
+"options": [
+"Authentication and encryption",
+"Neighbor Discovery functionality and integration of ARP/IGMP functions",
+"TCP-like retransmission",
+"OSPF routing"
+],
+"correct": 1
+},
+{
+"question": "True or False: IPv6 flow label was designed to enable special handling of packet flows for QoS.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which is the correct description of 'hop limit' in IPv6?",
+"options": [
+"Same as IPv4 TTL, decremented at each hop to avoid infinite loops",
+"A measure of hops times bandwidth",
+"Only used for multicast",
+"Counts number of routers in source path only"
+],
+"correct": 0
+},
+{
+"question": "True or False: IPv6 payload length includes the base header size of 40 bytes.",
+"options": [
+"True",
+"False"
+],
+"correct": 1
+},
+{
+"question": "Which routing method exchanges full path (not just metric) info and supports policies?",
+"options": [
+"Link State",
+"Distance Vector",
+"Path Vector (BGP)",
+"Static Routing"
+],
+"correct": 2
+},
+{
+"question": "True or False: Path Vector routing is used because it helps instantiate routing policies between administrative domains.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What is the effect of fragmentation on end-to-end performance?",
+"options": [
+"No effect because fragments are independent",
+"Potentially harmful: loss of one fragment means entire datagram must be retransmitted (or reassembled fails)",
+"Increases reliability automatically",
+"Reduces header overhead"
+],
+"correct": 1
+},
+{
+"question": "True or False: In IPv4 fragmentation, identification/flags/offset fields are used to reassemble fragments at the destination.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which of the following best explains why UDP is used for DNS and similar services?",
+"options": [
+"Because DNS requires streaming reliability",
+"Because UDP is simple, low-overhead, and DNS does its own retransmit/timeouts",
+"Because UDP provides congestion control",
+"Because UDP guarantees ordering"
+],
+"correct": 1
+},
+{
+"question": "True or False: Applications that require ordering and reliability should always use TCP rather than UDP.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What is the purpose of the TCP urgent pointer?",
+"options": [
+"To indicate where options start",
+"To point to urgent data within the byte stream for out-of-band delivery",
+"To carry checksum",
+"To identify the process"
+],
+"correct": 1
+},
+{
+"question": "True or False: The TCP window size advertised by the receiver controls flow control and can be used in window scaling for high-bandwidth links.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Why does the TCP header include options (variable length)?",
+"options": [
+"To provide future extensibility such as selective acknowledgements and timestamping",
+"To confuse packet sniffers",
+"To store application data",
+"For IPv6 compatibility"
+],
+"correct": 0
+},
+{
+"question": "True or False: UDP checksum is optional in IPv4 but mandatory in IPv6.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which statement about ICMP echo request/reply is correct?",
+"options": [
+"It is used to exchange routing tables",
+"It is used for ping-style reachability and basic diagnostics",
+"It provides reliable data transport",
+"It updates ARP caches"
+],
+"correct": 1
+},
+{
+"question": "True or False: ICMP messages travel inside IP datagrams and have their own protocol number.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What is a key downside of Distance Vector protocols compared to Link State?",
+"options": [
+"They require full network topology knowledge",
+"Slower convergence and potential for routing loops/count-to-infinity",
+"They scale better to huge networks",
+"They always produce optimal paths"
+],
+"correct": 1
+},
+{
+"question": "True or False: Link State protocols flood link-state advertisements to all routers, enabling each to build a full topology map.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What role does the 'Identification' field in IPv4 serve during fragmentation?",
+"options": [
+"Specifies flow label for QoS",
+"Uniquely identifies fragments belonging to the same datagram for reassembly",
+"Indicates the next header type",
+"Contains checksum"
+],
+"correct": 1
+},
+{
+"question": "True or False: Broadcast addresses exist in IPv6 as in IPv4.",
+"options": [
+"True",
+"False"
+],
+"correct": 1
+},
+{
+"question": "Which of the following is a correct reason to prefer core-based multicast in large-scale deployments?",
+"options": [
+"It floods the network more aggressively",
+"It reduces per-source state and control overhead",
+"It always gives lower latency than source trees",
+"It eliminates the need for IGMP"
+],
+"correct": 1
+},
+{
+"question": "True or False: Multicast scope in IPv4/IPv6 can be limited by TTL/hop limit respectively.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Why is minimizing routing table size and control traffic important in routing algorithm design?",
+"options": [
+"To maximize CPU utilization on routers",
+"To reduce overhead and improve scalability and convergence",
+"To ensure all routers store identical state",
+"To remove the need for packet forwarding"
+],
+"correct": 1
+},
+{
+"question": "True or False: A distributed routing algorithm is usually required for the Internet to be robust and scalable.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What does 'autoconfiguration' in IPv6 refer to?",
+"options": [
+"Manual assignment of IPv6 addresses",
+"Mechanisms (stateful/stateless) for nodes to automatically obtain addresses",
+"Automatic generation of routing tables",
+"Automatic encryption of packets"
+],
+"correct": 1
+},
+{
+"question": "True or False: IPv6 autoconfiguration can operate in stateless mode using Neighbor Discovery and router advertisements.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which layer’s service is best described as providing 'an illusion of direct physical interconnection' between processes?",
+"options": [
+"Physical Layer",
+"Network Layer",
+"Transport Layer",
+"Application Layer"
+],
+"correct": 2
+},
+{
+"question": "True or False: Routers are aware of transport-layer connections (like TCP connections).",
+"options": [
+"True",
+"False"
+],
+"correct": 1
+},
+{
+"question": "Which mechanism prevents receiver congestion at the Transport Layer?",
+"options": [
+"Spanning Tree",
+"Flow Control (receiver window)",
+"Hop-by-hop routing",
+"ARP"
+],
+"correct": 1
+},
+{
+"question": "True or False: Congestion window in TCP is maintained on the sender side and reflects network conditions.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which of the following is a primary difference between connection-oriented and connectionless services?",
+"options": [
+"Connection-oriented requires prior setup and often guarantees ordering; connectionless does not.",
+"Connectionless guarantees ordering; connection-oriented does not.",
+"Only connectionless can use ports.",
+"Connection-oriented uses UDP only."
+],
+"correct": 0
+},
+{
+"question": "True or False: Multiplexing at lower layers refers to sharing a single physical medium among several logical channels.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which of the following is an example of a de facto standard from the slides?",
+"options": [
+"ISO 9001",
+"Ethernet",
+"IETF RFC 791",
+"ITU-T H.264"
+],
+"correct": 1
+},
+{
+"question": "True or False: De jure standards are those legislated by an organized official body.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Why is decentralised management listed as a required feature of networks?",
+"options": [
+"To ensure a single point of control",
+"To allow scalability and resilience without a single failure point",
+"To mandate use of specific hardware",
+"To reduce encryption requirements"
+],
+"correct": 1
+},
+{
+"question": "True or False: Fairness in networks means flows with the same priority should receive similar treatment.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which layer performs Address Resolution Protocol (ARP) functionality in IPv4?",
+"options": [
+"Physical Layer",
+"Data Link Layer in cooperation with Network Layer",
+"Application Layer",
+"Transport Layer"
+],
+"correct": 1
+},
+{
+"question": "True or False: Bridges and switches reduce collision domains and help segment Layer 2 networks.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What is meant by 'multiplexing/demultiplexing' as a required network feature?",
+"options": [
+"Combining multiple logical streams onto one physical medium and separating them back",
+"Encrypting multiple streams together",
+"Routing tables exchange",
+"Fragmenting datagrams"
+],
+"correct": 0
+},
+{
+"question": "True or False: The Physical Layer decides how many logical channels can simultaneously transfer data on the medium.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "What tradeoff does the lecture highlight between ideal and real networks?",
+"options": [
+"Real networks have perfect delivery; ideal ones do not",
+"Real networks have limits like throughput, losses, delay and ordering issues; ideal networks are perfect abstractions",
+"Both are identical in practice",
+"Ideal networks are always faster than real ones because of better cables"
+],
+"correct": 1
+},
+{
+"question": "True or False: QoS (Quality of Service) is easy to implement in connectionless (best-effort) networks.",
+"options": [
+"True",
+"False"
+],
+"correct": 1
+},
+{
+"question": "Which of the following is a shared medium MAC problem the Data Link Layer must address?",
+"options": [
+"IP fragmentation",
+"Collisions caused by concurrent transmissions",
+"Application timeouts",
+"DNS caching"
+],
+"correct": 1
+},
+{
+"question": "True or False: The 'backward learning algorithm' enables switches/bridges to populate forwarding tables by observing source addresses.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which control messaging protocol allows hosts to be informed when packets cannot be delivered?",
+"options": [
+"ARP",
+"ICMP",
+"UDP",
+"TCP"
+],
+"correct": 1
+},
+{
+"question": "True or False: The IPv4 'Protocol' field identifies the higher-level protocol (e.g., TCP or UDP) carried in the datagram.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Why is header checksum in IPv4 restricted to the header only?",
+"options": [
+"Because only header changes along the path and recomputing less data is faster",
+"Because data integrity is not important",
+"To avoid checksum calculation entirely",
+"To include data checksums at L1"
+],
+"correct": 0
+},
+{
+"question": "True or False: ICMP messages can be used by routers to signal TTL expiry and unreachable destinations.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+},
+{
+"question": "Which of the following best describes 'flow control' at Transport Layer?",
+"options": [
+"Regulating application CPU usage",
+"Preventing the sender from overwhelming the receiver",
+"Encrypting data between peers",
+"Advertising routes to neighbors"
+],
+"correct": 1
+},
+{
+"question": "True or False: TCP performs congestion control using estimates of the network's available capacity rather than explicit knowledge.",
+"options": [
+"True",
+"False"
+],
+"correct": 0
+}
+]
