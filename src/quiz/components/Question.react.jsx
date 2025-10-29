@@ -21,6 +21,7 @@ const Question = ({
   const correctIndices = Array.isArray(correct) ? correct : [correct];
   const isCorrect = correctIndices.includes(index);
   let iconType;
+  let emoji = null;
 
   if (multipleCorrect) {
     // For multi-select questions
@@ -31,8 +32,13 @@ const Question = ({
       styles.push(classes.disabled);
       if (isCorrect) {
         iconType = 'correct';
+        if (isSelected) {
+          emoji = '😊'; // Smiling emoji for correct answer
+        }
       } else if (isSelected) {
         iconType = 'incorrect';
+        emoji = '😢'; // Crying emoji for incorrect answer
+        styles.push(classes.incorrect);
       }
     }
   } else {
@@ -40,11 +46,19 @@ const Question = ({
     if (selected) {
       iconType = isCorrect ? 'correct' : 'incorrect';
       styles.push(classes.selected);
+      if (showFeedback) {
+        if (isCorrect) {
+          emoji = '😊'; // Smiling emoji for correct answer
+        } else {
+          emoji = '😢'; // Crying emoji for incorrect answer
+          styles.push(classes.incorrect);
+        }
+      }
     }
 
     if (showFeedback) {
       styles.push(classes.disabled);
-      if (isCorrect) {
+      if (isCorrect && !selected) {
         iconType = 'correct';
       }
     }
@@ -82,6 +96,7 @@ const Question = ({
         <Icon size={1.5} type={iconType} />
       </div>
       <AccessibleLabel className={styles.join(' ')} htmlFor={id}>
+        {emoji && <span className={classes.emoji}>{emoji}</span>}
         {`${getLetterFromId(index)}) ${option}`}
       </AccessibleLabel>
     </div>

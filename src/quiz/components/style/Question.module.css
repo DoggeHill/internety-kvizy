@@ -3,6 +3,11 @@
   align-items: flex-start;
 }
 
+.QuestionContainer > div {
+  align-self: center;
+  margin-top: 6px;
+}
+
 .Question {
   cursor: pointer;
   font-weight: 400;
@@ -18,6 +23,16 @@
   font-weight: 600;
 }
 
+.incorrect {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
 
 .hidden {
   display: none;

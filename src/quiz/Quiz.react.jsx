@@ -30,11 +30,13 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
   const [showIncorrectAnswers, setShowIncorrectAnswers] = useState(false);
   const {question, options, correct, explanation, multipleCorrect} = data[questionIndex];
   const [selectedAnswers, setSelectedAnswers] = useState([]);
+  const [lastAnswerCorrect, setLastAnswerCorrect] = useState(null);
   
   // Store original quiz state before switching to incorrect answers
   const [savedQuizState, setSavedQuizState] = useState(null);
 
   const answerHandler = (isCorrect, selectedOption) => {
+    setLastAnswerCorrect(isCorrect);
     if (isCorrect) {
       // Correct answer logic
       setScore(prevScore => prevScore + 1);
@@ -69,6 +71,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
     setQuestionIndex(0);
     setScore(0);
     setAnswered(0);
+    setLastAnswerCorrect(null);
     resetTimer();
     restartQuiz();
   };
@@ -113,6 +116,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
       setQuestionIndex(0);
       setScore(0);
       setAnswered(0);
+      setLastAnswerCorrect(null);
       resetTimer();
     }
   };
@@ -129,6 +133,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
       setQuizEnd(false);
       setAnswer(null);
       setSelectedAnswers([]);
+      setLastAnswerCorrect(null);
       setSavedQuizState(null);
     }
   };
@@ -192,6 +197,11 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
             <Card rounded>
               <div className={classes.QuestionWrapper}>
                 <div className={classes.title}>
+                  {answer && lastAnswerCorrect !== null && (
+                    <div className={classes.feedbackEmoji}>
+                      {lastAnswerCorrect ? '😊' : '😢'}
+                    </div>
+                  )}
                   <Text type="header2" variant="primary" bold>
                     {question}
                   </Text>
@@ -254,6 +264,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
                         setQuestionIndex(i => i + 1);
                         setAnswer(null);
                         setSelectedAnswers([]);
+                        setLastAnswerCorrect(null);
                       }}
                     />
                   ) : (
