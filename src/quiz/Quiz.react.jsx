@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Card from '../components/core/UI/Card.react';
 import Text from '../components/core/UI/Text.react';
 import VerticalLayout from '../components/core/layout/VerticalLayout.react';
 import QuestionList from './components/QuestionList.react';
 import Button from '../components/core/UI/Button.react';
-import {getStringHash} from '../service/util/util';
+import { getStringHash } from '../service/util/util';
 import Header from '../components/core/UI/Header.react';
 import Sidebar from '../components/core/UI/Sidebar.react';
 import Modal from '../components/core/UI/Modal.react';
@@ -17,7 +17,7 @@ import QuizEnd from './QuizEnd.react';
 
 const getTimerHash = () => `timer_${getStringHash('timer', Date.now())}`;
 
-const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, onRemoveCorrectAnswers, isRetryQuiz}) => {
+const Quiz = ({ data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, onRemoveCorrectAnswers, isRetryQuiz }) => {
   const [timerKey, setTimerKey] = useState(getTimerHash());
   const [answer, setAnswer] = useState(null);
   const [quizEnd, setQuizEnd] = useState(false);
@@ -28,19 +28,31 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
   const [correctAnswersInRetry, setCorrectAnswersInRetry] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [showIncorrectAnswers, setShowIncorrectAnswers] = useState(false);
-  const {question, options, correct, explanation, multipleCorrect} = data[questionIndex];
+  const { question, options, correct, explanation, multipleCorrect } = data[questionIndex];
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [lastAnswerCorrect, setLastAnswerCorrect] = useState(null);
-  
+  const [jumpToQuestion, setJumpToQuestion] = useState('');
+
   // Store original quiz state before switching to incorrect answers
   const [savedQuizState, setSavedQuizState] = useState(null);
+
+  const handleJumpToQuestion = () => {
+    const targetQuestion = parseInt(jumpToQuestion, 10);
+    if (targetQuestion >= 1 && targetQuestion <= data.length) {
+      setQuestionIndex(targetQuestion - 1);
+      setAnswer(null);
+      setSelectedAnswers([]);
+      setLastAnswerCorrect(null);
+      setJumpToQuestion('');
+    }
+  };
 
   const answerHandler = (isCorrect, selectedOption) => {
     setLastAnswerCorrect(isCorrect);
     if (isCorrect) {
       // Correct answer logic
       setScore(prevScore => prevScore + 1);
-      
+
       // If this is a retry quiz, track correctly answered questions
       if (isRetryQuiz) {
         setCorrectAnswersInRetry(prev => [...prev, question]);
@@ -91,12 +103,12 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
         incorrectAnswers: incorrectAnswers,
         timerKey: timerKey,
       });
-      
+
       // Save current incorrect answers to localStorage
       if (onSaveIncorrectAnswers) {
         onSaveIncorrectAnswers(incorrectAnswers);
       }
-      
+
       // Create new quiz data from incorrect answers
       const incorrectQuestionsData = incorrectAnswers.map(item => ({
         question: item.question,
@@ -105,7 +117,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
         explanation: item.explanation,
         multipleCorrect: item.multipleCorrect,
       }));
-      
+
       // Reset quiz state and start with incorrect questions
       setData(incorrectQuestionsData);
       setQuizEnd(false);
@@ -155,6 +167,32 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
               <Timer key={timerKey} stop={answer || quizEnd ? true : false} />
               <ProgressRing current={questionIndex + 1} total={data.length} />
               <QuizScore current={score} total={answered} />
+              <div className={classes.JumpToQuestion}>
+                <Text type="body2" bold align="center">
+                  Jump to Question
+                </Text>
+                <div className={classes.JumpInputGroup}>
+                  <input
+                    type="number"
+                    min="1"
+                    max={data.length}
+                    value={jumpToQuestion}
+                    onChange={(e) => setJumpToQuestion(e.target.value)}
+                    placeholder={`1-${data.length}`}
+                    className={classes.JumpInput}
+                    onKeyPress={(e) => {
+                      if (e.key === 'Enter') {
+                        handleJumpToQuestion();
+                      }
+                    }}
+                  />
+                  <Button
+                    type="button"
+                    value="Go"
+                    onClick={handleJumpToQuestion}
+                  />
+                </div>
+              </div>
               {savedQuizState && (
                 <div className={classes.ContinueQuizButton}>
                   <Button
@@ -197,11 +235,6 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
             <Card rounded>
               <div className={classes.QuestionWrapper}>
                 <div className={classes.title}>
-                  {answer && lastAnswerCorrect !== null && (
-                    <div className={classes.feedbackEmoji}>
-                      {lastAnswerCorrect ? '😊' : '😢'}
-                    </div>
-                  )}
                   <Text type="header2" variant="primary" bold>
                     {question}
                   </Text>
@@ -210,7 +243,7 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
                   questionId={`question_${getStringHash(question)}`}
                   questions={options}
                   correct={correct}
-                  shuffle={true}
+                  shuffle={false}
                   showFeedback={answer ? true : false}
                   multipleCorrect={multipleCorrect}
                   selectedAnswers={selectedAnswers}
@@ -235,11 +268,11 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
                       onClick={() => {
                         // Check if all correct answers are selected
                         const correctAnswers = Array.isArray(correct) ? correct : [correct];
-                        const isCorrect = 
+                        const isCorrect =
                           selectedAnswers.length === correctAnswers.length &&
                           selectedAnswers.every(ans => correctAnswers.includes(ans)) &&
                           correctAnswers.every(ans => selectedAnswers.includes(ans));
-                        
+
                         setAnswer(selectedAnswers);
                         answerHandler(isCorrect, selectedAnswers);
                       }}
@@ -309,13 +342,13 @@ const Quiz = ({data, setData, finishQuiz, restartQuiz, onSaveIncorrectAnswers, o
                 </Text>
                 <div className={classes.IncorrectAnswersList}>
                   {incorrectAnswers.map((item, idx) => {
-                    const correctAnswers = Array.isArray(item.correct) 
-                      ? item.correct 
+                    const correctAnswers = Array.isArray(item.correct)
+                      ? item.correct
                       : [item.correct];
                     const userAnswers = Array.isArray(item.userAnswer)
                       ? item.userAnswer
                       : [item.userAnswer];
-                    
+
                     return (
                       <div key={idx} className={classes.IncorrectAnswerItem}>
                         <Text type="body1" bold>

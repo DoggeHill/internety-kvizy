@@ -6,6 +6,7 @@
 }
 
 .QuizPanel {
+  overflow-y: hidden;
   display: flex;
   height: 100%;
   margin: 0;
@@ -103,6 +104,44 @@
 .ContinueQuizButton {
   margin-top: 1rem;
   width: 100%;
+}
+
+.JumpToQuestion {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.JumpInputGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.JumpInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--color-dark);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.JumpInput:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.JumpInput::placeholder {
+  color: #999;
+}
+
+html.dark-mode .JumpInput::placeholder {
+  color: #666;
 }
 
 .IncorrectAnswersModal {

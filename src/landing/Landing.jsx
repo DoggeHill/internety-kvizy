@@ -94,7 +94,7 @@ const Landing = () => {
         const fileContents = await file.getAsFile().text();
         const fileData = JSON.parse(fileContents);
         // Error handling should go here
-        setQuizData(randomizeArray(fileData));
+        setQuizData(fileData);
         setIsRetryQuiz(false);
       }
       setLoading(false);
@@ -102,7 +102,7 @@ const Landing = () => {
   };
 
   const setNewQuizData = data => {
-    setQuizData(randomizeArray(data));
+    setQuizData(data);
   };
 
   const handlePracticeIncorrect = () => {
@@ -118,7 +118,7 @@ const Landing = () => {
         multipleCorrect: item.multipleCorrect
       }));
       
-      setQuizData(randomizeArray(uniqueQuestions));
+      setQuizData(uniqueQuestions);
       setIsRetryQuiz(true);
     }
   };
@@ -131,7 +131,7 @@ const Landing = () => {
         const fileContents = await file.text();
         const fileData = JSON.parse(fileContents);
         // Error handling should go here
-        setQuizData(randomizeArray(fileData));
+        setQuizData(fileData);
         setIsRetryQuiz(false);
       }
       setLoading(false);
@@ -144,7 +144,7 @@ const Landing = () => {
     setIsRetryQuiz(false);
   };
   const quizRestartHandler = () =>
-    setQuizData(currQuizData => randomizeArray(currQuizData));
+    setQuizData(currQuizData => [...currQuizData]);
 
   return (
     <>
