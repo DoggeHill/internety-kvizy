@@ -32,6 +32,7 @@ const Question = ({
       styles.push(classes.disabled);
       if (isCorrect) {
         iconType = 'correct';
+        styles.push(classes.correct);
         if (isSelected) {
           emoji = '😊'; // Smiling emoji for correct answer
         }
@@ -49,6 +50,7 @@ const Question = ({
       if (showFeedback) {
         if (isCorrect) {
           emoji = '😊'; // Smiling emoji for correct answer
+          styles.push(classes.correct);
         } else {
           emoji = '😢'; // Crying emoji for incorrect answer
           styles.push(classes.incorrect);
@@ -60,6 +62,7 @@ const Question = ({
       styles.push(classes.disabled);
       if (isCorrect && !selected) {
         iconType = 'correct';
+        styles.push(classes.correct);
       }
     }
   }

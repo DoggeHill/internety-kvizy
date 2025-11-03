@@ -2,108 +2,88 @@
   {
     "question": "Which of the following statements correctly describe the main advantages of IPv6 over IPv4?",
     "options": [
-      "IPv6 includes IPsec as a fundamental protocol feature.",
-      "IPv6 mandates NAT for address conservation.",
       "IPv6 has a simplified header for faster processing.",
-      "IPv6 natively supports multicast and anycast."
+      "IPv6 mandates NAT for address conservation.",
+      "IPv6 natively supports multicast and anycast.",
+      "IPv6 includes IPsec as a fundamental protocol feature."
     ],
-    "correct": [
-      0,
-      2,
-      3
-    ],
+    "correct": [0, 2, 3],
+    "multipleCorrect": true,
     "explanation": "IPv6 simplifies the header, integrates multicast and anycast, and mandates IPsec for security. NAT is not part of IPv6 design since address exhaustion is no longer an issue."
   },
   {
     "question": "In IPv6, what is the function of the Flow Label field?",
     "options": [
-      "To identify transport layer sessions uniquely.",
-      "To provide fragmentation offset information.",
+      "To mark packets belonging to the same flow for special handling by routers.",
       "To indicate packet priority among flows.",
-      "To mark packets belonging to the same flow for special handling by routers."
+      "To identify transport layer sessions uniquely.",
+      "To provide fragmentation offset information."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [0],
     "explanation": "The Flow Label field is used to label packets of a particular flow for routers to provide consistent QoS handling without examining transport headers."
   },
   {
     "question": "True or False: IPv6 routers can fragment packets like in IPv4.",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "Routers in IPv6 do not perform fragmentation. If a packet is too large, they drop it and send an ICMPv6 'Packet Too Big' message back to the sender."
   },
   {
     "question": "Which of the following are true regarding ICMPv6?",
     "options": [
-      "It is only used for Neighbor Discovery messages.",
+      "It is mandatory in every IPv6 implementation.",
       "It carries error messages such as Destination Unreachable and Packet Too Big.",
       "It replaces ARP, IGMP, and ICMPv4 functionality.",
-      "It is mandatory in every IPv6 implementation."
+      "It is only used for Neighbor Discovery messages."
     ],
-    "correct": [
-      1,
-      2,
-      3
-    ],
+    "correct": [0, 1, 2],
+    "multipleCorrect": true,
     "explanation": "ICMPv6 combines several IPv4-era protocols and is essential for error reporting, diagnostics, and Neighbor Discovery. It must be implemented in all IPv6 systems."
   },
   {
     "question": "In Neighbor Discovery Protocol (NDP), which message types are used for address resolution and neighbor reachability?",
     "options": [
-      "Neighbor Solicitation and Neighbor Advertisement.",
       "Echo Request and Echo Reply.",
       "Redirect and Destination Unreachable.",
-      "Router Solicitation and Router Advertisement."
+      "Router Solicitation and Router Advertisement.",
+      "Neighbor Solicitation and Neighbor Advertisement."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [3],
     "explanation": "NDP uses Neighbor Solicitation and Advertisement messages to resolve link-layer addresses and verify neighbor reachability."
   },
   {
     "question": "What does Stateless Address Autoconfiguration (SLAAC) allow a node to do?",
     "options": [
-      "Manually configure subnet prefixes.",
-      "Assign static addresses to routers.",
+      "Automatically generate its own IPv6 address using router advertisements.",
       "Request and assign IP addresses via DHCPv6 exclusively.",
-      "Automatically generate its own IPv6 address using router advertisements."
+      "Manually configure subnet prefixes.",
+      "Assign static addresses to routers."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [0],
     "explanation": "SLAAC enables a device to form its own IPv6 address using a prefix learned from router advertisements, without relying on DHCPv6."
   },
   {
     "question": "Which IPv6 routing protocols are direct successors of IPv4 protocols?",
     "options": [
       "EIGRPv6 for IGRP",
-      "RIPng for RIP",
+      "BGP-4+ for BGP",
       "OSPFv3 for OSPF",
-      "BGP-4+ for BGP"
+      "RIPng for RIP"
     ],
-    "correct": [
-      0,
-      1,
-      2,
-      3
-    ],
+    "correct": [0, 1, 2, 3],
+    "multipleCorrect": true,
     "explanation": "IPv6 versions of IPv4 routing protocols exist—RIPng, OSPFv3, and BGP-4+—all adapted to operate with 128-bit IPv6 addresses."
   },
   {
     "question": "True or False: OSPFv3 exchanges IPv6 routing information using IPv4 transport.",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "OSPFv3 runs directly over IPv6 using protocol number 89, not over IPv4 transport."
   },
   {
@@ -114,165 +94,39 @@
       "Tunneling IPv6 packets through IPv4 networks.",
       "Exclusive IPv6-only deployment."
     ],
-    "correct": [
-      0,
-      1,
-      2
-    ],
+    "correct": [0, 1, 2],
+    "multipleCorrect": true,
     "explanation": "Transition mechanisms include dual stack for interoperability, tunneling to traverse IPv4 networks, and translation between address families like NAT64."
   },
   {
     "question": "True or False: Mobile IPv6 allows devices to maintain existing connections while moving between networks.",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [1],
     "explanation": "Mobile IPv6 introduces home and care-of addresses allowing seamless handovers without breaking ongoing connections."
   },
   {
     "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
     "options": [
       "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header reduces the need for routing tables."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 handles link-layer encryption directly."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP handles link-layer encryption directly.",
-      "NDP improves scalability and interoperability.",
-      "NDP replaces physical signaling mechanisms.",
-      "NDP reduces the need for routing tables."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms.",
-      "Routing reduces the need for routing tables.",
-      "Routing improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration replaces physical signaling mechanisms.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition replaces physical signaling mechanisms.",
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
-      "Transition improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility handles link-layer encryption directly.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility reduces the need for routing tables.",
-      "Mobility improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security replaces physical signaling mechanisms.",
-      "Security handles link-layer encryption directly."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS replaces physical signaling mechanisms.",
-      "QoS improves scalability and interoperability.",
-      "QoS handles link-layer encryption directly.",
-      "QoS reduces the need for routing tables."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
       "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header replaces physical signaling mechanisms.",
       "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header improves scalability and interoperability."
+      "IPv6 Header replaces physical signaling mechanisms."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [0],
     "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
     "options": [
-      "ICMPv6 reduces the need for routing tables.",
+      "ICMPv6 handles link-layer encryption directly.",
       "ICMPv6 replaces physical signaling mechanisms.",
       "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 handles link-layer encryption directly."
+      "ICMPv6 reduces the need for routing tables."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -283,22 +137,18 @@
       "NDP reduces the need for routing tables.",
       "NDP improves scalability and interoperability."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [3],
     "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Routing contributes to IPv6 network functionality.",
     "options": [
-      "Routing improves scalability and interoperability.",
       "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms."
+      "Routing improves scalability and interoperability.",
+      "Routing replaces physical signaling mechanisms.",
+      "Routing handles link-layer encryption directly."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [1],
     "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -309,152 +159,29 @@
       "Autoconfiguration replaces physical signaling mechanisms.",
       "Autoconfiguration reduces the need for routing tables."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Transition contributes to IPv6 network functionality.",
     "options": [
       "Transition improves scalability and interoperability.",
-      "Transition replaces physical signaling mechanisms.",
+      "Transition reduces the need for routing tables.",
       "Transition handles link-layer encryption directly.",
-      "Transition reduces the need for routing tables."
+      "Transition replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Mobility contributes to IPv6 network functionality.",
     "options": [
       "Mobility reduces the need for routing tables.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility handles link-layer encryption directly.",
-      "Mobility improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms.",
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS handles link-layer encryption directly.",
-      "QoS improves scalability and interoperability.",
-      "QoS reduces the need for routing tables.",
-      "QoS replaces physical signaling mechanisms."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header handles link-layer encryption directly."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP reduces the need for routing tables.",
-      "NDP replaces physical signaling mechanisms.",
-      "NDP improves scalability and interoperability.",
-      "NDP handles link-layer encryption directly."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing replaces physical signaling mechanisms.",
-      "Routing reduces the need for routing tables.",
-      "Routing improves scalability and interoperability.",
-      "Routing handles link-layer encryption directly."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition handles link-layer encryption directly.",
-      "Transition improves scalability and interoperability.",
-      "Transition replaces physical signaling mechanisms.",
-      "Transition reduces the need for routing tables."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
       "Mobility improves scalability and interoperability.",
       "Mobility replaces physical signaling mechanisms.",
-      "Mobility handles link-layer encryption directly.",
-      "Mobility reduces the need for routing tables."
+      "Mobility handles link-layer encryption directly."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [1],
     "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -465,9 +192,7 @@
       "Security handles link-layer encryption directly.",
       "Security replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -475,298 +200,153 @@
     "options": [
       "QoS reduces the need for routing tables.",
       "QoS replaces physical signaling mechanisms.",
-      "QoS improves scalability and interoperability.",
-      "QoS handles link-layer encryption directly."
+      "QoS handles link-layer encryption directly.",
+      "QoS improves scalability and interoperability."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [3],
     "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
     "options": [
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header handles link-layer encryption directly.",
+      "IPv6 Header replaces physical signaling mechanisms.",
       "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header replaces physical signaling mechanisms."
+      "IPv6 Header handles link-layer encryption directly.",
+      "IPv6 Header reduces the need for routing tables."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [1],
     "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
     "options": [
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 handles link-layer encryption directly.",
       "ICMPv6 replaces physical signaling mechanisms.",
+      "ICMPv6 handles link-layer encryption directly.",
+      "ICMPv6 reduces the need for routing tables.",
       "ICMPv6 improves scalability and interoperability."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [3],
     "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how NDP contributes to IPv6 network functionality.",
     "options": [
-      "NDP reduces the need for routing tables.",
       "NDP improves scalability and interoperability.",
+      "NDP reduces the need for routing tables.",
       "NDP handles link-layer encryption directly.",
       "NDP replaces physical signaling mechanisms."
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Routing contributes to IPv6 network functionality.",
     "options": [
       "Routing improves scalability and interoperability.",
-      "Routing handles link-layer encryption directly.",
       "Routing reduces the need for routing tables.",
+      "Routing handles link-layer encryption directly.",
       "Routing replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
     "options": [
-      "Autoconfiguration reduces the need for routing tables.",
       "Autoconfiguration improves scalability and interoperability.",
       "Autoconfiguration replaces physical signaling mechanisms.",
+      "Autoconfiguration reduces the need for routing tables.",
       "Autoconfiguration handles link-layer encryption directly."
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Transition contributes to IPv6 network functionality.",
     "options": [
-      "Transition replaces physical signaling mechanisms.",
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
-      "Transition improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility reduces the need for routing tables.",
-      "Mobility improves scalability and interoperability.",
-      "Mobility handles link-layer encryption directly."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security handles link-layer encryption directly.",
-      "Security reduces the need for routing tables.",
-      "Security improves scalability and interoperability.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS replaces physical signaling mechanisms.",
-      "QoS reduces the need for routing tables.",
-      "QoS handles link-layer encryption directly.",
-      "QoS improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header reduces the need for routing tables."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 handles link-layer encryption directly."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP handles link-layer encryption directly.",
-      "NDP improves scalability and interoperability.",
-      "NDP replaces physical signaling mechanisms.",
-      "NDP reduces the need for routing tables."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing replaces physical signaling mechanisms.",
-      "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly.",
-      "Routing improves scalability and interoperability."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition replaces physical signaling mechanisms.",
       "Transition improves scalability and interoperability.",
       "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly."
+      "Transition handles link-layer encryption directly.",
+      "Transition replaces physical signaling mechanisms."
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Mobility contributes to IPv6 network functionality.",
     "options": [
-      "Mobility reduces the need for routing tables.",
-      "Mobility handles link-layer encryption directly.",
       "Mobility replaces physical signaling mechanisms.",
-      "Mobility improves scalability and interoperability."
+      "Mobility improves scalability and interoperability.",
+      "Mobility handles link-layer encryption directly.",
+      "Mobility reduces the need for routing tables."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [1],
     "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Security contributes to IPv6 network functionality.",
     "options": [
-      "Security replaces physical signaling mechanisms.",
+      "Security improves scalability and interoperability.",
       "Security reduces the need for routing tables.",
       "Security handles link-layer encryption directly.",
-      "Security improves scalability and interoperability."
+      "Security replaces physical signaling mechanisms."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [0],
     "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how QoS contributes to IPv6 network functionality.",
     "options": [
       "QoS reduces the need for routing tables.",
-      "QoS replaces physical signaling mechanisms.",
       "QoS handles link-layer encryption directly.",
-      "QoS improves scalability and interoperability."
+      "QoS improves scalability and interoperability.",
+      "QoS replaces physical signaling mechanisms."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [2],
     "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
     "options": [
-      "IPv6 Header improves scalability and interoperability.",
       "IPv6 Header replaces physical signaling mechanisms.",
       "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header reduces the need for routing tables."
+      "IPv6 Header reduces the need for routing tables.",
+      "IPv6 Header improves scalability and interoperability."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [3],
     "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
     "options": [
       "ICMPv6 improves scalability and interoperability.",
+      "ICMPv6 reduces the need for routing tables.",
       "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 reduces the need for routing tables."
+      "ICMPv6 replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how NDP contributes to IPv6 network functionality.",
     "options": [
       "NDP replaces physical signaling mechanisms.",
-      "NDP improves scalability and interoperability.",
       "NDP handles link-layer encryption directly.",
-      "NDP reduces the need for routing tables."
+      "NDP reduces the need for routing tables.",
+      "NDP improves scalability and interoperability."
     ],
-    "correct": [
-      1
-    ],
+    "correct": [3],
     "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Routing contributes to IPv6 network functionality.",
     "options": [
-      "Routing improves scalability and interoperability.",
-      "Routing replaces physical signaling mechanisms.",
+      "Routing handles link-layer encryption directly.",
       "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly."
+      "Routing replaces physical signaling mechanisms.",
+      "Routing improves scalability and interoperability."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [3],
     "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -777,87 +357,73 @@
       "Autoconfiguration handles link-layer encryption directly.",
       "Autoconfiguration replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Transition contributes to IPv6 network functionality.",
     "options": [
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
       "Transition replaces physical signaling mechanisms.",
+      "Transition handles link-layer encryption directly.",
+      "Transition reduces the need for routing tables.",
       "Transition improves scalability and interoperability."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [3],
     "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Mobility contributes to IPv6 network functionality.",
     "options": [
-      "Mobility handles link-layer encryption directly.",
-      "Mobility replaces physical signaling mechanisms.",
+      "Mobility improves scalability and interoperability.",
       "Mobility reduces the need for routing tables.",
-      "Mobility improves scalability and interoperability."
+      "Mobility handles link-layer encryption directly.",
+      "Mobility replaces physical signaling mechanisms."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [0],
     "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Security contributes to IPv6 network functionality.",
     "options": [
-      "Security replaces physical signaling mechanisms.",
       "Security improves scalability and interoperability.",
+      "Security reduces the need for routing tables.",
       "Security handles link-layer encryption directly.",
-      "Security reduces the need for routing tables."
+      "Security replaces physical signaling mechanisms."
     ],
-    "correct": [
-      1
-    ],
+    "correct": [0],
     "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how QoS contributes to IPv6 network functionality.",
     "options": [
-      "QoS reduces the need for routing tables.",
-      "QoS handles link-layer encryption directly.",
       "QoS replaces physical signaling mechanisms.",
+      "QoS handles link-layer encryption directly.",
+      "QoS reduces the need for routing tables.",
       "QoS improves scalability and interoperability."
     ],
-    "correct": [
-      3
-    ],
+    "correct": [3],
     "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
     "options": [
-      "IPv6 Header replaces physical signaling mechanisms.",
       "IPv6 Header handles link-layer encryption directly.",
       "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header reduces the need for routing tables."
+      "IPv6 Header reduces the need for routing tables.",
+      "IPv6 Header replaces physical signaling mechanisms."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [1],
     "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
     "options": [
-      "ICMPv6 reduces the need for routing tables.",
+      "ICMPv6 handles link-layer encryption directly.",
       "ICMPv6 replaces physical signaling mechanisms.",
       "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 handles link-layer encryption directly."
+      "ICMPv6 reduces the need for routing tables."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
@@ -865,51 +431,340 @@
     "options": [
       "NDP improves scalability and interoperability.",
       "NDP reduces the need for routing tables.",
-      "NDP replaces physical signaling mechanisms.",
-      "NDP handles link-layer encryption directly."
+      "NDP handles link-layer encryption directly.",
+      "NDP replaces physical signaling mechanisms."
     ],
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Routing contributes to IPv6 network functionality.",
     "options": [
-      "Routing replaces physical signaling mechanisms.",
       "Routing improves scalability and interoperability.",
+      "Routing reduces the need for routing tables.",
       "Routing handles link-layer encryption directly.",
-      "Routing reduces the need for routing tables."
+      "Routing replaces physical signaling mechanisms."
     ],
-    "correct": [
-      1
+    "correct": [0],
+    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
+    "options": [
+      "Autoconfiguration improves scalability and interoperability.",
+      "Autoconfiguration reduces the need for routing tables.",
+      "Autoconfiguration handles link-layer encryption directly.",
+      "Autoconfiguration replaces physical signaling mechanisms."
     ],
+    "correct": [0],
+    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Transition contributes to IPv6 network functionality.",
+    "options": [
+      "Transition improves scalability and interoperability.",
+      "Transition reduces the need for routing tables.",
+      "Transition handles link-layer encryption directly.",
+      "Transition replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Mobility contributes to IPv6 network functionality.",
+    "options": [
+      "Mobility handles link-layer encryption directly.",
+      "Mobility reduces the need for routing tables.",
+      "Mobility replaces physical signaling mechanisms.",
+      "Mobility improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Security contributes to IPv6 network functionality.",
+    "options": [
+      "Security improves scalability and interoperability.",
+      "Security reduces the need for routing tables.",
+      "Security handles link-layer encryption directly.",
+      "Security replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how QoS contributes to IPv6 network functionality.",
+    "options": [
+      "QoS improves scalability and interoperability.",
+      "QoS reduces the need for routing tables.",
+      "QoS handles link-layer encryption directly.",
+      "QoS replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "options": [
+      "IPv6 Header reduces the need for routing tables.",
+      "IPv6 Header replaces physical signaling mechanisms.",
+      "IPv6 Header handles link-layer encryption directly.",
+      "IPv6 Header improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
+    "options": [
+      "ICMPv6 improves scalability and interoperability.",
+      "ICMPv6 reduces the need for routing tables.",
+      "ICMPv6 handles link-layer encryption directly.",
+      "ICMPv6 replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how NDP contributes to IPv6 network functionality.",
+    "options": [
+      "NDP replaces physical signaling mechanisms.",
+      "NDP handles link-layer encryption directly.",
+      "NDP reduces the need for routing tables.",
+      "NDP improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Routing contributes to IPv6 network functionality.",
+    "options": [
+      "Routing improves scalability and interoperability.",
+      "Routing reduces the need for routing tables.",
+      "Routing handles link-layer encryption directly.",
+      "Routing replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
     "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
     "options": [
       "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration reduces the need for routing tables.",
       "Autoconfiguration improves scalability and interoperability.",
+      "Autoconfiguration reduces the need for routing tables.",
       "Autoconfiguration replaces physical signaling mechanisms."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [1],
     "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   },
   {
     "question": "Explain how Transition contributes to IPv6 network functionality.",
     "options": [
-      "Transition reduces the need for routing tables.",
+      "Transition handles link-layer encryption directly.",
+      "Transition replaces physical signaling mechanisms.",
+      "Transition improves scalability and interoperability.",
+      "Transition reduces the need for routing tables."
+    ],
+    "correct": [2],
+    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Mobility contributes to IPv6 network functionality.",
+    "options": [
+      "Mobility handles link-layer encryption directly.",
+      "Mobility replaces physical signaling mechanisms.",
+      "Mobility improves scalability and interoperability.",
+      "Mobility reduces the need for routing tables."
+    ],
+    "correct": [2],
+    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Security contributes to IPv6 network functionality.",
+    "options": [
+      "Security improves scalability and interoperability.",
+      "Security reduces the need for routing tables.",
+      "Security handles link-layer encryption directly.",
+      "Security replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how QoS contributes to IPv6 network functionality.",
+    "options": [
+      "QoS replaces physical signaling mechanisms.",
+      "QoS improves scalability and interoperability.",
+      "QoS handles link-layer encryption directly.",
+      "QoS reduces the need for routing tables."
+    ],
+    "correct": [1],
+    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "options": [
+      "IPv6 Header improves scalability and interoperability.",
+      "IPv6 Header reduces the need for routing tables.",
+      "IPv6 Header handles link-layer encryption directly.",
+      "IPv6 Header replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
+    "options": [
+      "ICMPv6 improves scalability and interoperability.",
+      "ICMPv6 replaces physical signaling mechanisms.",
+      "ICMPv6 reduces the need for routing tables.",
+      "ICMPv6 handles link-layer encryption directly."
+    ],
+    "correct": [0],
+    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how NDP contributes to IPv6 network functionality.",
+    "options": [
+      "NDP reduces the need for routing tables.",
+      "NDP replaces physical signaling mechanisms.",
+      "NDP handles link-layer encryption directly.",
+      "NDP improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Routing contributes to IPv6 network functionality.",
+    "options": [
+      "Routing improves scalability and interoperability.",
+      "Routing handles link-layer encryption directly.",
+      "Routing replaces physical signaling mechanisms.",
+      "Routing reduces the need for routing tables."
+    ],
+    "correct": [0],
+    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
+    "options": [
+      "Autoconfiguration improves scalability and interoperability.",
+      "Autoconfiguration reduces the need for routing tables.",
+      "Autoconfiguration handles link-layer encryption directly.",
+      "Autoconfiguration replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Transition contributes to IPv6 network functionality.",
+    "options": [
+      "Transition handles link-layer encryption directly.",
+      "Transition replaces physical signaling mechanisms.",
+      "Transition improves scalability and interoperability.",
+      "Transition reduces the need for routing tables."
+    ],
+    "correct": [2],
+    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Mobility contributes to IPv6 network functionality.",
+    "options": [
+      "Mobility reduces the need for routing tables.",
+      "Mobility improves scalability and interoperability.",
+      "Mobility replaces physical signaling mechanisms.",
+      "Mobility handles link-layer encryption directly."
+    ],
+    "correct": [1],
+    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Security contributes to IPv6 network functionality.",
+    "options": [
+      "Security reduces the need for routing tables.",
+      "Security replaces physical signaling mechanisms.",
+      "Security handles link-layer encryption directly.",
+      "Security improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how QoS contributes to IPv6 network functionality.",
+    "options": [
+      "QoS handles link-layer encryption directly.",
+      "QoS replaces physical signaling mechanisms.",
+      "QoS improves scalability and interoperability.",
+      "QoS reduces the need for routing tables."
+    ],
+    "correct": [2],
+    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "options": [
+      "IPv6 Header reduces the need for routing tables.",
+      "IPv6 Header improves scalability and interoperability.",
+      "IPv6 Header replaces physical signaling mechanisms.",
+      "IPv6 Header handles link-layer encryption directly."
+    ],
+    "correct": [1],
+    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
+    "options": [
+      "ICMPv6 replaces physical signaling mechanisms.",
+      "ICMPv6 handles link-layer encryption directly.",
+      "ICMPv6 reduces the need for routing tables.",
+      "ICMPv6 improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how NDP contributes to IPv6 network functionality.",
+    "options": [
+      "NDP improves scalability and interoperability.",
+      "NDP reduces the need for routing tables.",
+      "NDP handles link-layer encryption directly.",
+      "NDP replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Routing contributes to IPv6 network functionality.",
+    "options": [
+      "Routing reduces the need for routing tables.",
+      "Routing replaces physical signaling mechanisms.",
+      "Routing handles link-layer encryption directly.",
+      "Routing improves scalability and interoperability."
+    ],
+    "correct": [3],
+    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
+    "options": [
+      "Autoconfiguration improves scalability and interoperability.",
+      "Autoconfiguration reduces the need for routing tables.",
+      "Autoconfiguration handles link-layer encryption directly.",
+      "Autoconfiguration replaces physical signaling mechanisms."
+    ],
+    "correct": [0],
+    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+  },
+  {
+    "question": "Explain how Transition contributes to IPv6 network functionality.",
+    "options": [
       "Transition handles link-layer encryption directly.",
       "Transition improves scalability and interoperability.",
+      "Transition reduces the need for routing tables.",
       "Transition replaces physical signaling mechanisms."
     ],
-    "correct": [
-      2
-    ],
+    "correct": [1],
     "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
   }
 ]
