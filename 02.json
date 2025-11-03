@@ -2,10 +2,10 @@
   {
     "question": "Which of the following statements correctly describe the main advantages of IPv6 over IPv4?",
     "options": [
-      "IPv6 natively supports multicast and anycast.",
-      "IPv6 mandates NAT for address conservation.",
       "IPv6 includes IPsec as a fundamental protocol feature.",
-      "IPv6 has a simplified header for faster processing."
+      "IPv6 mandates NAT for address conservation.",
+      "IPv6 has a simplified header for faster processing.",
+      "IPv6 natively supports multicast and anycast."
     ],
     "correct": [0, 2, 3],
     "multipleCorrect": true,
@@ -14,64 +14,64 @@
   {
     "question": "In IPv6, what is the function of the Flow Label field?",
     "options": [
-      "To mark packets belonging to the same flow for special handling by routers.",
-      "To indicate packet priority among flows.",
+      "To provide fragmentation offset information.",
       "To identify transport layer sessions uniquely.",
-      "To provide fragmentation offset information."
+      "To mark packets belonging to the same flow for special handling by routers.",
+      "To indicate packet priority among flows."
     ],
-    "correct": [0],
+    "correct": [2],
     "explanation": "The Flow Label field is used to label packets of a particular flow for routers to provide consistent QoS handling without examining transport headers."
   },
   {
     "question": "True or False: IPv6 routers can fragment packets like in IPv4.",
     "options": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "correct": [0],
+    "correct": [1],
     "explanation": "Routers in IPv6 do not perform fragmentation. If a packet is too large, they drop it and send an ICMPv6 'Packet Too Big' message back to the sender."
   },
   {
     "question": "Which of the following are true regarding ICMPv6?",
     "options": [
-      "It is mandatory in every IPv6 implementation.",
+      "It is only used for Neighbor Discovery messages.",
       "It carries error messages such as Destination Unreachable and Packet Too Big.",
       "It replaces ARP, IGMP, and ICMPv4 functionality.",
-      "It is only used for Neighbor Discovery messages."
+      "It is mandatory in every IPv6 implementation."
     ],
-    "correct": [0, 1, 2],
+    "correct": [1, 2, 3],
     "multipleCorrect": true,
     "explanation": "ICMPv6 combines several IPv4-era protocols and is essential for error reporting, diagnostics, and Neighbor Discovery. It must be implemented in all IPv6 systems."
   },
   {
     "question": "In Neighbor Discovery Protocol (NDP), which message types are used for address resolution and neighbor reachability?",
     "options": [
-      "Echo Request and Echo Reply.",
       "Redirect and Destination Unreachable.",
       "Router Solicitation and Router Advertisement.",
-      "Neighbor Solicitation and Neighbor Advertisement."
+      "Neighbor Solicitation and Neighbor Advertisement.",
+      "Echo Request and Echo Reply."
     ],
-    "correct": [3],
+    "correct": [2],
     "explanation": "NDP uses Neighbor Solicitation and Advertisement messages to resolve link-layer addresses and verify neighbor reachability."
   },
   {
     "question": "What does Stateless Address Autoconfiguration (SLAAC) allow a node to do?",
     "options": [
-      "Automatically generate its own IPv6 address using router advertisements.",
-      "Request and assign IP addresses via DHCPv6 exclusively.",
+      "Assign static addresses to routers.",
       "Manually configure subnet prefixes.",
-      "Assign static addresses to routers."
+      "Automatically generate its own IPv6 address using router advertisements.",
+      "Request and assign IP addresses via DHCPv6 exclusively."
     ],
-    "correct": [0],
+    "correct": [2],
     "explanation": "SLAAC enables a device to form its own IPv6 address using a prefix learned from router advertisements, without relying on DHCPv6."
   },
   {
     "question": "Which IPv6 routing protocols are direct successors of IPv4 protocols?",
     "options": [
       "EIGRPv6 for IGRP",
-      "BGP-4+ for BGP",
+      "RIPng for RIP",
       "OSPFv3 for OSPF",
-      "RIPng for RIP"
+      "BGP-4+ for BGP"
     ],
     "correct": [0, 1, 2, 3],
     "multipleCorrect": true,
@@ -80,10 +80,10 @@
   {
     "question": "True or False: OSPFv3 exchanges IPv6 routing information using IPv4 transport.",
     "options": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "correct": [0],
+    "correct": [1],
     "explanation": "OSPFv3 runs directly over IPv6 using protocol number 89, not over IPv4 transport."
   },
   {
@@ -101,19 +101,19 @@
   {
     "question": "True or False: Mobile IPv6 allows devices to maintain existing connections while moving between networks.",
     "options": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "correct": [1],
+    "correct": [0],
     "explanation": "Mobile IPv6 introduces home and care-of addresses allowing seamless handovers without breaking ongoing connections."
   },
   {
     "question": "What is the size of an IPv6 address?",
     "options": [
       "32 bits",
-      "256 bits",
+      "64 bits",
       "128 bits",
-      "64 bits"
+      "256 bits"
     ],
     "correct": [2],
     "explanation": "IPv6 addresses are 128 bits long, compared to IPv4's 32 bits, providing approximately 3.4×10^38 unique addresses."
@@ -121,54 +121,54 @@
   {
     "question": "Which IPv6 address type is used for one-to-nearest communication?",
     "options": [
+      "Anycast",
       "Broadcast",
       "Unicast",
-      "Multicast",
-      "Anycast"
+      "Multicast"
     ],
-    "correct": [3],
+    "correct": [0],
     "explanation": "Anycast addresses allow packets to be routed to the nearest node in a group. IPv6 does not support broadcast; it uses multicast instead."
   },
   {
     "question": "What is the IPv6 loopback address?",
     "options": [
-      "0:0:0:0:0:0:0:1",
-      "127.0.0.1",
       "Both ::1 and 0:0:0:0:0:0:0:1",
-      "::1"
+      "0:0:0:0:0:0:0:1",
+      "::1",
+      "127.0.0.1"
     ],
-    "correct": [2],
+    "correct": [0],
     "explanation": "The IPv6 loopback address is ::1 (compressed form) or 0:0:0:0:0:0:0:1 (full form), equivalent to 127.0.0.1 in IPv4."
   },
   {
     "question": "Which ICMPv6 message type is used when a router cannot forward a packet?",
     "options": [
-      "Packet Too Big",
-      "Parameter Problem",
       "Destination Unreachable",
-      "Time Exceeded"
+      "Time Exceeded",
+      "Parameter Problem",
+      "Packet Too Big"
     ],
-    "correct": [2],
+    "correct": [0],
     "explanation": "Destination Unreachable is sent when a router cannot forward a packet to its destination for various reasons (no route, prohibited, etc.)."
   },
   {
     "question": "What is the minimum MTU size required for IPv6 links?",
     "options": [
       "576 bytes",
+      "1500 bytes",
       "9000 bytes",
-      "1280 bytes",
-      "1500 bytes"
+      "1280 bytes"
     ],
-    "correct": [2],
+    "correct": [3],
     "explanation": "IPv6 requires a minimum MTU of 1280 bytes on all links. If a physical link cannot support this, link-specific fragmentation and reassembly must be provided."
   },
   {
     "question": "Which field in the IPv6 header indicates the upper-layer protocol?",
     "options": [
-      "Traffic Class",
+      "Protocol",
       "Next Header",
       "Type of Service",
-      "Protocol"
+      "Traffic Class"
     ],
     "correct": [1],
     "explanation": "The Next Header field in IPv6 serves the same purpose as the Protocol field in IPv4, identifying the type of header following the IPv6 header."
@@ -176,12 +176,12 @@
   {
     "question": "What does the prefix fe80::/10 indicate?",
     "options": [
-      "Multicast address",
-      "Unique local address",
       "Link-local address",
-      "Global unicast address"
+      "Global unicast address",
+      "Unique local address",
+      "Multicast address"
     ],
-    "correct": [2],
+    "correct": [0],
     "explanation": "fe80::/10 is reserved for link-local addresses, which are used for communication on a single link and are not routable."
   },
   {
@@ -189,30 +189,30 @@
     "options": [
       "Neighbor Solicitation",
       "Neighbor Advertisement",
-      "Router Advertisement",
-      "Router Solicitation"
+      "Router Solicitation",
+      "Router Advertisement"
     ],
-    "correct": [3],
+    "correct": [2],
     "explanation": "Hosts send Router Solicitation messages to discover routers on the link. Routers respond with Router Advertisements."
   },
   {
     "question": "What is the purpose of Duplicate Address Detection (DAD)?",
     "options": [
+      "To detect router failures",
       "To compress IPv6 addresses",
-      "To prevent IP address conflicts on a network",
       "To find the MAC address of a neighbor",
-      "To detect router failures"
+      "To prevent IP address conflicts on a network"
     ],
-    "correct": [1],
+    "correct": [3],
     "explanation": "DAD is used by a node to determine if an address is already in use on the link before assigning it to an interface."
   },
   {
     "question": "Which IPv6 extension header is used for fragmentation?",
     "options": [
-      "Routing Header",
       "Destination Options",
+      "Hop-by-Hop Options",
       "Fragment Header",
-      "Hop-by-Hop Options"
+      "Routing Header"
     ],
     "correct": [2],
     "explanation": "The Fragment Header is used when a source node must fragment a packet because it exceeds the path MTU. Only the source performs fragmentation in IPv6."
@@ -220,23 +220,23 @@
   {
     "question": "What does the IPv6 address :: represent?",
     "options": [
-      "All zeros (unspecified address)",
       "A multicast address",
-      "The loopback address",
-      "The default route"
+      "The default route",
+      "All zeros (unspecified address)",
+      "The loopback address"
     ],
-    "correct": [0],
+    "correct": [2],
     "explanation": ":: represents all zeros and is called the unspecified address. It's used by hosts that don't yet have an address assigned."
   },
   {
     "question": "Which DHCPv6 mode provides only configuration information, not addresses?",
     "options": [
-      "Rapid DHCPv6",
-      "DHCPv6-PD",
+      "Stateful DHCPv6",
       "Stateless DHCPv6",
-      "Stateful DHCPv6"
+      "DHCPv6-PD",
+      "Rapid DHCPv6"
     ],
-    "correct": [2],
+    "correct": [1],
     "explanation": "Stateless DHCPv6 provides configuration information (like DNS servers) while hosts use SLAAC for address assignment."
   },
   {
@@ -254,31 +254,31 @@
     "question": "Which transition mechanism encapsulates IPv6 packets in IPv4 for transport?",
     "options": [
       "Dual stack",
-      "6to4 tunneling",
       "DNS64",
-      "NAT64"
+      "NAT64",
+      "6to4 tunneling"
     ],
-    "correct": [1],
+    "correct": [3],
     "explanation": "6to4 is a tunneling mechanism that encapsulates IPv6 packets within IPv4 packets to traverse IPv4 networks. Dual stack runs both protocols natively."
   },
   {
     "question": "What does the 'M' flag in a Router Advertisement indicate?",
     "options": [
       "Multicast is supported",
-      "MTU information is included",
+      "Use DHCPv6 for address configuration (Managed)",
       "Mobile IPv6 is enabled",
-      "Use DHCPv6 for address configuration (Managed)"
+      "MTU information is included"
     ],
-    "correct": [3],
+    "correct": [1],
     "explanation": "The Managed address configuration (M) flag tells hosts to use DHCPv6 for address assignment rather than SLAAC."
   },
   {
     "question": "Which IPv6 address scope is indicated by ff05::/16?",
     "options": [
-      "Link-local",
       "Global",
+      "Interface-local",
       "Site-local",
-      "Interface-local"
+      "Link-local"
     ],
     "correct": [2],
     "explanation": "The fourth hexadecimal digit (5) in multicast addresses indicates site-local scope. ff02 is link-local, ff0e is global."
@@ -286,67 +286,67 @@
   {
     "question": "What is the purpose of the Hop Limit field in IPv6?",
     "options": [
-      "To indicate packet priority",
-      "To set the maximum packet size",
       "To limit the number of hops a packet can take",
-      "To specify the number of extension headers"
+      "To specify the number of extension headers",
+      "To indicate packet priority",
+      "To set the maximum packet size"
     ],
-    "correct": [2],
+    "correct": [0],
     "explanation": "Hop Limit functions like TTL in IPv4, decremented by each router. When it reaches 0, the packet is discarded to prevent routing loops."
   },
   {
     "question": "Which address block is reserved for unique local addresses (ULA)?",
     "options": [
+      "fe80::/10",
       "ff00::/8",
       "fc00::/7",
-      "fe80::/10",
       "2001::/16"
     ],
-    "correct": [1],
+    "correct": [2],
     "explanation": "fc00::/7 (fc00::/8 and fd00::/8) is reserved for unique local addresses, similar to RFC 1918 private addresses in IPv4."
   },
   {
     "question": "What does Path MTU Discovery (PMTUD) determine?",
     "options": [
-      "The maximum packet size that can be sent without fragmentation",
       "The optimal QoS settings for a path",
-      "The fastest route to a destination",
-      "The number of routers between source and destination"
+      "The number of routers between source and destination",
+      "The maximum packet size that can be sent without fragmentation",
+      "The fastest route to a destination"
     ],
-    "correct": [0],
+    "correct": [2],
     "explanation": "PMTUD discovers the smallest MTU along the path to avoid fragmentation. It's more important in IPv6 since routers don't fragment."
   },
   {
     "question": "Which ICMPv6 type is used for Neighbor Solicitation?",
     "options": [
-      "Type 136",
-      "Type 135",
+      "Type 133",
       "Type 134",
-      "Type 133"
+      "Type 135",
+      "Type 136"
     ],
-    "correct": [1],
+    "correct": [2],
     "explanation": "Type 135 is Neighbor Solicitation, Type 136 is Neighbor Advertisement, Type 133 is Router Solicitation, Type 134 is Router Advertisement."
   },
   {
     "question": "Which NDP message is sent by routers to proactively advertise their presence?",
     "options": [
-      "Router Advertisement",
       "Redirect",
-      "Router Solicitation",
-      "Neighbor Solicitation"
+      "Neighbor Solicitation",
+      "Router Advertisement",
+      "Router Solicitation"
     ],
-    "correct": [0],
+    "correct": [2],
     "explanation": "Router Advertisement messages are sent periodically by routers or in response to Router Solicitation messages to advertise their presence and configuration parameters."
   },
   {
     "question": "What information can be included in NDP Router Advertisements?",
     "options": [
-      "MAC addresses of all hosts",
+      "Flags indicating address configuration method",
       "MTU size for the link",
-      "Prefix information for SLAAC",
-      "Flags indicating address configuration method"
+      "MAC addresses of all hosts",
+      "Prefix information for SLAAC"
     ],
-    "correct": [1, 2, 3],
+    "correct": [0, 1, 3],
     "multipleCorrect": true,
     "explanation": "Router Advertisements can include prefixes for autoconfiguration, link MTU, hop limit values, and flags (M and O) for address and other configuration."
   },
@@ -365,23 +365,23 @@
   {
     "question": "What is a Care-of Address in Mobile IPv6?",
     "options": [
-      "The address of the home agent",
-      "The permanent address assigned to a mobile node",
       "The address used for return routability testing",
-      "A temporary address indicating the mobile node's current location"
+      "The address of the home agent",
+      "A temporary address indicating the mobile node's current location",
+      "The permanent address assigned to a mobile node"
     ],
-    "correct": [3],
+    "correct": [2],
     "explanation": "A care-of address is a temporary IPv6 address that reflects the mobile node's current point of attachment to the Internet."
   },
   {
     "question": "Which IPv6 security feature was mandatory in the original specification?",
     "options": [
       "TLS",
-      "DNSSEC",
+      "IPsec",
       "SSH",
-      "IPsec"
+      "DNSSEC"
     ],
-    "correct": [3],
+    "correct": [1],
     "explanation": "IPsec was originally mandatory in IPv6 (though this requirement was later relaxed). It provides authentication, integrity, and confidentiality at the network layer."
   },
   {
@@ -399,41 +399,41 @@
   {
     "question": "How does IPv6 use the Traffic Class field for QoS?",
     "options": [
-      "To encrypt quality-sensitive traffic",
       "To determine routing paths",
-      "To mark packets with priority or DSCP values",
-      "To compress multimedia packets"
+      "To compress multimedia packets",
+      "To encrypt quality-sensitive traffic",
+      "To mark packets with priority or DSCP values"
     ],
-    "correct": [2],
+    "correct": [3],
     "explanation": "The Traffic Class field (8 bits) is used similarly to ToS in IPv4, allowing packets to be marked with DiffServ Code Points (DSCP) for QoS treatment."
   },
   {
     "question": "What security risk is associated with NDP in IPv6?",
     "options": [
-      "NDP automatically encrypts all traffic",
       "NDP prevents all man-in-the-middle attacks",
       "NDP messages can be spoofed without protection",
+      "NDP automatically encrypts all traffic",
       "NDP requires certificate authentication by default"
     ],
-    "correct": [2],
+    "correct": [1],
     "explanation": "Without SEND (Secure Neighbor Discovery), NDP messages are vulnerable to spoofing attacks, allowing attackers to redirect traffic or perform DoS attacks."
   },
   {
     "question": "What is SEND (Secure Neighbor Discovery)?",
     "options": [
-      "A compression algorithm for IPv6 packets",
       "A routing protocol for IPv6 networks",
       "A method for address allocation",
-      "A protocol that uses cryptographic signatures to secure NDP messages"
+      "A protocol that uses cryptographic signatures to secure NDP messages",
+      "A compression algorithm for IPv6 packets"
     ],
-    "correct": [3],
+    "correct": [2],
     "explanation": "SEND uses Cryptographically Generated Addresses (CGA) and RSA signatures to authenticate NDP messages and prevent spoofing attacks."
   },
   {
     "question": "Which type of attack can be performed by spoofing Router Advertisement messages?",
     "options": [
-      "Denial of service by advertising invalid prefixes",
       "Man-in-the-middle attack by advertising a rogue router",
+      "Denial of service by advertising invalid prefixes",
       "SQL injection",
       "Redirect legitimate traffic to attacker"
     ],
@@ -445,8 +445,8 @@
     "question": "What is the purpose of the Redirect message in NDP?",
     "options": [
       "To inform a host of a better first-hop router for a specific destination",
-      "To change a host's IPv6 address",
       "To redirect DNS queries to a different server",
+      "To change a host's IPv6 address",
       "To block malicious traffic"
     ],
     "correct": [0],
@@ -455,32 +455,32 @@
   {
     "question": "In Mobile IPv6, what is Route Optimization?",
     "options": [
-      "Compressing routing tables",
       "A mechanism allowing direct communication between correspondent nodes and mobile nodes",
-      "Automatically selecting the fastest ISP",
-      "Reducing the number of hops in a network"
+      "Compressing routing tables",
+      "Reducing the number of hops in a network",
+      "Automatically selecting the fastest ISP"
     ],
-    "correct": [1],
+    "correct": [0],
     "explanation": "Route Optimization allows correspondent nodes to send packets directly to a mobile node's care-of address, bypassing the home agent for efficiency."
   },
   {
     "question": "What is Binding Update in Mobile IPv6?",
     "options": [
-      "A DNS record update",
+      "A message sent by the mobile node to register its care-of address",
       "An update to the routing table",
       "A security certificate renewal",
-      "A message sent by the mobile node to register its care-of address"
+      "A DNS record update"
     ],
-    "correct": [3],
+    "correct": [0],
     "explanation": "Binding Update messages inform the home agent (and optionally correspondent nodes) about the mobile node's current care-of address."
   },
   {
     "question": "Which IPv6 extension header is used by IPsec for authentication?",
     "options": [
-      "Hop-by-Hop Options",
+      "Routing Header",
       "Authentication Header (AH)",
-      "Fragment Header",
-      "Routing Header"
+      "Hop-by-Hop Options",
+      "Fragment Header"
     ],
     "correct": [1],
     "explanation": "The Authentication Header provides connectionless integrity, data origin authentication, and optional anti-replay protection for IPv6 packets."
@@ -488,43 +488,43 @@
   {
     "question": "What is the main difference between AH and ESP in IPsec?",
     "options": [
-      "AH is faster than ESP",
-      "AH is for IPv4, ESP is for IPv6",
       "AH provides authentication only, ESP provides encryption and authentication",
+      "AH is for IPv4, ESP is for IPv6",
+      "AH is faster than ESP",
       "ESP cannot work with NAT"
     ],
-    "correct": [2],
+    "correct": [0],
     "explanation": "AH provides authentication and integrity but not encryption. ESP can provide confidentiality (encryption), authentication, and integrity."
   },
   {
     "question": "How does IPv6 Privacy Extensions enhance security?",
     "options": [
-      "By using shorter addresses",
+      "By generating temporary random interface identifiers",
       "By encrypting all IPv6 headers",
       "By hiding the MAC address in Router Advertisements",
-      "By generating temporary random interface identifiers"
+      "By using shorter addresses"
     ],
-    "correct": [3],
+    "correct": [0],
     "explanation": "Privacy Extensions (RFC 4941) generate temporary, changing interface IDs instead of using MAC-based identifiers, preventing tracking across networks."
   },
   {
     "question": "What is a Cryptographically Generated Address (CGA)?",
     "options": [
+      "An encrypted IPv6 address",
       "An address assigned by DHCP with encryption",
-      "An IPv6 address generated from a public key hash",
       "A randomly generated temporary address",
-      "An encrypted IPv6 address"
+      "An IPv6 address generated from a public key hash"
     ],
-    "correct": [1],
+    "correct": [3],
     "explanation": "CGAs use a hash of a public key to generate the interface identifier, allowing proof of address ownership through digital signatures."
   },
   {
     "question": "Which NDP option is used to advertise the link-layer address?",
     "options": [
-      "Target Link-Layer Address option",
       "Source Link-Layer Address option",
-      "Prefix Information option",
-      "MTU option"
+      "Target Link-Layer Address option",
+      "MTU option",
+      "Prefix Information option"
     ],
     "correct": [0, 1],
     "multipleCorrect": true,
@@ -533,80 +533,80 @@
   {
     "question": "What happens during the Neighbor Unreachability Detection (NUD) process?",
     "options": [
-      "The network assigns new addresses",
-      "Hosts verify that neighbors are still reachable",
       "Hosts discover available bandwidth",
-      "Routers detect link failures"
+      "The network assigns new addresses",
+      "Routers detect link failures",
+      "Hosts verify that neighbors are still reachable"
     ],
-    "correct": [1],
+    "correct": [3],
     "explanation": "NUD allows hosts to track the reachability status of neighbors and detect when a neighbor is no longer reachable, updating the neighbor cache accordingly."
   },
   {
     "question": "What are the possible states in the NDP neighbor cache?",
     "options": [
-      "ENCRYPTED - secure connection established",
+      "INCOMPLETE - waiting for address resolution",
       "REACHABLE - known to be reachable",
       "STALE - no recent reachability confirmation",
-      "INCOMPLETE - waiting for address resolution"
+      "ENCRYPTED - secure connection established"
     ],
-    "correct": [1, 2, 3],
+    "correct": [0, 1, 2],
     "multipleCorrect": true,
     "explanation": "NDP defines states including INCOMPLETE, REACHABLE, STALE, DELAY, and PROBE to track neighbor reachability. There is no ENCRYPTED state."
   },
   {
     "question": "In Mobile IPv6, what is Return Routability Test (RRT)?",
     "options": [
-      "A speed test for mobile connections",
       "A method to find the shortest path",
       "A security mechanism to verify the mobile node owns both home and care-of addresses",
+      "A speed test for mobile connections",
       "A QoS measurement tool"
     ],
-    "correct": [2],
+    "correct": [1],
     "explanation": "RRT is a security procedure where correspondent nodes verify that the mobile node is reachable at both its home address and care-of address before enabling route optimization."
   },
   {
     "question": "What is the purpose of the 'O' flag in Router Advertisements?",
     "options": [
+      "Optimizes routing tables",
       "Opens firewall ports",
       "Indicates hosts should use DHCPv6 for other configuration (not addresses)",
-      "Enables IPv6 over IPv4 tunneling",
-      "Optimizes routing tables"
+      "Enables IPv6 over IPv4 tunneling"
     ],
-    "correct": [1],
+    "correct": [2],
     "explanation": "The Other configuration (O) flag tells hosts to use DHCPv6 to obtain additional configuration information like DNS servers, while still using SLAAC for addresses."
   },
   {
     "question": "How does IPsec transport mode differ from tunnel mode?",
     "options": [
-      "Transport mode is faster than tunnel mode",
       "Tunnel mode creates a new IP header, transport mode doesn't",
       "Transport mode works only with TCP",
-      "Transport mode encrypts only the payload, tunnel mode encrypts the entire packet"
+      "Transport mode encrypts only the payload, tunnel mode encrypts the entire packet",
+      "Transport mode is faster than tunnel mode"
     ],
-    "correct": [1, 3],
+    "correct": [0, 2],
     "multipleCorrect": true,
     "explanation": "In transport mode, only the payload is protected. In tunnel mode, the entire original packet is encapsulated in a new IPv6 packet, often used for VPNs."
   },
   {
     "question": "What is the Flow Label field used for in IPv6 QoS?",
     "options": [
-      "To compress packet headers",
+      "To identify packets belonging to the same flow for consistent QoS treatment",
       "To encrypt flows",
       "To count the number of flows",
-      "To identify packets belonging to the same flow for consistent QoS treatment"
+      "To compress packet headers"
     ],
-    "correct": [3],
+    "correct": [0],
     "explanation": "The 20-bit Flow Label allows routers to identify packets belonging to the same flow and handle them consistently without examining upper-layer headers."
   },
   {
     "question": "Which security feature helps prevent IPv6 address scanning attacks?",
     "options": [
-      "Randomized interface identifiers",
       "All subnet addresses are always allocated",
+      "The large address space makes brute-force scanning impractical",
       "SEND protocol",
-      "The large address space makes brute-force scanning impractical"
+      "Randomized interface identifiers"
     ],
-    "correct": [0, 3],
+    "correct": [1, 3],
     "multipleCorrect": true,
     "explanation": "The huge IPv6 address space (2^64 addresses per subnet) makes scanning impractical, and randomized IDs prevent predictable addressing patterns."
   },
@@ -614,9 +614,9 @@
     "question": "What is a Mobile IPv6 Correspondent Node?",
     "options": [
       "A node communicating with a mobile node",
-      "A backup home agent",
+      "A router managing mobile connections",
       "A DNS server for mobile devices",
-      "A router managing mobile connections"
+      "A backup home agent"
     ],
     "correct": [0],
     "explanation": "A correspondent node is any IPv6 node that is communicating with a mobile node, which may be mobile or stationary."
@@ -625,9 +625,9 @@
     "question": "How does NDP prevent address conflicts?",
     "options": [
       "Through Duplicate Address Detection (DAD)",
-      "Through encryption",
       "By limiting the number of hosts",
-      "By using DHCP exclusively"
+      "By using DHCP exclusively",
+      "Through encryption"
     ],
     "correct": [0],
     "explanation": "DAD uses Neighbor Solicitation messages to check if an address is already in use before a node configures it on its interface."
@@ -635,23 +635,23 @@
   {
     "question": "What is the Router Preference option in NDP?",
     "options": [
+      "Sets bandwidth limits for routers",
       "Determines router uptime",
-      "Allows routers to advertise their preference level (high, medium, low)",
       "Configures router encryption strength",
-      "Sets bandwidth limits for routers"
+      "Allows routers to advertise their preference level (high, medium, low)"
     ],
-    "correct": [1],
+    "correct": [3],
     "explanation": "The Router Preference option allows routers to indicate their relative preference for use as a default router, helping hosts choose the best default gateway."
   },
   {
     "question": "Which extension header would be used for end-to-end encryption in IPv6?",
     "options": [
       "Hop-by-Hop Options",
+      "Fragment Header",
       "Routing Header",
-      "ESP (Encapsulating Security Payload)",
-      "Fragment Header"
+      "ESP (Encapsulating Security Payload)"
     ],
-    "correct": [2],
+    "correct": [3],
     "explanation": "ESP provides encryption and can be used in transport mode for end-to-end encryption between source and destination."
   },
   {
@@ -664,5 +664,340 @@
     ],
     "correct": [0],
     "explanation": "RA Guard is a switch security feature that blocks rogue Router Advertisement messages from unauthorized devices, preventing attacks."
+  },
+  {
+    "question": "During Duplicate Address Detection (DAD), what does a node do before assigning an address?",
+    "options": [
+      "Sends a Router Advertisement to all nodes",
+      "Broadcasts an ARP request",
+      "Queries the DHCP server",
+      "Sends a Neighbor Solicitation with the tentative address as the target"
+    ],
+    "correct": [3],
+    "explanation": "The node sends a Neighbor Solicitation message with the unspecified address (::) as source and the tentative address as the target to check if anyone else is using it."
+  },
+  {
+    "question": "What is the source address used in DAD Neighbor Solicitation messages?",
+    "options": [
+      "The link-local address",
+      "The global unicast address",
+      "The unspecified address (::)",
+      "The tentative address being tested"
+    ],
+    "correct": [2],
+    "explanation": "During DAD, the source address is the unspecified address (::) because the node hasn't confirmed ownership of any address yet."
+  },
+  {
+    "question": "If a node receives a Neighbor Advertisement in response to its DAD message, what should it do?",
+    "options": [
+      "Request a new address from DHCPv6",
+      "Ignore the message and use the address anyway",
+      "Send another DAD message",
+      "Not use the tentative address as it's a duplicate"
+    ],
+    "correct": [3],
+    "explanation": "If a node receives a response during DAD, it means another node is already using that address. The node must not use the duplicate address."
+  },
+  {
+    "question": "How many DAD messages must a node send before considering an address safe to use?",
+    "options": [
+      "Exactly 3",
+      "At least 5",
+      "Continuously until stopped",
+      "At least 1 (DupAddrDetectTransmits default)"
+    ],
+    "correct": [3],
+    "explanation": "The number is configurable via DupAddrDetectTransmits, with a default of 1. The node must wait RetransTimer milliseconds for responses."
+  },
+  {
+    "question": "What is the purpose of the tentative address state in DAD?",
+    "options": [
+      "To flag addresses assigned by DHCPv6",
+      "To identify temporary privacy addresses",
+      "To indicate an address is being tested and cannot yet be used for communication",
+      "To mark addresses that will expire soon"
+    ],
+    "correct": [2],
+    "explanation": "During the tentative state, the address cannot be used for regular communication except for DAD, NUD, and Router Solicitation messages."
+  },
+  {
+    "question": "In Neighbor Unreachability Detection, what triggers the transition from REACHABLE to STALE?",
+    "options": [
+      "A packet is sent to the neighbor",
+      "The router restarts",
+      "The ReachableTime timer expires",
+      "The neighbor sends an error message"
+    ],
+    "correct": [2],
+    "explanation": "When ReachableTime expires without any reachability confirmation, the neighbor entry transitions from REACHABLE to STALE state."
+  },
+  {
+    "question": "What are the five states in the NUD state machine?",
+    "options": [
+      "INCOMPLETE, REACHABLE, STALE, DELAY, PROBE",
+      "INIT, READY, ACTIVE, SUSPEND, TERMINATE",
+      "DISCOVER, OFFER, REQUEST, ACKNOWLEDGE, BOUND",
+      "NEW, VERIFIED, EXPIRED, INVALID, DELETED"
+    ],
+    "correct": [0],
+    "explanation": "NUD uses five states to track neighbor reachability: INCOMPLETE (resolving), REACHABLE (confirmed reachable), STALE (unknown), DELAY (waiting), and PROBE (actively probing)."
+  },
+  {
+    "question": "How does a node confirm forward reachability in NUD?",
+    "options": [
+      "By checking DNS records",
+      "By receiving upper-layer protocol confirmation (e.g., TCP ACK)",
+      "By monitoring ARP tables",
+      "By sending ICMP Echo Requests"
+    ],
+    "correct": [1],
+    "explanation": "Forward reachability is confirmed through upper-layer protocols (like TCP acknowledgments) indicating successful two-way communication."
+  },
+  {
+    "question": "What happens when a node in STALE state needs to send packets to a neighbor?",
+    "options": [
+      "It stays in STALE state indefinitely",
+      "It immediately transitions to PROBE state",
+      "It transitions to DELAY state and sets a timer",
+      "It deletes the neighbor cache entry"
+    ],
+    "correct": [2],
+    "explanation": "When sending to a STALE neighbor, the entry moves to DELAY. If no reachability confirmation arrives within DELAY_FIRST_PROBE_TIME, it transitions to PROBE."
+  },
+  {
+    "question": "In the PROBE state, what does a node do to verify neighbor reachability?",
+    "options": [
+      "Sends multicast Router Solicitation messages",
+      "Broadcasts ARP requests",
+      "Sends unicast Neighbor Solicitation messages",
+      "Sends ICMP Echo Requests"
+    ],
+    "correct": [2],
+    "explanation": "In PROBE state, the node sends unicast Neighbor Solicitation messages directly to the cached link-layer address to verify reachability."
+  },
+  {
+    "question": "What information does a Router Advertisement provide for SLAAC?",
+    "options": [
+      "Complete IPv6 addresses",
+      "Prefix lifetime (valid and preferred)",
+      "On-link and autonomous flags",
+      "Network prefix and prefix length"
+    ],
+    "correct": [1, 2, 3],
+    "multipleCorrect": true,
+    "explanation": "Router Advertisements include prefix information with length, lifetimes, and flags. Nodes use this to generate their own complete addresses via SLAAC."
+  },
+  {
+    "question": "What is the difference between valid lifetime and preferred lifetime in SLAAC?",
+    "options": [
+      "Valid lifetime is how long an address can be used; preferred lifetime is how long it should be used for new connections",
+      "They are the same value",
+      "Valid is for unicast, preferred is for multicast",
+      "Valid is assigned by routers, preferred by hosts"
+    ],
+    "correct": [0],
+    "explanation": "Addresses remain valid for the valid lifetime but should only be used for new connections during the preferred lifetime. Deprecated addresses (preferred lifetime expired) can still receive traffic."
+  },
+  {
+    "question": "How does a host generate its interface identifier using EUI-64 format?",
+    "options": [
+      "Uses the MAC address directly without modification",
+      "Inserts FF:FE in the middle of the MAC address and flips the universal/local bit",
+      "Generates a random 64-bit number",
+      "Hashes the MAC address with SHA-256"
+    ],
+    "correct": [1],
+    "explanation": "EUI-64 takes a 48-bit MAC address, inserts FF:FE in the middle to create 64 bits, and inverts the 7th bit (universal/local bit) to create the interface ID."
+  },
+  {
+    "question": "What is the A flag in the Prefix Information option of Router Advertisements?",
+    "options": [
+      "Anycast address flag",
+      "Authentication required flag",
+      "Administrative preference flag",
+      "Autonomous address-configuration flag indicating SLAAC is allowed"
+    ],
+    "correct": [3],
+    "explanation": "The A (autonomous) flag indicates whether the prefix can be used for stateless address autoconfiguration (SLAAC)."
+  },
+  {
+    "question": "What is the L flag in the Prefix Information option?",
+    "options": [
+      "Link-local flag",
+      "Lifetime extension flag",
+      "On-link flag indicating addresses with this prefix are on the same link",
+      "Loopback flag"
+    ],
+    "correct": [2],
+    "explanation": "The L (on-link) flag indicates that addresses with this prefix are assigned to the link and can be reached directly without routing."
+  },
+  {
+    "question": "What security vulnerability exists with standard SLAAC?",
+    "options": [
+      "No authentication of Router Advertisements",
+      "Addresses are transmitted in cleartext",
+      "Rogue routers can advertise malicious prefixes",
+      "Interface identifiers based on MAC addresses enable tracking"
+    ],
+    "correct": [0, 2, 3],
+    "multipleCorrect": true,
+    "explanation": "SLAAC vulnerabilities include rogue RA attacks, privacy issues with MAC-based addresses, and lack of RA authentication without SEND."
+  },
+  {
+    "question": "How do Privacy Extensions (RFC 4941) improve SLAAC security?",
+    "options": [
+      "Use shorter addresses",
+      "Generate random, temporary interface identifiers instead of MAC-based ones",
+      "Require password authentication",
+      "Encrypt the IPv6 address"
+    ],
+    "correct": [1],
+    "explanation": "Privacy Extensions generate cryptographically random interface IDs that change periodically, preventing tracking based on stable MAC-derived identifiers."
+  },
+  {
+    "question": "What is the difference between temporary and stable addresses in Privacy Extensions?",
+    "options": [
+      "Stable addresses cannot send traffic",
+      "Temporary addresses change periodically for privacy; stable addresses remain constant",
+      "Temporary addresses are for IPv4, stable for IPv6",
+      "Temporary addresses are shorter"
+    ],
+    "correct": [1],
+    "explanation": "Privacy Extensions create both stable addresses (for servers/incoming connections) and temporary addresses (for outgoing connections that change regularly)."
+  },
+  {
+    "question": "How does SEND (Secure Neighbor Discovery) protect against NDP attacks?",
+    "options": [
+      "Encrypts all NDP traffic",
+      "Requires DHCP authentication",
+      "Validates NDP messages with digital certificates",
+      "Uses cryptographic signatures based on CGA"
+    ],
+    "correct": [2, 3],
+    "multipleCorrect": true,
+    "explanation": "SEND uses Cryptographically Generated Addresses (CGA) and RSA signatures to authenticate NDP messages, preventing spoofing and man-in-the-middle attacks."
+  },
+  {
+    "question": "What is the CGA modifier in Cryptographically Generated Addresses?",
+    "options": [
+      "A random encryption key",
+      "A timestamp for address expiration",
+      "The router's MAC address",
+      "A value used to make the first 16 bits of the hash match a security parameter"
+    ],
+    "correct": [3],
+    "explanation": "The CGA modifier is brute-forced to produce a hash where the leftmost Sec*16 bits are zero, making address forgery computationally expensive."
+  },
+  {
+    "question": "What are the components used to generate a CGA?",
+    "options": [
+      "IPv6 subnet prefix",
+      "CGA modifier",
+      "MAC address",
+      "Public key"
+    ],
+    "correct": [0, 1, 3],
+    "multipleCorrect": true,
+    "explanation": "CGAs are generated using the subnet prefix, modifier value, and the hash of the public key and other parameters, binding the address to the public key."
+  },
+  {
+    "question": "What attack does SEND's timestamp option help prevent?",
+    "options": [
+      "Replay attacks",
+      "Buffer overflow",
+      "SQL injection",
+      "Cross-site scripting"
+    ],
+    "correct": [0],
+    "explanation": "SEND includes timestamp options to detect and reject replayed NDP messages, ensuring freshness and preventing replay attacks."
+  },
+  {
+    "question": "What is the purpose of the Nonce option in SEND?",
+    "options": [
+      "To compress packet headers",
+      "To match solicitation messages with their responses",
+      "To calculate checksums",
+      "To encrypt NDP messages"
+    ],
+    "correct": [1],
+    "explanation": "The Nonce option ensures that advertisement messages correspond to specific solicitation messages, preventing off-path attacks."
+  },
+  {
+    "question": "How does SeND prevent address resolution attacks?",
+    "options": [
+      "By using only DHCPv6",
+      "By requiring proof of address ownership through CGA verification",
+      "By disabling autoconfiguration",
+      "By encrypting all traffic"
+    ],
+    "correct": [1],
+    "explanation": "With SEND, a node must prove ownership of an address by providing the CGA parameters and signing messages with the corresponding private key."
+  },
+  {
+    "question": "What is the RSA Signature option used for in SEND?",
+    "options": [
+      "To provide digital signature for NDP message authentication",
+      "To compress the packet",
+      "To encrypt the payload",
+      "To indicate routing preferences"
+    ],
+    "correct": [0],
+    "explanation": "The RSA Signature option contains a digital signature covering the NDP message, allowing recipients to verify the sender's identity and message integrity."
+  },
+  {
+    "question": "What happens if a node performing DAD receives a Neighbor Solicitation for the same tentative address?",
+    "options": [
+      "Both nodes have detected a duplicate and must not use the address",
+      "The router assigns a new address to both",
+      "The first node wins and keeps the address",
+      "Both nodes can use the address simultaneously"
+    ],
+    "correct": [0],
+    "explanation": "If both nodes are performing DAD for the same address simultaneously, both detect the conflict and neither should use the address."
+  },
+  {
+    "question": "What is Optimistic DAD (RFC 4429)?",
+    "options": [
+      "Performs DAD only for global addresses",
+      "Uses hardware-based duplicate detection",
+      "Allows using an address before DAD completes, with restrictions",
+      "Skips DAD entirely for faster configuration"
+    ],
+    "correct": [2],
+    "explanation": "Optimistic DAD allows limited use of an address (sending but not receiving) before DAD completes, reducing configuration delays while maintaining safety."
+  },
+  {
+    "question": "Which types of addresses require DAD to be performed?",
+    "options": [
+      "The unspecified address (::)",
+      "Anycast addresses",
+      "Unicast addresses",
+      "Multicast addresses"
+    ],
+    "correct": [1, 2],
+    "multipleCorrect": true,
+    "explanation": "DAD must be performed on all unicast and anycast addresses before use. Multicast addresses don't need DAD, and the unspecified address is never assigned."
+  },
+  {
+    "question": "What is the purpose of the Router Lifetime field in Router Advertisements?",
+    "options": [
+      "Specifies how long the router has been running",
+      "Determines prefix validity",
+      "Indicates how long the router should be used as a default router",
+      "Sets the TTL for packets"
+    ],
+    "correct": [2],
+    "explanation": "Router Lifetime tells hosts how long (in seconds) they should consider this router as a valid default router. A value of 0 means it should not be used as default."
+  },
+  {
+    "question": "What security risk does IPv6 address scanning face compared to IPv4?",
+    "options": [
+      "IPv6 addresses are encrypted by default",
+      "The huge address space makes brute-force scanning impractical",
+      "IPv6 doesn't allow port scanning",
+      "All IPv6 addresses are hidden from scanners"
+    ],
+    "correct": [1],
+    "explanation": "With 2^64 possible addresses per subnet, random scanning is computationally infeasible in IPv6, unlike IPv4's smaller address spaces."
   }
 ]
