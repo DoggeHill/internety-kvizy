@@ -1,0 +1,1294 @@
+[
+  {
+    "question": "A computer network is defined as a group of computers and devices interconnected by communication channels that primarily allow users to:",
+    "options": [
+      "Process data locally without interaction.",
+      "Share resources.",
+      "Establish physical hardware connections only.",
+      "Perform complex mathematical operations."
+    ],
+    "correct": 1,
+    "explanation": "A computer network allows users to share resources (hardware, files, data, and software)[cite: 4, 5]."
+  },
+  {
+    "question": "Which of the following are fundamental characteristics required of a computer network? (Select all that apply)",
+    "options": [
+      "Delivery to the correct destination",
+      "Accuracy of data delivery",
+      "Timeliness of data delivery",
+      "Unlimited throughput",
+      "Transparent internal structure"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "Fundamental characteristics are Delivery, Accuracy, and Timeliness[cite: 5]."
+  },
+  {
+    "question": "Which of the following are required features for a robust computer network? (Select all that apply)",
+    "options": [
+      "Centralized management",
+      "Fast convergence when adapting to a new state",
+      "Data flow control to avoid congestion",
+      "Fairness to all data flows (of the same priority)"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multipleCorrect": true,
+    "explanation": "Required features include decentralised management, fast convergence, data flow control, and fairness[cite: 6, 7]."
+  },
+  {
+    "question": "Which basic networking approach maintains a 'state' about the connection, simplifying QoS implementation, and is exemplified by the regular telephone system?",
+    "options": [
+      "Connection-less (Packet Switching)",
+      "Best-Effort Service",
+      "Connection-oriented (Circuit Switching)",
+      "The Internet Approach"
+    ],
+    "correct": 2,
+    "explanation": "Connection-oriented (Circuit Switching) networks maintain a state and information about the nature of the circuit, which makes QoS implementation easy[cite: 10]."
+  },
+  {
+    "question": "True or False: The Internet is an example of a connection-oriented network because a path is established before data transfer begins.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. The Internet uses packet switching (connection-less approach) and provides a best-effort service[cite: 10]."
+  },
+  {
+    "question": "In the context of network protocols, Semantics refers to:",
+    "options": [
+      "The format and order of data.",
+      "The meaning of each section of bits.",
+      "When data should be sent and how fast.",
+      "The specific channel coding used."
+    ],
+    "correct": 1,
+    "explanation": "Semantics refers to the meaning of each section of bits and how a particular pattern is interpreted[cite: 13]."
+  },
+  {
+    "question": "Which component of a network protocol defines the format and structure of the data?",
+    "options": [
+      "Timing",
+      "Semantics",
+      "Syntax",
+      "Action"
+    ],
+    "correct": 2,
+    "explanation": "Syntax defines the structure or format of the data and the order in which they are presented[cite: 13]."
+  },
+  {
+    "question": "Which of the following are main goals of network standardization? (Select all that apply)",
+    "options": [
+      "Compatibility",
+      "Interoperability",
+      "Portability",
+      "Vendor lock-in",
+      "Exhaustion of address space"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "Main goals of standardization include quality, portability, compatibility, security, and interoperability[cite: 14]."
+  },
+  {
+    "question": "True or False: A de facto standard is one legislated by an officially recognized body (e.g., IETF).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. De jure standards are legislated by an officially recognized body, while de facto standards are adopted through widespread use (e.g., by manufacturers)[cite: 14]."
+  },
+  {
+    "question": "True or False: In a layered network architecture, if a layer changes, the functionality isolation ensures that only the neighbouring layers have to adapt to the change.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. The functionality is isolated in a particular layer, so once a layer changes, just the neighboring layers have to adapt[cite: 16]."
+  },
+  {
+    "question": "The primary function of the Physical Layer (L1) is to:",
+    "options": [
+      "Encapsulate packets into frames.",
+      "Transform streams of bits into signals.",
+      "Resolve IP addresses to MAC addresses.",
+      "Ensure end-to-end communication reliability."
+    ],
+    "correct": 1,
+    "explanation": "The Physical Layer transforms the streams of bits (from frames) into signals spread through the transmission media[cite: 21]."
+  },
+  {
+    "question": "Which of the following services are provided by the Physical Layer (L1)? (Select all that apply)",
+    "options": [
+      "Bit-to-Signal Transformation",
+      "Flow Control",
+      "Multiplexing",
+      "Circuit Switching",
+      "Error Detection"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "multipleCorrect": true,
+    "explanation": "Services of the Physical Layer include Bit-to-Signal Transformation, Multiplexing, Bit-Rate Control, Bit Synchronization, and Circuit Switching[cite: 24]."
+  },
+  {
+    "question": "True or False: Packet switching is usually a function of the Physical Layer (L1).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Circuit switching is usually a function of the Physical Layer, while packet switching is an issue of the data link layer[cite: 24]."
+  },
+  {
+    "question": "Which transmission medium is classified as an unguided (wire-less) medium?",
+    "options": [
+      "Twisted pair",
+      "Optical fibre",
+      "Coaxial cable",
+      "Radio signals"
+    ],
+    "correct": 3,
+    "explanation": "Radio signals are a form of unguided (wire-less) media that transfer electromagnetic waves via ether[cite: 26]."
+  },
+  {
+    "question": "Which multiplexing technique is applied to analog signals for sharing bandwidth?",
+    "options": [
+      "Time-Division Multiplexing (TDM)",
+      "Frequency-Division Multiplexing (FDM)",
+      "Statistical Time-Division Multiplexing",
+      "Code-Division Multiple Access (CDMA)"
+    ],
+    "correct": 1,
+    "explanation": "Frequency-Division Multiplexing (FDM) and Wave-Division Multiplexing (WDM) are for analog signals[cite: 27]."
+  },
+  {
+    "question": "The Data Link Layer (L2) is responsible for ensuring the transmission of data between devices:",
+    "options": [
+      "Globally (across the WAN).",
+      "Locally (inside a LAN segment).",
+      "End-to-end (source to destination).",
+      "From Network Layer to Application Layer."
+    ],
+    "correct": 1,
+    "explanation": "The Data Link Layer ensures the transmission of frames between communicating devices locally (inside a segment)[cite: 29]."
+  },
+  {
+    "question": "What data unit is received by the Data Link Layer from the Network Layer and then transformed into frames?",
+    "options": [
+      "Segments",
+      "Datagrams",
+      "Bits",
+      "Packets"
+    ],
+    "correct": 3,
+    "explanation": "The Data Link Layer receives packets (from the Network Layer) and transforms them into frames[cite: 29]."
+  },
+  {
+    "question": "Which of the following are services provided by the Data Link Layer (L2)? (Select all that apply)",
+    "options": [
+      "Addressing using physical/MAC addresses",
+      "Error Control",
+      "Medium Access Control (MAC)",
+      "Logical Addressing (IP addresses)",
+      "Fragmenting"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "L2 services include Framing, Addressing (MAC addresses), Error Control, Flow Control, and Medium Access Control (MAC)[cite: 30]."
+  },
+  {
+    "question": "The concept of Forward Error Correction (FEC) is characterized by:",
+    "options": [
+      "Relying solely on retransmission requests.",
+      "Error detection and attempts to correct data using redundancy.",
+      "Only being suitable for little-lossy transmission media.",
+      "Relying on the Transport Layer for reliability."
+    ],
+    "correct": 1,
+    "explanation": "FEC ensures error detection and attempts to data correction using redundant data, making it suitable for lossy transmission media[cite: 31]."
+  },
+  {
+    "question": "True or False: Automatic Request for Retransmission (ARQ) is more suitable for lossy transmission media with high latency than Forward Error Correction (FEC).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. ARQ is suitable for little-lossy media, while FEC is suitable for lossy media (especially with high transmission latency)[cite: 31]."
+  },
+  {
+    "question": "The functionality responsible for coordination of multiple devices' access to shared transmission media to eliminate collisions is called:",
+    "options": [
+      "Framing.",
+      "Error Control.",
+      "Medium Access Control (MAC).",
+      "Flow Control."
+    ],
+    "correct": 2,
+    "explanation": "Medium Access Control (MAC) is responsible for coordination of multiple devices' access to shared transmission media[cite: 32]."
+  },
+  {
+    "question": "Which of the following are common L2 interconnection devices? (Select all that apply)",
+    "options": [
+      "Router",
+      "Bridge",
+      "Switch",
+      "Gateway",
+      "End Host"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "Common L2 interconnection devices are bridges and switches (a switch is a multi-port bridge)[cite: 33]."
+  },
+  {
+    "question": "The Backward Learning Algorithm is used by bridges/switches to:",
+    "options": [
+      "Calculate the shortest path between networks.",
+      "Learn the locations (MAC addresses) of network stations.",
+      "Determine the best path in a wireless network.",
+      "Prevent network loops."
+    ],
+    "correct": 1,
+    "explanation": "The Backward Learning Algorithm is where the bridge 'learns' the locations of network stations by listening on the media (observing source addresses)[cite: 34]."
+  },
+  {
+    "question": "What algorithm is used to prevent network loops (cycles) when interconnecting L2 networks with bridges/switches?",
+    "options": [
+      "Backward Learning Algorithm",
+      "Dijkstra's Algorithm",
+      "Distributed Spanning Tree Algorithm",
+      "BGP Protocol"
+    ],
+    "correct": 2,
+    "explanation": "The Distributed Spanning Tree Algorithm is used to calculate and prevent loops[cite: 34]."
+  },
+  {
+    "question": "What is the primary role of the Application Layer (L7)?",
+    "options": [
+      "Providing services to users and acting as the interface to the network.",
+      "Ensuring reliable, end-to-end data transfer.",
+      "Performing logical addressing and routing.",
+      "Transforming bits into signals."
+    ],
+    "correct": 0,
+    "explanation": "The Application Layer provides services to users and acts as an interface between users and the computer network[cite: 24]."
+  },
+  {
+    "question": "Which of the following are examples of Application Layer protocols mentioned in the slides? (Select all that apply)",
+    "options": [
+      "HTTP",
+      "TCP",
+      "DNS",
+      "RTP/RTCP",
+      "IP"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "multipleCorrect": true,
+    "explanation": "Examples of application protocols are DNS, HTTP, FTP, SMTP, and RTP/RTCP[cite: 24]."
+  },
+  {
+    "question": "True or False: The Network Layer's main function is to join independent LANs to create an internetwork (WAN).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. The Network Layer logically joins independent LANs to create an internetwork (WAN), providing the illusion of a single wide network[cite: 39]."
+  },
+  {
+    "question": "In the Network Layer (L3), the process of selecting paths to send traffic from source to destination is called:",
+    "options": [
+      "Encapsulation.",
+      "Fragmentation.",
+      "Routing.",
+      "Addressing."
+    ],
+    "correct": 2,
+    "explanation": "Routing is the process of selecting paths to send traffic from source to destination[cite: 39]."
+  },
+  {
+    "question": "True or False: Static routing automatically adapts to network topology changes, while dynamic routing must be manually configured.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Static routing is manually configured, while dynamic routing adapts to network topology changes[cite: 42]."
+  },
+  {
+    "question": "The Internet is divided into domains to simplify management and reduce routing overhead. These domains are known as:",
+    "options": [
+      "Link State Blocks (LSBs).",
+      "Autonomous Systems (ASs).",
+      "Subnets.",
+      "Routing Information Areas (RIAs)."
+    ],
+    "correct": 1,
+    "explanation": "The Internet is divided into domains called Autonomous Systems (ASs)[cite: 42]."
+  },
+  {
+    "question": "True or False: Interior Gateway Protocols (IGPs) are used for routing between Autonomous Systems (ASs).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Interior Routing protocols (IGPs, e.g., RIP, OSPF) are used inside an AS, while Exterior Routing protocols (EGPs, e.g., BGP) are used among ASs[cite: 42]."
+  },
+  {
+    "question": "Which of the following protocols uses the Distance Vector approach for routing?",
+    "options": [
+      "OSPF",
+      "IS-IS",
+      "BGP",
+      "RIP"
+    ],
+    "correct": 3,
+    "explanation": "RIP (Routing Information Protocol) is a distance vector routing protocol[cite: 43]."
+  },
+  {
+    "question": "Which of the following protocols is a common example of a Link State routing protocol?",
+    "options": [
+      "RIP",
+      "BGP",
+      "OSPF",
+      "EIGRP"
+    ],
+    "correct": 2,
+    "explanation": "OSPF (Open Shortest Path First) is a link state routing protocol[cite: 43]."
+  },
+  {
+    "question": "Which routing protocol is known for using the Path Vector approach, typically operating between ASes?",
+    "options": [
+      "OSPF",
+      "RIP",
+      "IGRP",
+      "BGP"
+    ],
+    "correct": 3,
+    "explanation": "BGP (Border Gateway Protocol) is a path vector routing protocol[cite: 43]."
+  },
+  {
+    "question": "What information is specifically sent by Path Vector protocols (like BGP) that helps detect loops and define routing policies?",
+    "options": [
+      "Only the link cost.",
+      "Only the next-hop router.",
+      "The whole path (list of ASes).",
+      "The full network topology map."
+    ],
+    "correct": 2,
+    "explanation": "Path Vector protocols send the whole paths (a list of ASes) to detect loops and define policies[cite: 43]."
+  },
+  {
+    "question": "A router must perform two fundamental tasks. What are they? (Select all that apply)",
+    "options": [
+      "IP Header Validation",
+      "Routing (path computation)",
+      "Packet Forwarding (moving the packet)",
+      "Address Resolution"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "The two fundamental tasks are routing (constructing the network view and path computation) and packet forwarding (moving the packet)[cite: 54]."
+  },
+  {
+    "question": "Where are the best paths computed by the routing process stored for use during the packet forwarding process?",
+    "options": [
+      "A cache memory",
+      "The L2 MAC table",
+      "The forwarding table",
+      "The routing protocol database"
+    ],
+    "correct": 2,
+    "explanation": "The best paths are stored in a data structure called a forwarding table[cite: 54]."
+  },
+  {
+    "question": "True or False: Packet Lifetime Control involves incrementing the TTL field in the IP header to ensure packets live longer in large networks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Packet Lifetime Control involves decrementing the TTL field to prevent packets from getting caught in routing loops forever[cite: 55]."
+  },
+  {
+    "question": "In large and dynamic networks, which mechanism is used to automatically distribute additional information about link capabilities (like bandwidth) needed for Traffic Engineering (TE)?",
+    "options": [
+      "Manual configuration by an administrator.",
+      "Extending IGP routing protocols (like OSPF/IS-IS).",
+      "Using the Traceroute tool.",
+      "DHCP and DNS."
+    ],
+    "correct": 1,
+    "explanation": "Extending the IGP routing protocols (OSPF and IS-IS) to distribute information like TE metric, max bandwidth, etc., is used for automatic discovery[cite: 61]."
+  },
+  {
+    "question": "The Multicommodity Shortest Path-Based Routing Flow (MCSPRF) optimization problem often seeks to optimize what objective?",
+    "options": [
+      "Maximize the cost of the path.",
+      "Minimize the maximum link utilization (load balancing).",
+      "Maximize the number of hops.",
+      "Minimize the total demand volume."
+    ],
+    "correct": 1,
+    "explanation": "The objective is to minimize the maximum link utilization (load balancing)[cite: 76]."
+  },
+  {
+    "question": "Which of the following are common metrics suitable for QoS-Based Routing? (Select all that apply)",
+    "options": [
+      "Available bandwidth",
+      "Delay",
+      "Jitter",
+      "TTL",
+      "MAC address"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "Suitable metrics for QoS-based routing include available bandwidth, delay, and jitter[cite: 81]."
+  },
+  {
+    "question": "To avoid a great burden on the network from constantly exchanging routing information with dynamic metrics, QoS-based routing commonly uses a technique based on:",
+    "options": [
+      "Exchanging information at fixed 30-second intervals.",
+      "Never exchanging information.",
+      "Setting a threshold to distinguish significant changes from minor changes in metrics.",
+      "Using only static routing."
+    ],
+    "correct": 2,
+    "explanation": "A common way is to set a threshold to distinguish significant changes in metrics from minor changes[cite: 83]."
+  },
+  {
+    "question": "True or False: Hierarchical routing is suitable for very large networks because of its scalability, despite decreased routing accuracy due to aggregation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. Hierarchical routing is suitable for large networks due to scalability, but aggregation decreases the accuracy of the routing state information[cite: 86, 87]."
+  },
+  {
+    "question": "PNNI (Private Network-Network Interface) is a hierarchical, dynamic routing protocol originally designed for what type of network?",
+    "options": [
+      "Ethernet LANs",
+      "ATM Networks",
+      "Wireless Sensor Networks (WSNs)",
+      "The public Internet"
+    ],
+    "correct": 1,
+    "explanation": "PNNI is a hierarchical, dynamic routing protocol for ATM networks[cite: 88]."
+  },
+  {
+    "question": "Regarding scalability, what is the main advantage of Peer-to-Peer (P2P) systems over Client-Server (C-S) systems?",
+    "options": [
+      "P2P is limited by fixed server hardware.",
+      "C-S is scalable by nature.",
+      "P2P is scalable by nature, as server capacity grows with the number of peers.",
+      "C-S is easier to manage."
+    ],
+    "correct": 2,
+    "explanation": "P2P is scalable by nature, since as the number of peers grows, so does the 'server' capacity[cite: 119, 120]."
+  },
+  {
+    "question": "True or False: Peer-to-Peer (P2P) systems typically involve simpler interaction patterns and are easier to develop than Client-Server (C-S) systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. C-S exhibits simple interaction patterns, while P2P involves more complex interaction patterns between peers[cite: 119]."
+  },
+  {
+    "question": "Which type of P2P system maintains scalability but uses selected, more powerful peer nodes as 'super peers' to assist with resource locating?",
+    "options": [
+      "Centralized P2P",
+      "Decentralized P2P (Unstructured)",
+      "Structured P2P (DHT-based)",
+      "Hybrid P2P"
+    ],
+    "correct": 3,
+    "explanation": "Hybrid P2P systems use more powerful nodes (super peers) to maintain scalability while improving resource locating[cite: 125]."
+  },
+  {
+    "question": "Which unstructured P2P routing strategy is similar to the k-walker Random Walk but initiates the search by randomly selecting a *subset* of neighbors to send the query to?",
+    "options": [
+      "Random Walk (1-walker)",
+      "Iterative Deepening",
+      "Random Breadth First Search (RBFS)",
+      "Adaptive Probabilistic Search (APS)"
+    ],
+    "correct": 2,
+    "explanation": "Random Breadth First Search (RBFS) is similar to k-walker Random Walk, where the initiator randomly selects a subset of neighbors to send the query to[cite: 136]."
+  },
+  {
+    "question": "The Adaptive Probabilistic Search (APS) strategy primarily differs from random walkers by:",
+    "options": [
+      "Sending the query to all neighbors.",
+      "Sending the query to neighbor nodes based on learned probabilities.",
+      "Limiting the search depth to one hop.",
+      "Using a central index server."
+    ],
+    "correct": 1,
+    "explanation": "APS sends the query to neighbor nodes based on some probabilities (determined from past results), unlike random walkers that send to random neighbors[cite: 137]."
+  },
+  {
+    "question": "What mechanism is used in Structured P2P systems like Chord and CAN to map both nodes and data items to a single-dimensional identifier space?",
+    "options": [
+      "IP Address Resolution",
+      "Virtual Ring Addressing",
+      "One-way Consistent Hash Function",
+      "Global Index Server"
+    ],
+    "correct": 2,
+    "explanation": "Structured P2P systems (like Chord) use a one-way consistent hash function to map nodes and data items to an m-bit identifier[cite: 142]."
+  },
+  {
+    "question": "What happens when a new node joins a Content Addressable Network (CAN) system?",
+    "options": [
+      "It transfers all its data to the nearest neighbor.",
+      "It asks an existing node to split its maintenance zone into two parts.",
+      "It calculates a new global hash table for the entire network.",
+      "It waits for a super peer to assign it a zone."
+    ],
+    "correct": 1,
+    "explanation": "When a new node joins, it asks an existing node to split the zone into two parts[cite: 152]."
+  },
+  {
+    "question": "What data structure is used in systems like SkipNet, featuring a hierarchy of linked lists where higher layers act as 'express lanes' for faster searching?",
+    "options": [
+      "Hash Table",
+      "B+-Tree",
+      "Skip List",
+      "Routing Table"
+    ],
+    "correct": 2,
+    "explanation": "SkipNet uses a Skip List structure, which is a hierarchy of linked lists where higher layers are increasingly sparse subsequences[cite: 161]."
+  },
+  {
+    "question": "In a Skip List structure with $n$ elements, what is the expected search cost complexity?",
+    "options": [
+      "O(1)",
+      "O($n$)",
+      "O($n^2$)",
+      "O(log $n$)"
+    ],
+    "correct": 3,
+    "explanation": "The expected cost of a search is O(log $n$)[cite: 163]."
+  },
+  {
+    "question": "The P-Grid P2P system is based on a virtual binary tree structure where each peer's responsibility for data is based on its key's prefix matching the peer's:",
+    "options": [
+      "IP address",
+      "MAC address",
+      "Binary Identifier",
+      "Randomly generated number"
+    ],
+    "correct": 2,
+    "explanation": "Each peer is assigned a binary bit string identifier and is responsible for data items whose prefix matches that identifier[cite: 180]."
+  },
+  {
+    "question": "The lookup performance in the P-Grid system is bounded by the height of the tree. What is the complexity?",
+    "options": [
+      "O($N$)",
+      "O(log $N$)",
+      "O($N \\times \\log N$)",
+      "O(1)"
+    ],
+    "correct": 1,
+    "explanation": "The maximum number of search steps is bounded by the height of the tree, giving a lookup performance of O(log_2)[cite: 183]."
+  },
+  {
+    "question": "The primary driver for the proposal of IPv6 was the:",
+    "options": [
+      "Need for better security features.",
+      "Weak support for real-time applications.",
+      "Relatively fast exhaustion of IPv4 address space.",
+      "Lack of mobility support."
+    ],
+    "correct": 2,
+    "explanation": "The master pulse for a new protocol proposal was the relatively fast exhaustion of IPv4 address space[cite: 1737]."
+  },
+  {
+    "question": "Which of the following issues in IPv4 did IPv6 aim to address? (Select all that apply)",
+    "options": [
+      "No support of communication security",
+      "No mobility support",
+      "No devices' autoconfiguration support",
+      "Limited address space"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "multipleCorrect": true,
+    "explanation": "IPv4 was noted for weak support of real-time applications, no support for security/autoconfiguration/mobility, and address space exhaustion[cite: 1737, 1740, 1741, 1742, 1748]."
+  },
+  {
+    "question": "What is the size of an IPv6 address in bits?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
+    "correct": 2,
+    "explanation": "An IPv6 address has 128 bits, or 16 bytes[cite: 1552]."
+  },
+  {
+    "question": "True or False: The basic IPv6 header is a fixed 40-byte header that is guaranteed to be smaller than any IPv4 header.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. The basic IPv6 header is a fixed size of 40 bytes[cite: 1551]."
+  },
+  {
+    "question": "Which of the following fields were *removed* from the basic IPv6 header and either eliminated or moved to Extension Headers? (Select all that apply)",
+    "options": [
+      "Source Address",
+      "Fragmentation Information",
+      "Checksum",
+      "Options"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "multipleCorrect": true,
+    "explanation": "The Checksum was removed entirely, while Fragmentation Information and Options were moved to Extension Headers[cite: 1551]."
+  },
+  {
+    "question": "What is the purpose of the Next Header field in the basic IPv6 header?",
+    "options": [
+      "It indicates the protocol used at the Transport Layer.",
+      "It indicates the presence of a fragmentation header.",
+      "It indicates the type of header immediately following the basic IPv6 header.",
+      "It indicates the total number of extension headers."
+    ],
+    "correct": 2,
+    "explanation": "The Next Header field indicates the type of header immediately following the basic IPv6 header, which could be another extension header or the upper layer protocol header[cite: 1552]."
+  },
+  {
+    "question": "True or False: An IPv6 address can use the \"::\" abbreviation multiple times to replace consecutive groups of zeros to achieve maximum compression.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Only a single group of consecutive zeros may be replaced by \"::\"[cite: 1554]."
+  },
+  {
+    "question": "The basic structure of a unicast IPv6 address typically reserves how many bits for the Global Routing Prefix and the Subnet Address combined?",
+    "options": [
+      "32 bits",
+      "48 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "correct": 2,
+    "explanation": "The global routing prefix and subnetwork address (usually 16 bits long) combined typically make up the first 64 bits of the address[cite: 1555]."
+  },
+  {
+    "question": "Which IPv6 address type identifies a group of devices but delivers data only to the *closest* member of the group?",
+    "options": [
+      "Unicast",
+      "Multicast",
+      "Broadcast",
+      "Anycast"
+    ],
+    "correct": 3,
+    "explanation": "Anycast addresses identify a group but data is delivered just to a single member (the 'closest' one)[cite: 29]."
+  },
+  {
+    "question": "In IPv6, the functionality of the IPv4 Broadcast address is replaced by which type of address?",
+    "options": [
+      "Unicast",
+      "Anycast",
+      "Special Multicast addresses",
+      "Link-local addresses"
+    ],
+    "correct": 2,
+    "explanation": "IPv4 broadcast addresses are not used and are replaced by special multicast addresses (e.g., FF02::1 - all nodes on the LAN)[cite: 29]."
+  },
+  {
+    "question": "True or False: In IPv6, intermediate routers are allowed to fragment a datagram if it exceeds the link's MTU.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. In IPv6, only the source devices must decide the correct size, as routers are not allowed to fragment datagrams[cite: 30]."
+  },
+  {
+    "question": "If an IPv6 router receives a datagram larger than the next link's MTU, what message must it send back to the source to initiate Path MTU Discovery?",
+    "options": [
+      "ICMPv4 Destination Unreachable",
+      "ICMPv6 Parameter Problem",
+      "ICMPv6 Packet Too Big",
+      "TCP Reset"
+    ],
+    "correct": 2,
+    "explanation": "The router must drop the packet and send back an ICMPv6 Packet Too Big message[cite: 30]."
+  },
+  {
+    "question": "The Neighbor Discovery Protocol (NDP) in IPv6 primarily replaces the functionality of which IPv4 protocol?",
+    "options": [
+      "DNS",
+      "ARP",
+      "DHCP",
+      "ICMP"
+    ],
+    "correct": 1,
+    "explanation": "NDP is the mechanism that replaces IPv4's ARP (Address Resolution Protocol)[cite: 36]."
+  },
+  {
+    "question": "Which of the following functions are provided by the Neighbor Discovery Protocol (NDP)? (Select all that apply)",
+    "options": [
+      "L2 address resolution",
+      "Duplicate Address Detection (DAD)",
+      "Neighbor Unreachability Detection (NUD)",
+      "IP address fragmentation"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "NDP provides L2 address resolution, Duplicate Address Detection (DAD), and Neighbor Unreachability Detection (NUD)[cite: 36]."
+  },
+  {
+    "question": "True or False: Duplicate Address Detection (DAD) is a process used by a host to ensure its newly configured IP address is unique on the link.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. DAD is used for checking if a tentative address is already in use by another node on the link[cite: 36]."
+  },
+  {
+    "question": "Neighbor Unreachability Detection (NUD) is the process used by a node to:",
+    "options": [
+      "Discover the L2 address of a new neighbor.",
+      "Determine if a neighbor on the link is still reachable.",
+      "Set its gateway router address.",
+      "Perform address autoconfiguration."
+    ],
+    "correct": 1,
+    "explanation": "NUD is used to track the reachability of a neighbor[cite: 36]."
+  },
+  {
+    "question": "In IPv6 Stateless Autoconfiguration, what does a host often use to generate the 64-bit Interface Identifier (IID)?",
+    "options": [
+      "A random number or a derived ID.",
+      "A server-provided key.",
+      "Its router's IP address.",
+      "The EUI-48 format."
+    ],
+    "correct": 0,
+    "explanation": "The Interface Identifier (IID) is often generated using the EUI-64 format derived from the MAC address, or a randomly chosen ID, in stateless autoconfiguration[cite: 40]."
+  },
+  {
+    "question": "Which protocol is used in IPv6 to obtain configuration parameters (like DNS server addresses) in a stateful way, or to provide stateful address allocation?",
+    "options": [
+      "ARP",
+      "NDP",
+      "DHCPv6",
+      "ICMPv6"
+    ],
+    "correct": 2,
+    "explanation": "DHCPv6 is used for stateful address allocation or for obtaining additional configuration parameters (like DNS server addresses)[cite: 40]."
+  },
+  {
+    "question": "In Mobile IPv6, the address that identifies the mobile node regardless of its current location is the:",
+    "options": [
+      "Care-of Address (CoA)",
+      "Home Address (HoA)",
+      "Correspondent Address (CNA)",
+      "Foreign Address (FoA)"
+    ],
+    "correct": 1,
+    "explanation": "The Home Address (HoA) identifies the mobile node, regardless of its current location[cite: 49]."
+  },
+  {
+    "question": "When a Mobile Node (MN) is on a foreign link, traffic destined for its Home Address is intercepted and tunneled by the:",
+    "options": [
+      "Foreign Agent (FA)",
+      "Correspondent Node (CN)",
+      "Home Agent (HA)",
+      "Local Router"
+    ],
+    "correct": 2,
+    "explanation": "The Home Agent (HA) intercepts packets destined for the MN's HoA and tunnels them to the MN's Care-of Address (CoA)[cite: 49]."
+  },
+  {
+    "question": "True or False: Route Optimization in Mobile IPv6 requires the Mobile Node (MN) to tunnel all its packets through its Home Agent (HA) for all communication.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "explanation": "False. Route Optimization allows the Mobile Node to communicate directly with the Correspondent Node (CN), bypassing the Home Agent tunnel[cite: 52]."
+  },
+  {
+    "question": "What security procedure must be successfully performed before Route Optimization can be used between a Mobile Node (MN) and a Correspondent Node (CN)?",
+    "options": [
+      "Duplicate Address Detection (DAD)",
+      "Path MTU Discovery",
+      "Return Routability (RR) Procedure",
+      "Neighbor Discovery Protocol (NDP)"
+    ],
+    "correct": 2,
+    "explanation": "The Return Routability (RR) Procedure must be completed to authorize the registration of the Care-of Address (CoA) with the Correspondent Node (CN)[cite: 52]."
+  },
+  {
+    "question": "What is the IPSec component whose *primary* role is encryption (confidentiality)?",
+    "options": [
+      "Authentication Header (AH)",
+      "Encapsulating Security Payload (ESP)",
+      "Key Exchange Protocol (KEP)",
+      "Internet Key Exchange (IKE)"
+    ],
+    "correct": 1,
+    "explanation": "The Encapsulating Security Payload (ESP) is the component that provides encryption (confidentiality)[cite: 57]."
+  },
+  {
+    "question": "Which IPSec component provides authentication and integrity verification for the datagram, but *not* confidentiality (encryption)?",
+    "options": [
+      "Encapsulating Security Payload (ESP)",
+      "Authentication Header (AH)",
+      "Internet Key Exchange (IKE)",
+      "Security Association (SA)"
+    ],
+    "correct": 1,
+    "explanation": "The Authentication Header (AH) provides authentication and integrity verification[cite: 57]."
+  },
+  {
+    "question": "In IPv6, which 20-bit field in the basic header is designed to enable the classification of packets belonging to a specific sequence of related packets (a flow)?",
+    "options": [
+      "Traffic Class",
+      "Hop Limit",
+      "Payload Length",
+      "Flow Label"
+    ],
+    "correct": 3,
+    "explanation": "The Flow Label is a 20-bit field that enables the classification of packets belonging to a specific flow[cite: 38]."
+  },
+  {
+    "question": "In IPv6, the classification of a flow can be efficiently achieved using a triple of fields. What are these fields?",
+    "options": [
+      "Flow Label, Traffic Class, and Hop Limit",
+      "Source Address, Destination Address, and Hop Limit",
+      "Flow Label, Source Address, and Destination Address",
+      "Flow Label, Source Port, and Destination Port"
+    ],
+    "correct": 2,
+    "explanation": "IPv6 flow classification can be efficiently achieved using the triple of the Flow Label and the Source and Destination Address fields[cite: 41]."
+  },
+  {
+    "question": "True or False: A Flow Label value of zero is used to indicate packets that are not part of any defined flow.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. A Flow Label of zero is used to indicate packets not being part of any flow[cite: 42]."
+  },
+  {
+    "question": "Which IPv6 transition mechanism involves encapsulating IPv6 packets inside an IPv4 header for transport across an IPv4-only network?",
+    "options": [
+      "Translation (NAT-PT)",
+      "Dual Stack",
+      "Tunnelling",
+      "Header Modification"
+    ],
+    "correct": 2,
+    "explanation": "Tunnelling is the technique that encapsulates IPv6 packets inside IPv4 packets[cite: 74]."
+  },
+  {
+    "question": "What transition mechanism involves running both IPv4 and IPv6 protocols simultaneously on hosts and routers?",
+    "options": [
+      "Tunnelling",
+      "Dual Stack",
+      "NAT-PT",
+      "Hybrid Approach"
+    ],
+    "correct": 1,
+    "explanation": "Dual Stack involves running both IPv4 and IPv6 protocols simultaneously on hosts and routers[cite: 76]."
+  },
+  {
+    "question": "Which IPv6 transition mechanism involves a stateful device (like NAT-PT) that translates between the IPv4 and IPv6 header formats?",
+    "options": [
+      "Tunnelling",
+      "Dual Stack",
+      "Translation (Translators/NAT-PT)",
+      "Routing Optimization"
+    ],
+    "correct": 2,
+    "explanation": "Translators (NAT-PT) are used for translation between IPv4 and IPv6 header formats[cite: 89]."
+  },
+  {
+    "question": "Which of the following are listed as drawbacks of using a Translation mechanism (NAT-PT)? (Select all that apply)",
+    "options": [
+      "Does not support advanced IPv6 features (like end-to-end security)",
+      "NAT router is a single point of failure",
+      "Poses limitations on the design topology (requires replies through the same router)",
+      "It is the only technique that supports end-to-end security"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "multipleCorrect": true,
+    "explanation": "Disadvantages include no support for advanced features (e.g., end-to-end security), being a single point of failure, and posing limitations on topology[cite: 90]."
+  },
+  {
+    "question": "What are the two components of the TCP/IP model that correspond to the three top layers (Session, Presentation, Application) of the ISO/OSI model?",
+    "options": [
+      "Internet and Transport Layers",
+      "Physical and Data Link Layers",
+      "Transport and Application Layers",
+      "Only the Application Layer"
+    ],
+    "correct": 3,
+    "explanation": "The top three layers of the ISO/OSI model (Session, Presentation, Application) are generally mapped to the single Application Layer in the 5-layer TCP/IP model[cite: 18]."
+  },
+  {
+    "question": "True or False: Real networks, unlike ideal networks, sometimes experience variable delay/latency and jitter.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. Real networks are characterized by variable delay/latency and jitter, whereas ideal networks have none[cite: 6]."
+  },
+  {
+    "question": "In a connection-less network approach (packet switching), what is the key drawback regarding Quality of Service (QoS)?",
+    "options": [
+      "It is easily and automatically implemented.",
+      "It is very hard to implement (resulting in a best-effort service).",
+      "It is managed by a centralized server.",
+      "It is not required since throughput is unlimited."
+    ],
+    "correct": 1,
+    "explanation": "In connection-less networks, the implementation of QoS is very hard, often resulting in a best-effort service[cite: 10]."
+  },
+  {
+    "question": "The Physical Layer (L1) service of Multiplexing aims to:",
+    "options": [
+      "Ensure reliable data transfer.",
+      "Divide a physical link into logical channels for better efficiency.",
+      "Synchronize the clock between sender and receiver.",
+      "Convert analog signals to digital data."
+    ],
+    "correct": 1,
+    "explanation": "Multiplexing is the process of dividing a link (physical medium) into logical channels for better efficiency[cite: 24]."
+  },
+  {
+    "question": "Which error control mechanism is suitable for little-lossy transmission media, relying on a request for retransmission when an error is detected?",
+    "options": [
+      "Hamming code (FEC)",
+      "Cyclic Redundancy Check (CRC) with ARQ",
+      "Bit-to-Signal Transformation",
+      "Wavelength Division Multiplexing (WDM)"
+    ],
+    "correct": 1,
+    "explanation": "Error Detection, Automatic Request for Retransmission (ARQ) is suitable for little-lossy media and uses mechanisms like CRC[cite: 31]."
+  },
+  {
+    "question": "Which MAC protocol is an example of a random-access protocol?",
+    "options": [
+      "Token Ring",
+      "CSMA/CD",
+      "TDMA",
+      "Polling"
+    ],
+    "correct": 1,
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access/Collision Detection) is listed as a random-access protocol, along with Aloha and CSMA/CA[cite: 32]."
+  },
+  {
+    "question": "The problem with large L2 networks that prevents them from being suitable for very large-scale systems is:",
+    "options": [
+      "Low bandwidth capacity of switches.",
+      "The switch tables grow with the number of stations, leading to low convergence.",
+      "Lack of MAC address availability.",
+      "Inability to handle frames larger than the MTU."
+    ],
+    "correct": 1,
+    "explanation": "L2 networks are not suitable for large networks because switch tables grow with the number of stations, leading to low convergence[cite: 34]."
+  },
+  {
+    "question": "Which interior routing protocol (IGP) uses the Link State approach?",
+    "options": [
+      "RIP",
+      "BGP",
+      "OSPF",
+      "EIGRP"
+    ],
+    "correct": 2,
+    "explanation": "OSPF (Open Shortest Path First) is a Link State routing protocol[cite: 43]."
+  },
+  {
+    "question": "The performance of which fundamental router function determines the overall performance of the router?",
+    "options": [
+      "The routing process (path computation).",
+      "The packet forwarding process (moving a packet).",
+      "The IP Header Validation process.",
+      "Checksum Recalculation."
+    ],
+    "correct": 1,
+    "explanation": "The performance of the packet forwarding process determines the overall performance of the router[cite: 54]."
+  },
+  {
+    "question": "Why is the IP Header Checksum field removed from the basic IPv6 header?",
+    "options": [
+      "It is moved to an Extension Header.",
+      "It is ensured on L2 and L4 (by CRC and TCP/UDP checksums).",
+      "It is no longer necessary in modern networks.",
+      "It is a variable-length field."
+    ],
+    "correct": 1,
+    "explanation": "The checksum was removed at all (it's ensured on L2 and L4)[cite: 1551]."
+  },
+  {
+    "question": "What is a disadvantage of using the Hybrid P2P system architecture?",
+    "options": [
+      "It cannot scale to a large number of nodes.",
+      "It loses the quick and reliable resource locating of centralized P2P.",
+      "It still relies on complex decentralized search techniques.",
+      "The use of 'super peers' may create single points of trust or potential bottlenecks."
+    ],
+    "correct": 3,
+    "explanation": "The hybrid system aims to avoid the scalability limitation of centralized P2P, but the reliance on a subset of 'super peers' for locating resources makes those powerful peers a critical part of the system[cite: 125]."
+  },
+  {
+    "question": "In IPv6 Stateless Autoconfiguration, what is the size of the Network Prefix provided by the router via a Router Advertisement (RA)?",
+    "options": [
+      "32 bits",
+      "48 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "correct": 2,
+    "explanation": "The host combines the Network Prefix received from a Router Advertisement with its 64-bit Interface Identifier[cite: 40]."
+  },
+  {
+    "question": "Which IPv6 extension header is one of the mandatory headers that must be examined by *every* hop on the path?",
+    "options": [
+      "Fragment Header",
+      "Routing Header",
+      "Encapsulating Security Payload Header (ESP)",
+      "Hop-by-Hop Options Header"
+    ],
+    "correct": 3,
+    "explanation": "The Hop-by-Hop Options extension header must be processed by every hop on the path[cite: 1552]."
+  },
+  {
+    "question": "True or False: In Mobile IPv6, the Return Routability Procedure is a mandatory security check.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. The Return Routability Procedure is required to authorize the registration of the Care-of Address (CoA) for Route Optimization[cite: 52]."
+  },
+  {
+    "question": "When a network administrator manually configures routing paths that do not adapt to network topology changes, this is known as:",
+    "options": [
+      "Dynamic routing",
+      "Link State routing",
+      "Static routing",
+      "Path Vector routing"
+    ],
+    "correct": 2,
+    "explanation": "Static routing is manually configured, while dynamic routing adapts to network changes[cite: 42]."
+  },
+  {
+    "question": "What is the primary drawback of using Hierarchical Routing in large networks?",
+    "options": [
+      "It completely eliminates the need for IGPs.",
+      "It introduces too much routing overhead at the local level.",
+      "Aggregation of information decreases the accuracy of the routing state.",
+      "It is not scalable for very large networks."
+    ],
+    "correct": 2,
+    "explanation": "The drawback of hierarchical routing is that aggregation decreases the accuracy of the routing state information[cite: 86]."
+  },
+  {
+    "question": "What happens if an IPv6 router receives a datagram with the Hop Limit field set to zero or a negative value?",
+    "options": [
+      "It forwards the packet to the destination and ignores the field.",
+      "It discards the packet and sends an ICMP message to the sender.",
+      "It automatically fragments the packet to reduce its size.",
+      "It increments the Hop Limit and forwards the packet."
+    ],
+    "correct": 1,
+    "explanation": "If the TTL (Hop Limit in IPv6) is zero or negative, the packet is discarded and an ICMP message is generated and sent to the original sender[cite: 55, 56]."
+  },
+  {
+    "question": "True or False: Both OSPF and IS-IS have been extended to distribute Traffic Engineering (TE) information such as maximum and unreserved bandwidth for links.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. Both OSPF and IS-IS have been extended to provide additional information about links for TE purposes[cite: 61]."
+  },
+  {
+    "question": "What term is used for the network design strategy aimed at minimizing the maximum link utilization (load balancing) by determining optimal link weights for given traffic demand?",
+    "options": [
+      "Autonomous System Routing",
+      "The Shortest Path First Algorithm",
+      "The Multicommodity Shortest Path-Based Routing Flow (MCSPRF) optimization problem",
+      "QoS-Based Routing"
+    ],
+    "correct": 2,
+    "explanation": "The Multicommodity shortest path-based routing flow (MCSPRF) optimization problem aims to minimize the maximum link utilization[cite: 76]."
+  },
+  {
+    "question": "Which term describes the process of transforming streams of bits from L2 frames into electromagnetic energy signals that spread through the transmission media?",
+    "options": [
+      "Framing",
+      "Packetizing",
+      "Bit-to-Signal Transformation",
+      "Multiplexing"
+    ],
+    "correct": 2,
+    "explanation": "The Physical Layer performs Bit-to-Signal Transformation, representing bits by a signal that can propagate through the medium[cite: 24]."
+  },
+  {
+    "question": "In the TCP/IP Hourglass Model, which layer forms the 'waist' of the hourglass?",
+    "options": [
+      "Application Layer",
+      "Transport Layer (TCP/UDP)",
+      "Internet Layer (IP)",
+      "Physical Layer"
+    ],
+    "correct": 2,
+    "explanation": "The Internet Protocol (IP) forms the narrowest, central part, or 'waist,' of the TCP/IP hourglass model[cite: 19]."
+  },
+  {
+    "question": "What is the key difference between Tunnelling and Translation (NAT-PT) as IPv6 transition mechanisms?",
+    "options": [
+      "Tunnelling works only on routers; Translation works only on hosts.",
+      "Tunnelling encapsulates packets; Translation modifies the header format and address fields.",
+      "Tunnelling is stateful; Translation is stateless.",
+      "Tunnelling is used for IPv4-to-IPv6; Translation is for IPv6-to-IPv4."
+    ],
+    "correct": 1,
+    "explanation": "Tunnelling encapsulates IPv6 packets in IPv4 headers for transport across the IPv4 network[cite: 74]. Translation (NAT-PT) is a stateful device that translates between the IPv4 and IPv6 header formats[cite: 89]."
+  },
+  {
+    "question": "True or False: The P-Tree P2P system is based on a virtual balanced B+-Tree built on top of a Chord ring to ensure better tree structure balance than P-Grid.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. P-Tree is based on a virtual balanced B+-Tree built on top of a Chord ring to address the balance issues of P-Grid[cite: 184]."
+  },
+  {
+    "question": "When a network flow is labeled in IPv6, what value is used in the Flow Label field to indicate that the packet does *not* require any flow-specific treatment?",
+    "options": [
+      "The highest possible 20-bit value.",
+      "A Flow Label of zero.",
+      "A Flow Label of one.",
+      "The value of the Traffic Class field."
+    ],
+    "correct": 1,
+    "explanation": "A Flow Label of zero is used to indicate packets not being part of any flow[cite: 42]."
+  },
+  {
+    "question": "What is the complexity of searching for a target element in a Skip List structure of size $n$?",
+    "options": [
+      "O($n^2$)",
+      "O(1)",
+      "O(log $n$)",
+      "O($n$)"
+    ],
+    "correct": 2,
+    "explanation": "The expected cost of a search in a Skip List is O(log $n$)[cite: 163]."
+  },
+  {
+    "question": "Which IPv6 extension header must be processed only at the destination node?",
+    "options": [
+      "Hop-by-Hop Options Header",
+      "Routing Header",
+      "Fragment Header",
+      "Destination Options Header"
+    ],
+    "correct": 3,
+    "explanation": "The Destination Options Header is only examined at the destination node[cite: 1552]."
+  },
+  {
+    "question": "In IPv6, what is used to provide support for real-time transmissions?",
+    "options": [
+      "Checksum Recalculation",
+      "Strict Path MTU Discovery",
+      "Streams' tagging and priorities",
+      "Unicast Address Abbreviation"
+    ],
+    "correct": 2,
+    "explanation": "IPv6 provides support for real-time transmissions through streams' tagging and priorities[cite: 1749]."
+  },
+  {
+    "question": "The purpose of Error Control in the Data Link Layer (L2) is to:",
+    "options": [
+      "Prevent receiver congestion.",
+      "Ensure the required level of reliability of the data link.",
+      "Coordinate multiple device access to shared media.",
+      "Transform packets into frames."
+    ],
+    "correct": 1,
+    "explanation": "The L2 layer ensures the required level of reliability of the data link (error detection and correction)[cite: 30]."
+  },
+  {
+    "question": "True or False: Data transfer in unguided (wire-less) media, such as radio signals, is typically achieved by broadcasting electromagnetic waves via ether.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "explanation": "True. Unguided media transfer an electromagnetic wave without a physical conductor, and signals are broadcasted via ether (air)[cite: 26]."
+  }
+]
