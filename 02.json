@@ -2,10 +2,10 @@
   {
     "question": "Which of the following statements correctly describe the main advantages of IPv6 over IPv4?",
     "options": [
-      "IPv6 has a simplified header for faster processing.",
-      "IPv6 mandates NAT for address conservation.",
       "IPv6 natively supports multicast and anycast.",
-      "IPv6 includes IPsec as a fundamental protocol feature."
+      "IPv6 mandates NAT for address conservation.",
+      "IPv6 includes IPsec as a fundamental protocol feature.",
+      "IPv6 has a simplified header for faster processing."
     ],
     "correct": [0, 2, 3],
     "multipleCorrect": true,
@@ -108,663 +108,561 @@
     "explanation": "Mobile IPv6 introduces home and care-of addresses allowing seamless handovers without breaking ongoing connections."
   },
   {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "question": "What is the size of an IPv6 address?",
     "options": [
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 reduces the need for routing tables."
+      "32 bits",
+      "256 bits",
+      "128 bits",
+      "64 bits"
     ],
     "correct": [2],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "IPv6 addresses are 128 bits long, compared to IPv4's 32 bits, providing approximately 3.4×10^38 unique addresses."
   },
   {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
+    "question": "Which IPv6 address type is used for one-to-nearest communication?",
     "options": [
-      "NDP replaces physical signaling mechanisms.",
-      "NDP handles link-layer encryption directly.",
-      "NDP reduces the need for routing tables.",
-      "NDP improves scalability and interoperability."
+      "Broadcast",
+      "Unicast",
+      "Multicast",
+      "Anycast"
     ],
     "correct": [3],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "Anycast addresses allow packets to be routed to the nearest node in a group. IPv6 does not support broadcast; it uses multicast instead."
   },
   {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
+    "question": "What is the IPv6 loopback address?",
     "options": [
-      "Routing reduces the need for routing tables.",
-      "Routing improves scalability and interoperability.",
-      "Routing replaces physical signaling mechanisms.",
-      "Routing handles link-layer encryption directly."
-    ],
-    "correct": [1],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms.",
-      "Autoconfiguration reduces the need for routing tables."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
-      "Transition replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility reduces the need for routing tables.",
-      "Mobility improves scalability and interoperability.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility handles link-layer encryption directly."
-    ],
-    "correct": [1],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS reduces the need for routing tables.",
-      "QoS replaces physical signaling mechanisms.",
-      "QoS handles link-layer encryption directly.",
-      "QoS improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header reduces the need for routing tables."
-    ],
-    "correct": [1],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP improves scalability and interoperability.",
-      "NDP reduces the need for routing tables.",
-      "NDP handles link-layer encryption directly.",
-      "NDP replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing improves scalability and interoperability.",
-      "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration replaces physical signaling mechanisms.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
-      "Transition replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility improves scalability and interoperability.",
-      "Mobility handles link-layer encryption directly.",
-      "Mobility reduces the need for routing tables."
-    ],
-    "correct": [1],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS reduces the need for routing tables.",
-      "QoS handles link-layer encryption directly.",
-      "QoS improves scalability and interoperability.",
-      "QoS replaces physical signaling mechanisms."
+      "0:0:0:0:0:0:0:1",
+      "127.0.0.1",
+      "Both ::1 and 0:0:0:0:0:0:0:1",
+      "::1"
     ],
     "correct": [2],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "The IPv6 loopback address is ::1 (compressed form) or 0:0:0:0:0:0:0:1 (full form), equivalent to 127.0.0.1 in IPv4."
   },
   {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "question": "Which ICMPv6 message type is used when a router cannot forward a packet?",
     "options": [
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP replaces physical signaling mechanisms.",
-      "NDP handles link-layer encryption directly.",
-      "NDP reduces the need for routing tables.",
-      "NDP improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing handles link-layer encryption directly.",
-      "Routing reduces the need for routing tables.",
-      "Routing replaces physical signaling mechanisms.",
-      "Routing improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition replaces physical signaling mechanisms.",
-      "Transition handles link-layer encryption directly.",
-      "Transition reduces the need for routing tables.",
-      "Transition improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility improves scalability and interoperability.",
-      "Mobility reduces the need for routing tables.",
-      "Mobility handles link-layer encryption directly.",
-      "Mobility replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS replaces physical signaling mechanisms.",
-      "QoS handles link-layer encryption directly.",
-      "QoS reduces the need for routing tables.",
-      "QoS improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header replaces physical signaling mechanisms."
-    ],
-    "correct": [1],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 reduces the need for routing tables."
+      "Packet Too Big",
+      "Parameter Problem",
+      "Destination Unreachable",
+      "Time Exceeded"
     ],
     "correct": [2],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "Destination Unreachable is sent when a router cannot forward a packet to its destination for various reasons (no route, prohibited, etc.)."
   },
   {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
+    "question": "What is the minimum MTU size required for IPv6 links?",
     "options": [
-      "NDP improves scalability and interoperability.",
-      "NDP reduces the need for routing tables.",
-      "NDP handles link-layer encryption directly.",
-      "NDP replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing improves scalability and interoperability.",
-      "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables.",
-      "Transition handles link-layer encryption directly.",
-      "Transition replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
-    "options": [
-      "Mobility handles link-layer encryption directly.",
-      "Mobility reduces the need for routing tables.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
-    "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS improves scalability and interoperability.",
-      "QoS reduces the need for routing tables.",
-      "QoS handles link-layer encryption directly.",
-      "QoS replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP replaces physical signaling mechanisms.",
-      "NDP handles link-layer encryption directly.",
-      "NDP reduces the need for routing tables.",
-      "NDP improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing improves scalability and interoperability.",
-      "Routing reduces the need for routing tables.",
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [1],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition handles link-layer encryption directly.",
-      "Transition replaces physical signaling mechanisms.",
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables."
+      "576 bytes",
+      "9000 bytes",
+      "1280 bytes",
+      "1500 bytes"
     ],
     "correct": [2],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "IPv6 requires a minimum MTU of 1280 bytes on all links. If a physical link cannot support this, link-specific fragmentation and reassembly must be provided."
   },
   {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
+    "question": "Which field in the IPv6 header indicates the upper-layer protocol?",
     "options": [
-      "Mobility handles link-layer encryption directly.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility improves scalability and interoperability.",
-      "Mobility reduces the need for routing tables."
+      "Traffic Class",
+      "Next Header",
+      "Type of Service",
+      "Protocol"
+    ],
+    "correct": [1],
+    "explanation": "The Next Header field in IPv6 serves the same purpose as the Protocol field in IPv4, identifying the type of header following the IPv6 header."
+  },
+  {
+    "question": "What does the prefix fe80::/10 indicate?",
+    "options": [
+      "Multicast address",
+      "Unique local address",
+      "Link-local address",
+      "Global unicast address"
     ],
     "correct": [2],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "fe80::/10 is reserved for link-local addresses, which are used for communication on a single link and are not routable."
   },
   {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
+    "question": "Which NDP message does a host send to find its default gateway?",
     "options": [
-      "Security improves scalability and interoperability.",
-      "Security reduces the need for routing tables.",
-      "Security handles link-layer encryption directly.",
-      "Security replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS replaces physical signaling mechanisms.",
-      "QoS improves scalability and interoperability.",
-      "QoS handles link-layer encryption directly.",
-      "QoS reduces the need for routing tables."
-    ],
-    "correct": [1],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
-    "options": [
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header handles link-layer encryption directly.",
-      "IPv6 Header replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
-    "options": [
-      "ICMPv6 improves scalability and interoperability.",
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 handles link-layer encryption directly."
-    ],
-    "correct": [0],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP reduces the need for routing tables.",
-      "NDP replaces physical signaling mechanisms.",
-      "NDP handles link-layer encryption directly.",
-      "NDP improves scalability and interoperability."
+      "Neighbor Solicitation",
+      "Neighbor Advertisement",
+      "Router Advertisement",
+      "Router Solicitation"
     ],
     "correct": [3],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "Hosts send Router Solicitation messages to discover routers on the link. Routers respond with Router Advertisements."
   },
   {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
+    "question": "What is the purpose of Duplicate Address Detection (DAD)?",
     "options": [
-      "Routing improves scalability and interoperability.",
-      "Routing handles link-layer encryption directly.",
-      "Routing replaces physical signaling mechanisms.",
-      "Routing reduces the need for routing tables."
+      "To compress IPv6 addresses",
+      "To prevent IP address conflicts on a network",
+      "To find the MAC address of a neighbor",
+      "To detect router failures"
     ],
-    "correct": [0],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "correct": [1],
+    "explanation": "DAD is used by a node to determine if an address is already in use on the link before assigning it to an interface."
   },
   {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
+    "question": "Which IPv6 extension header is used for fragmentation?",
     "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition handles link-layer encryption directly.",
-      "Transition replaces physical signaling mechanisms.",
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables."
+      "Routing Header",
+      "Destination Options",
+      "Fragment Header",
+      "Hop-by-Hop Options"
     ],
     "correct": [2],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "The Fragment Header is used when a source node must fragment a packet because it exceeds the path MTU. Only the source performs fragmentation in IPv6."
   },
   {
-    "question": "Explain how Mobility contributes to IPv6 network functionality.",
+    "question": "What does the IPv6 address :: represent?",
     "options": [
-      "Mobility reduces the need for routing tables.",
-      "Mobility improves scalability and interoperability.",
-      "Mobility replaces physical signaling mechanisms.",
-      "Mobility handles link-layer encryption directly."
+      "All zeros (unspecified address)",
+      "A multicast address",
+      "The loopback address",
+      "The default route"
     ],
-    "correct": [1],
-    "explanation": "Mobility provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "correct": [0],
+    "explanation": ":: represents all zeros and is called the unspecified address. It's used by hosts that don't yet have an address assigned."
   },
   {
-    "question": "Explain how Security contributes to IPv6 network functionality.",
+    "question": "Which DHCPv6 mode provides only configuration information, not addresses?",
     "options": [
-      "Security reduces the need for routing tables.",
-      "Security replaces physical signaling mechanisms.",
-      "Security handles link-layer encryption directly.",
-      "Security improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "Security provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how QoS contributes to IPv6 network functionality.",
-    "options": [
-      "QoS handles link-layer encryption directly.",
-      "QoS replaces physical signaling mechanisms.",
-      "QoS improves scalability and interoperability.",
-      "QoS reduces the need for routing tables."
+      "Rapid DHCPv6",
+      "DHCPv6-PD",
+      "Stateless DHCPv6",
+      "Stateful DHCPv6"
     ],
     "correct": [2],
-    "explanation": "QoS provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "Stateless DHCPv6 provides configuration information (like DNS servers) while hosts use SLAAC for address assignment."
   },
   {
-    "question": "Explain how IPv6 Header contributes to IPv6 network functionality.",
+    "question": "What is the IPv6 multicast address for all routers on a link?",
     "options": [
-      "IPv6 Header reduces the need for routing tables.",
-      "IPv6 Header improves scalability and interoperability.",
-      "IPv6 Header replaces physical signaling mechanisms.",
-      "IPv6 Header handles link-layer encryption directly."
+      "ff02::1",
+      "ff02::2",
+      "ff05::2",
+      "ff0e::1"
     ],
     "correct": [1],
-    "explanation": "IPv6 Header provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "ff02::2 is the link-local multicast address for all routers. ff02::1 is for all nodes, ff05::2 is site-local all routers."
   },
   {
-    "question": "Explain how ICMPv6 contributes to IPv6 network functionality.",
+    "question": "Which transition mechanism encapsulates IPv6 packets in IPv4 for transport?",
     "options": [
-      "ICMPv6 replaces physical signaling mechanisms.",
-      "ICMPv6 handles link-layer encryption directly.",
-      "ICMPv6 reduces the need for routing tables.",
-      "ICMPv6 improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "ICMPv6 provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how NDP contributes to IPv6 network functionality.",
-    "options": [
-      "NDP improves scalability and interoperability.",
-      "NDP reduces the need for routing tables.",
-      "NDP handles link-layer encryption directly.",
-      "NDP replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "NDP provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Routing contributes to IPv6 network functionality.",
-    "options": [
-      "Routing reduces the need for routing tables.",
-      "Routing replaces physical signaling mechanisms.",
-      "Routing handles link-layer encryption directly.",
-      "Routing improves scalability and interoperability."
-    ],
-    "correct": [3],
-    "explanation": "Routing provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Autoconfiguration contributes to IPv6 network functionality.",
-    "options": [
-      "Autoconfiguration improves scalability and interoperability.",
-      "Autoconfiguration reduces the need for routing tables.",
-      "Autoconfiguration handles link-layer encryption directly.",
-      "Autoconfiguration replaces physical signaling mechanisms."
-    ],
-    "correct": [0],
-    "explanation": "Autoconfiguration provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
-  },
-  {
-    "question": "Explain how Transition contributes to IPv6 network functionality.",
-    "options": [
-      "Transition handles link-layer encryption directly.",
-      "Transition improves scalability and interoperability.",
-      "Transition reduces the need for routing tables.",
-      "Transition replaces physical signaling mechanisms."
+      "Dual stack",
+      "6to4 tunneling",
+      "DNS64",
+      "NAT64"
     ],
     "correct": [1],
-    "explanation": "Transition provides essential IPv6 networking functionality such as scalability, automatic addressing, or compatibility with legacy systems."
+    "explanation": "6to4 is a tunneling mechanism that encapsulates IPv6 packets within IPv4 packets to traverse IPv4 networks. Dual stack runs both protocols natively."
+  },
+  {
+    "question": "What does the 'M' flag in a Router Advertisement indicate?",
+    "options": [
+      "Multicast is supported",
+      "MTU information is included",
+      "Mobile IPv6 is enabled",
+      "Use DHCPv6 for address configuration (Managed)"
+    ],
+    "correct": [3],
+    "explanation": "The Managed address configuration (M) flag tells hosts to use DHCPv6 for address assignment rather than SLAAC."
+  },
+  {
+    "question": "Which IPv6 address scope is indicated by ff05::/16?",
+    "options": [
+      "Link-local",
+      "Global",
+      "Site-local",
+      "Interface-local"
+    ],
+    "correct": [2],
+    "explanation": "The fourth hexadecimal digit (5) in multicast addresses indicates site-local scope. ff02 is link-local, ff0e is global."
+  },
+  {
+    "question": "What is the purpose of the Hop Limit field in IPv6?",
+    "options": [
+      "To indicate packet priority",
+      "To set the maximum packet size",
+      "To limit the number of hops a packet can take",
+      "To specify the number of extension headers"
+    ],
+    "correct": [2],
+    "explanation": "Hop Limit functions like TTL in IPv4, decremented by each router. When it reaches 0, the packet is discarded to prevent routing loops."
+  },
+  {
+    "question": "Which address block is reserved for unique local addresses (ULA)?",
+    "options": [
+      "ff00::/8",
+      "fc00::/7",
+      "fe80::/10",
+      "2001::/16"
+    ],
+    "correct": [1],
+    "explanation": "fc00::/7 (fc00::/8 and fd00::/8) is reserved for unique local addresses, similar to RFC 1918 private addresses in IPv4."
+  },
+  {
+    "question": "What does Path MTU Discovery (PMTUD) determine?",
+    "options": [
+      "The maximum packet size that can be sent without fragmentation",
+      "The optimal QoS settings for a path",
+      "The fastest route to a destination",
+      "The number of routers between source and destination"
+    ],
+    "correct": [0],
+    "explanation": "PMTUD discovers the smallest MTU along the path to avoid fragmentation. It's more important in IPv6 since routers don't fragment."
+  },
+  {
+    "question": "Which ICMPv6 type is used for Neighbor Solicitation?",
+    "options": [
+      "Type 136",
+      "Type 135",
+      "Type 134",
+      "Type 133"
+    ],
+    "correct": [1],
+    "explanation": "Type 135 is Neighbor Solicitation, Type 136 is Neighbor Advertisement, Type 133 is Router Solicitation, Type 134 is Router Advertisement."
+  },
+  {
+    "question": "Which NDP message is sent by routers to proactively advertise their presence?",
+    "options": [
+      "Router Advertisement",
+      "Redirect",
+      "Router Solicitation",
+      "Neighbor Solicitation"
+    ],
+    "correct": [0],
+    "explanation": "Router Advertisement messages are sent periodically by routers or in response to Router Solicitation messages to advertise their presence and configuration parameters."
+  },
+  {
+    "question": "What information can be included in NDP Router Advertisements?",
+    "options": [
+      "MAC addresses of all hosts",
+      "MTU size for the link",
+      "Prefix information for SLAAC",
+      "Flags indicating address configuration method"
+    ],
+    "correct": [1, 2, 3],
+    "multipleCorrect": true,
+    "explanation": "Router Advertisements can include prefixes for autoconfiguration, link MTU, hop limit values, and flags (M and O) for address and other configuration."
+  },
+  {
+    "question": "In Mobile IPv6, what is the purpose of a Home Agent?",
+    "options": [
+      "To intercept packets destined for the mobile node's home address",
+      "To assign temporary IP addresses",
+      "To compress IPv6 headers for mobile devices",
+      "To tunnel packets to the mobile node's current location"
+    ],
+    "correct": [0, 3],
+    "multipleCorrect": true,
+    "explanation": "The Home Agent intercepts packets sent to the mobile node's home address and tunnels them to the mobile node's care-of address at its current location."
+  },
+  {
+    "question": "What is a Care-of Address in Mobile IPv6?",
+    "options": [
+      "The address of the home agent",
+      "The permanent address assigned to a mobile node",
+      "The address used for return routability testing",
+      "A temporary address indicating the mobile node's current location"
+    ],
+    "correct": [3],
+    "explanation": "A care-of address is a temporary IPv6 address that reflects the mobile node's current point of attachment to the Internet."
+  },
+  {
+    "question": "Which IPv6 security feature was mandatory in the original specification?",
+    "options": [
+      "TLS",
+      "DNSSEC",
+      "SSH",
+      "IPsec"
+    ],
+    "correct": [3],
+    "explanation": "IPsec was originally mandatory in IPv6 (though this requirement was later relaxed). It provides authentication, integrity, and confidentiality at the network layer."
+  },
+  {
+    "question": "What are the two main IPsec protocols used in IPv6?",
+    "options": [
+      "AH (Authentication Header)",
+      "SSL (Secure Sockets Layer)",
+      "ESP (Encapsulating Security Payload)",
+      "TLS (Transport Layer Security)"
+    ],
+    "correct": [0, 2],
+    "multipleCorrect": true,
+    "explanation": "AH provides authentication and integrity, while ESP provides confidentiality (encryption) in addition to authentication and integrity."
+  },
+  {
+    "question": "How does IPv6 use the Traffic Class field for QoS?",
+    "options": [
+      "To encrypt quality-sensitive traffic",
+      "To determine routing paths",
+      "To mark packets with priority or DSCP values",
+      "To compress multimedia packets"
+    ],
+    "correct": [2],
+    "explanation": "The Traffic Class field (8 bits) is used similarly to ToS in IPv4, allowing packets to be marked with DiffServ Code Points (DSCP) for QoS treatment."
+  },
+  {
+    "question": "What security risk is associated with NDP in IPv6?",
+    "options": [
+      "NDP automatically encrypts all traffic",
+      "NDP prevents all man-in-the-middle attacks",
+      "NDP messages can be spoofed without protection",
+      "NDP requires certificate authentication by default"
+    ],
+    "correct": [2],
+    "explanation": "Without SEND (Secure Neighbor Discovery), NDP messages are vulnerable to spoofing attacks, allowing attackers to redirect traffic or perform DoS attacks."
+  },
+  {
+    "question": "What is SEND (Secure Neighbor Discovery)?",
+    "options": [
+      "A compression algorithm for IPv6 packets",
+      "A routing protocol for IPv6 networks",
+      "A method for address allocation",
+      "A protocol that uses cryptographic signatures to secure NDP messages"
+    ],
+    "correct": [3],
+    "explanation": "SEND uses Cryptographically Generated Addresses (CGA) and RSA signatures to authenticate NDP messages and prevent spoofing attacks."
+  },
+  {
+    "question": "Which type of attack can be performed by spoofing Router Advertisement messages?",
+    "options": [
+      "Denial of service by advertising invalid prefixes",
+      "Man-in-the-middle attack by advertising a rogue router",
+      "SQL injection",
+      "Redirect legitimate traffic to attacker"
+    ],
+    "correct": [0, 1, 3],
+    "multipleCorrect": true,
+    "explanation": "Rogue RA attacks can redirect traffic, cause DoS by invalidating legitimate prefixes, or position the attacker as a man-in-the-middle."
+  },
+  {
+    "question": "What is the purpose of the Redirect message in NDP?",
+    "options": [
+      "To inform a host of a better first-hop router for a specific destination",
+      "To change a host's IPv6 address",
+      "To redirect DNS queries to a different server",
+      "To block malicious traffic"
+    ],
+    "correct": [0],
+    "explanation": "Routers send Redirect messages to inform hosts about better routes to specific destinations, optimizing path selection."
+  },
+  {
+    "question": "In Mobile IPv6, what is Route Optimization?",
+    "options": [
+      "Compressing routing tables",
+      "A mechanism allowing direct communication between correspondent nodes and mobile nodes",
+      "Automatically selecting the fastest ISP",
+      "Reducing the number of hops in a network"
+    ],
+    "correct": [1],
+    "explanation": "Route Optimization allows correspondent nodes to send packets directly to a mobile node's care-of address, bypassing the home agent for efficiency."
+  },
+  {
+    "question": "What is Binding Update in Mobile IPv6?",
+    "options": [
+      "A DNS record update",
+      "An update to the routing table",
+      "A security certificate renewal",
+      "A message sent by the mobile node to register its care-of address"
+    ],
+    "correct": [3],
+    "explanation": "Binding Update messages inform the home agent (and optionally correspondent nodes) about the mobile node's current care-of address."
+  },
+  {
+    "question": "Which IPv6 extension header is used by IPsec for authentication?",
+    "options": [
+      "Hop-by-Hop Options",
+      "Authentication Header (AH)",
+      "Fragment Header",
+      "Routing Header"
+    ],
+    "correct": [1],
+    "explanation": "The Authentication Header provides connectionless integrity, data origin authentication, and optional anti-replay protection for IPv6 packets."
+  },
+  {
+    "question": "What is the main difference between AH and ESP in IPsec?",
+    "options": [
+      "AH is faster than ESP",
+      "AH is for IPv4, ESP is for IPv6",
+      "AH provides authentication only, ESP provides encryption and authentication",
+      "ESP cannot work with NAT"
+    ],
+    "correct": [2],
+    "explanation": "AH provides authentication and integrity but not encryption. ESP can provide confidentiality (encryption), authentication, and integrity."
+  },
+  {
+    "question": "How does IPv6 Privacy Extensions enhance security?",
+    "options": [
+      "By using shorter addresses",
+      "By encrypting all IPv6 headers",
+      "By hiding the MAC address in Router Advertisements",
+      "By generating temporary random interface identifiers"
+    ],
+    "correct": [3],
+    "explanation": "Privacy Extensions (RFC 4941) generate temporary, changing interface IDs instead of using MAC-based identifiers, preventing tracking across networks."
+  },
+  {
+    "question": "What is a Cryptographically Generated Address (CGA)?",
+    "options": [
+      "An address assigned by DHCP with encryption",
+      "An IPv6 address generated from a public key hash",
+      "A randomly generated temporary address",
+      "An encrypted IPv6 address"
+    ],
+    "correct": [1],
+    "explanation": "CGAs use a hash of a public key to generate the interface identifier, allowing proof of address ownership through digital signatures."
+  },
+  {
+    "question": "Which NDP option is used to advertise the link-layer address?",
+    "options": [
+      "Target Link-Layer Address option",
+      "Source Link-Layer Address option",
+      "Prefix Information option",
+      "MTU option"
+    ],
+    "correct": [0, 1],
+    "multipleCorrect": true,
+    "explanation": "Source Link-Layer Address is used in Router/Neighbor Solicitation and Router/Neighbor Advertisement. Target Link-Layer Address is used in Neighbor Advertisement and Redirect."
+  },
+  {
+    "question": "What happens during the Neighbor Unreachability Detection (NUD) process?",
+    "options": [
+      "The network assigns new addresses",
+      "Hosts verify that neighbors are still reachable",
+      "Hosts discover available bandwidth",
+      "Routers detect link failures"
+    ],
+    "correct": [1],
+    "explanation": "NUD allows hosts to track the reachability status of neighbors and detect when a neighbor is no longer reachable, updating the neighbor cache accordingly."
+  },
+  {
+    "question": "What are the possible states in the NDP neighbor cache?",
+    "options": [
+      "ENCRYPTED - secure connection established",
+      "REACHABLE - known to be reachable",
+      "STALE - no recent reachability confirmation",
+      "INCOMPLETE - waiting for address resolution"
+    ],
+    "correct": [1, 2, 3],
+    "multipleCorrect": true,
+    "explanation": "NDP defines states including INCOMPLETE, REACHABLE, STALE, DELAY, and PROBE to track neighbor reachability. There is no ENCRYPTED state."
+  },
+  {
+    "question": "In Mobile IPv6, what is Return Routability Test (RRT)?",
+    "options": [
+      "A speed test for mobile connections",
+      "A method to find the shortest path",
+      "A security mechanism to verify the mobile node owns both home and care-of addresses",
+      "A QoS measurement tool"
+    ],
+    "correct": [2],
+    "explanation": "RRT is a security procedure where correspondent nodes verify that the mobile node is reachable at both its home address and care-of address before enabling route optimization."
+  },
+  {
+    "question": "What is the purpose of the 'O' flag in Router Advertisements?",
+    "options": [
+      "Opens firewall ports",
+      "Indicates hosts should use DHCPv6 for other configuration (not addresses)",
+      "Enables IPv6 over IPv4 tunneling",
+      "Optimizes routing tables"
+    ],
+    "correct": [1],
+    "explanation": "The Other configuration (O) flag tells hosts to use DHCPv6 to obtain additional configuration information like DNS servers, while still using SLAAC for addresses."
+  },
+  {
+    "question": "How does IPsec transport mode differ from tunnel mode?",
+    "options": [
+      "Transport mode is faster than tunnel mode",
+      "Tunnel mode creates a new IP header, transport mode doesn't",
+      "Transport mode works only with TCP",
+      "Transport mode encrypts only the payload, tunnel mode encrypts the entire packet"
+    ],
+    "correct": [1, 3],
+    "multipleCorrect": true,
+    "explanation": "In transport mode, only the payload is protected. In tunnel mode, the entire original packet is encapsulated in a new IPv6 packet, often used for VPNs."
+  },
+  {
+    "question": "What is the Flow Label field used for in IPv6 QoS?",
+    "options": [
+      "To compress packet headers",
+      "To encrypt flows",
+      "To count the number of flows",
+      "To identify packets belonging to the same flow for consistent QoS treatment"
+    ],
+    "correct": [3],
+    "explanation": "The 20-bit Flow Label allows routers to identify packets belonging to the same flow and handle them consistently without examining upper-layer headers."
+  },
+  {
+    "question": "Which security feature helps prevent IPv6 address scanning attacks?",
+    "options": [
+      "Randomized interface identifiers",
+      "All subnet addresses are always allocated",
+      "SEND protocol",
+      "The large address space makes brute-force scanning impractical"
+    ],
+    "correct": [0, 3],
+    "multipleCorrect": true,
+    "explanation": "The huge IPv6 address space (2^64 addresses per subnet) makes scanning impractical, and randomized IDs prevent predictable addressing patterns."
+  },
+  {
+    "question": "What is a Mobile IPv6 Correspondent Node?",
+    "options": [
+      "A node communicating with a mobile node",
+      "A backup home agent",
+      "A DNS server for mobile devices",
+      "A router managing mobile connections"
+    ],
+    "correct": [0],
+    "explanation": "A correspondent node is any IPv6 node that is communicating with a mobile node, which may be mobile or stationary."
+  },
+  {
+    "question": "How does NDP prevent address conflicts?",
+    "options": [
+      "Through Duplicate Address Detection (DAD)",
+      "Through encryption",
+      "By limiting the number of hosts",
+      "By using DHCP exclusively"
+    ],
+    "correct": [0],
+    "explanation": "DAD uses Neighbor Solicitation messages to check if an address is already in use before a node configures it on its interface."
+  },
+  {
+    "question": "What is the Router Preference option in NDP?",
+    "options": [
+      "Determines router uptime",
+      "Allows routers to advertise their preference level (high, medium, low)",
+      "Configures router encryption strength",
+      "Sets bandwidth limits for routers"
+    ],
+    "correct": [1],
+    "explanation": "The Router Preference option allows routers to indicate their relative preference for use as a default router, helping hosts choose the best default gateway."
+  },
+  {
+    "question": "Which extension header would be used for end-to-end encryption in IPv6?",
+    "options": [
+      "Hop-by-Hop Options",
+      "Routing Header",
+      "ESP (Encapsulating Security Payload)",
+      "Fragment Header"
+    ],
+    "correct": [2],
+    "explanation": "ESP provides encryption and can be used in transport mode for end-to-end encryption between source and destination."
+  },
+  {
+    "question": "What is RA Guard?",
+    "options": [
+      "A security feature that filters Router Advertisement messages",
+      "A QoS mechanism",
+      "A routing protocol",
+      "A compression algorithm"
+    ],
+    "correct": [0],
+    "explanation": "RA Guard is a switch security feature that blocks rogue Router Advertisement messages from unauthorized devices, preventing attacks."
   }
 ]
